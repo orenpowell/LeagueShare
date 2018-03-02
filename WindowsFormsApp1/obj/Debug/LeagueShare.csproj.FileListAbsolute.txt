@@ -7,3 +7,12 @@ C:\Users\oap1\source\repos\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.cs
 C:\Users\oap1\source\repos\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.CoreCompileInputs.cache
 C:\Users\oap1\source\repos\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\oap1\source\repos\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.GenerateResource.Cache
+C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.CoreCompileInputs.cache
+C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

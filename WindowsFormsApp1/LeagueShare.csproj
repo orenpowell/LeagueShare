@@ -81,6 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Fantasy-League.png" />
+    <None Include="Resources\League-Share-small.png" />
     <None Include="Resources\Fantasy-League-small.png" />
     <None Include="Resources\Fantasy-League.png" />
   </ItemGroup>
