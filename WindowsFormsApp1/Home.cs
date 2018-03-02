@@ -12,9 +12,16 @@ namespace WindowsFormsApp1
 {
     public partial class Home : Form
     {
+        
+
         public Home()
         {
             InitializeComponent();
+        }
+  
+        public void name (string a)
+        {
+            txtName.Text = a;
         }
 
         private void Home_Load(object sender, EventArgs e)
@@ -55,6 +62,11 @@ namespace WindowsFormsApp1
         private void label15_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtName_Click(object sender, EventArgs e)
+        {
+         
         }
     }
 }

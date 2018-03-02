@@ -30,24 +30,24 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.txtName = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.txtVPlayer = new System.Windows.Forms.Label();
+            this.txtVTeam = new System.Windows.Forms.Label();
             this.txtVGame = new System.Windows.Forms.Label();
             this.txtVLeague = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.txtSpacerR1C1 = new System.Windows.Forms.Label();
+            this.txtSpacerR1C2 = new System.Windows.Forms.Label();
+            this.txtSpacerR1C3 = new System.Windows.Forms.Label();
+            this.txtSpacerR2C3 = new System.Windows.Forms.Label();
+            this.txtSpacerR2C2 = new System.Windows.Forms.Label();
+            this.txtSpacerR2C1 = new System.Windows.Forms.Label();
+            this.txtULeague = new System.Windows.Forms.Label();
+            this.txtUGame = new System.Windows.Forms.Label();
+            this.txtUTeam = new System.Windows.Forms.Label();
+            this.txtUPlayer = new System.Windows.Forms.Label();
+            this.picBigLogo = new System.Windows.Forms.PictureBox();
+            this.picProfilePic = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picBigLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picProfilePic)).BeginInit();
             this.SuspendLayout();
             // 
             // txtName
@@ -60,26 +60,27 @@
             this.txtName.Size = new System.Drawing.Size(236, 37);
             this.txtName.TabIndex = 1;
             this.txtName.Text = "FName LName";
+            this.txtName.Click += new System.EventHandler(this.txtName_Click);
             // 
-            // label2
+            // txtVPlayer
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(371, 46);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "View Player";
+            this.txtVPlayer.AutoSize = true;
+            this.txtVPlayer.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.txtVPlayer.Location = new System.Drawing.Point(371, 46);
+            this.txtVPlayer.Name = "txtVPlayer";
+            this.txtVPlayer.Size = new System.Drawing.Size(62, 13);
+            this.txtVPlayer.TabIndex = 2;
+            this.txtVPlayer.Text = "View Player";
             // 
-            // label3
+            // txtVTeam
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label3.Location = new System.Drawing.Point(290, 46);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "View Team";
+            this.txtVTeam.AutoSize = true;
+            this.txtVTeam.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.txtVTeam.Location = new System.Drawing.Point(290, 46);
+            this.txtVTeam.Name = "txtVTeam";
+            this.txtVTeam.Size = new System.Drawing.Size(60, 13);
+            this.txtVTeam.TabIndex = 3;
+            this.txtVTeam.Text = "View Team";
             // 
             // txtVGame
             // 
@@ -101,132 +102,132 @@
             this.txtVLeague.TabIndex = 5;
             this.txtVLeague.Text = "View League";
             // 
-            // label6
+            // txtSpacerR1C1
             // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label6.Location = new System.Drawing.Point(193, 46);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(9, 13);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "|";
+            this.txtSpacerR1C1.AutoSize = true;
+            this.txtSpacerR1C1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.txtSpacerR1C1.Location = new System.Drawing.Point(193, 46);
+            this.txtSpacerR1C1.Name = "txtSpacerR1C1";
+            this.txtSpacerR1C1.Size = new System.Drawing.Size(9, 13);
+            this.txtSpacerR1C1.TabIndex = 6;
+            this.txtSpacerR1C1.Text = "|";
             // 
-            // label7
+            // txtSpacerR1C2
             // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label7.Location = new System.Drawing.Point(275, 46);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(9, 13);
-            this.label7.TabIndex = 7;
-            this.label7.Text = "|";
+            this.txtSpacerR1C2.AutoSize = true;
+            this.txtSpacerR1C2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.txtSpacerR1C2.Location = new System.Drawing.Point(275, 46);
+            this.txtSpacerR1C2.Name = "txtSpacerR1C2";
+            this.txtSpacerR1C2.Size = new System.Drawing.Size(9, 13);
+            this.txtSpacerR1C2.TabIndex = 7;
+            this.txtSpacerR1C2.Text = "|";
             // 
-            // label8
+            // txtSpacerR1C3
             // 
-            this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label8.Location = new System.Drawing.Point(356, 46);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(9, 13);
-            this.label8.TabIndex = 8;
-            this.label8.Text = "|";
+            this.txtSpacerR1C3.AutoSize = true;
+            this.txtSpacerR1C3.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.txtSpacerR1C3.Location = new System.Drawing.Point(356, 46);
+            this.txtSpacerR1C3.Name = "txtSpacerR1C3";
+            this.txtSpacerR1C3.Size = new System.Drawing.Size(9, 13);
+            this.txtSpacerR1C3.TabIndex = 8;
+            this.txtSpacerR1C3.Text = "|";
             // 
-            // label9
+            // txtSpacerR2C3
             // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label9.Location = new System.Drawing.Point(392, 68);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(9, 13);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "|";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+            this.txtSpacerR2C3.AutoSize = true;
+            this.txtSpacerR2C3.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.txtSpacerR2C3.Location = new System.Drawing.Point(392, 68);
+            this.txtSpacerR2C3.Name = "txtSpacerR2C3";
+            this.txtSpacerR2C3.Size = new System.Drawing.Size(9, 13);
+            this.txtSpacerR2C3.TabIndex = 15;
+            this.txtSpacerR2C3.Text = "|";
+            this.txtSpacerR2C3.Click += new System.EventHandler(this.label9_Click);
             // 
-            // label10
+            // txtSpacerR2C2
             // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label10.Location = new System.Drawing.Point(299, 68);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(9, 13);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "|";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
+            this.txtSpacerR2C2.AutoSize = true;
+            this.txtSpacerR2C2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.txtSpacerR2C2.Location = new System.Drawing.Point(299, 68);
+            this.txtSpacerR2C2.Name = "txtSpacerR2C2";
+            this.txtSpacerR2C2.Size = new System.Drawing.Size(9, 13);
+            this.txtSpacerR2C2.TabIndex = 14;
+            this.txtSpacerR2C2.Text = "|";
+            this.txtSpacerR2C2.Click += new System.EventHandler(this.label10_Click);
             // 
-            // label11
+            // txtSpacerR2C1
             // 
-            this.label11.AutoSize = true;
-            this.label11.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label11.Location = new System.Drawing.Point(205, 68);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(9, 13);
-            this.label11.TabIndex = 13;
-            this.label11.Text = "|";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
+            this.txtSpacerR2C1.AutoSize = true;
+            this.txtSpacerR2C1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.txtSpacerR2C1.Location = new System.Drawing.Point(205, 68);
+            this.txtSpacerR2C1.Name = "txtSpacerR2C1";
+            this.txtSpacerR2C1.Size = new System.Drawing.Size(9, 13);
+            this.txtSpacerR2C1.TabIndex = 13;
+            this.txtSpacerR2C1.Text = "|";
+            this.txtSpacerR2C1.Click += new System.EventHandler(this.label11_Click);
             // 
-            // label12
+            // txtULeague
             // 
-            this.label12.AutoSize = true;
-            this.label12.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label12.Location = new System.Drawing.Point(118, 68);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(81, 13);
-            this.label12.TabIndex = 12;
-            this.label12.Text = "Update League";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
+            this.txtULeague.AutoSize = true;
+            this.txtULeague.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.txtULeague.Location = new System.Drawing.Point(118, 68);
+            this.txtULeague.Name = "txtULeague";
+            this.txtULeague.Size = new System.Drawing.Size(81, 13);
+            this.txtULeague.TabIndex = 12;
+            this.txtULeague.Text = "Update League";
+            this.txtULeague.Click += new System.EventHandler(this.label12_Click);
             // 
-            // label13
+            // txtUGame
             // 
-            this.label13.AutoSize = true;
-            this.label13.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label13.Location = new System.Drawing.Point(220, 68);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(73, 13);
-            this.label13.TabIndex = 11;
-            this.label13.Text = "Update Game";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
+            this.txtUGame.AutoSize = true;
+            this.txtUGame.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.txtUGame.Location = new System.Drawing.Point(220, 68);
+            this.txtUGame.Name = "txtUGame";
+            this.txtUGame.Size = new System.Drawing.Size(73, 13);
+            this.txtUGame.TabIndex = 11;
+            this.txtUGame.Text = "Update Game";
+            this.txtUGame.Click += new System.EventHandler(this.label13_Click);
             // 
-            // label14
+            // txtUTeam
             // 
-            this.label14.AutoSize = true;
-            this.label14.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label14.Location = new System.Drawing.Point(314, 68);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(72, 13);
-            this.label14.TabIndex = 10;
-            this.label14.Text = "Update Team";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
+            this.txtUTeam.AutoSize = true;
+            this.txtUTeam.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.txtUTeam.Location = new System.Drawing.Point(314, 68);
+            this.txtUTeam.Name = "txtUTeam";
+            this.txtUTeam.Size = new System.Drawing.Size(72, 13);
+            this.txtUTeam.TabIndex = 10;
+            this.txtUTeam.Text = "Update Team";
+            this.txtUTeam.Click += new System.EventHandler(this.label14_Click);
             // 
-            // label15
+            // txtUPlayer
             // 
-            this.label15.AutoSize = true;
-            this.label15.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label15.Location = new System.Drawing.Point(407, 68);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(74, 13);
-            this.label15.TabIndex = 9;
-            this.label15.Text = "Update Player";
-            this.label15.Click += new System.EventHandler(this.label15_Click);
+            this.txtUPlayer.AutoSize = true;
+            this.txtUPlayer.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.txtUPlayer.Location = new System.Drawing.Point(407, 68);
+            this.txtUPlayer.Name = "txtUPlayer";
+            this.txtUPlayer.Size = new System.Drawing.Size(74, 13);
+            this.txtUPlayer.TabIndex = 9;
+            this.txtUPlayer.Text = "Update Player";
+            this.txtUPlayer.Click += new System.EventHandler(this.label15_Click);
             // 
-            // pictureBox2
+            // picBigLogo
             // 
-            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.League_Share;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 115);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(500, 500);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 16;
-            this.pictureBox2.TabStop = false;
+            this.picBigLogo.Image = global::WindowsFormsApp1.Properties.Resources.League_Share;
+            this.picBigLogo.Location = new System.Drawing.Point(12, 115);
+            this.picBigLogo.Name = "picBigLogo";
+            this.picBigLogo.Size = new System.Drawing.Size(500, 500);
+            this.picBigLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picBigLogo.TabIndex = 16;
+            this.picBigLogo.TabStop = false;
             // 
-            // pictureBox1
+            // picProfilePic
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.male_portrait_silhouette_small;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.picProfilePic.Image = global::WindowsFormsApp1.Properties.Resources.male_portrait_silhouette_small;
+            this.picProfilePic.Location = new System.Drawing.Point(12, 9);
+            this.picProfilePic.Name = "picProfilePic";
+            this.picProfilePic.Size = new System.Drawing.Size(100, 100);
+            this.picProfilePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picProfilePic.TabIndex = 0;
+            this.picProfilePic.TabStop = false;
             // 
             // Home
             // 
@@ -234,31 +235,31 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(524, 627);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.picBigLogo);
+            this.Controls.Add(this.txtSpacerR2C3);
+            this.Controls.Add(this.txtSpacerR2C2);
+            this.Controls.Add(this.txtSpacerR2C1);
+            this.Controls.Add(this.txtULeague);
+            this.Controls.Add(this.txtUGame);
+            this.Controls.Add(this.txtUTeam);
+            this.Controls.Add(this.txtUPlayer);
+            this.Controls.Add(this.txtSpacerR1C3);
+            this.Controls.Add(this.txtSpacerR1C2);
+            this.Controls.Add(this.txtSpacerR1C1);
             this.Controls.Add(this.txtVLeague);
             this.Controls.Add(this.txtVGame);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtVTeam);
+            this.Controls.Add(this.txtVPlayer);
             this.Controls.Add(this.txtName);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picProfilePic);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Home";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "League Share";
             this.Load += new System.EventHandler(this.Home_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBigLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picProfilePic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,22 +267,22 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picProfilePic;
         private System.Windows.Forms.Label txtName;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label txtVPlayer;
+        private System.Windows.Forms.Label txtVTeam;
         private System.Windows.Forms.Label txtVGame;
         private System.Windows.Forms.Label txtVLeague;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label txtSpacerR1C1;
+        private System.Windows.Forms.Label txtSpacerR1C2;
+        private System.Windows.Forms.Label txtSpacerR1C3;
+        private System.Windows.Forms.Label txtSpacerR2C3;
+        private System.Windows.Forms.Label txtSpacerR2C2;
+        private System.Windows.Forms.Label txtSpacerR2C1;
+        private System.Windows.Forms.Label txtULeague;
+        private System.Windows.Forms.Label txtUGame;
+        private System.Windows.Forms.Label txtUTeam;
+        private System.Windows.Forms.Label txtUPlayer;
+        private System.Windows.Forms.PictureBox picBigLogo;
     }
 }
