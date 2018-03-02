@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.bttnSubmit = new System.Windows.Forms.Button();
+            this.bttnCancel = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,23 +51,26 @@
             this.label1.Text = "Login Screen";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button1
+            // bttnSubmit
             // 
-            this.button1.Location = new System.Drawing.Point(37, 220);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bttnSubmit.Location = new System.Drawing.Point(37, 220);
+            this.bttnSubmit.Name = "bttnSubmit";
+            this.bttnSubmit.Size = new System.Drawing.Size(75, 23);
+            this.bttnSubmit.TabIndex = 2;
+            this.bttnSubmit.Text = "Submit";
+            this.bttnSubmit.UseVisualStyleBackColor = true;
+            this.bttnSubmit.Click += new System.EventHandler(this.bttnSubmit_Click);
             // 
-            // button2
+            // bttnCancel
             // 
-            this.button2.Location = new System.Drawing.Point(119, 220);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bttnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.bttnCancel.Location = new System.Drawing.Point(119, 220);
+            this.bttnCancel.Name = "bttnCancel";
+            this.bttnCancel.Size = new System.Drawing.Size(75, 23);
+            this.bttnCancel.TabIndex = 3;
+            this.bttnCancel.Text = "Cancel";
+            this.bttnCancel.UseVisualStyleBackColor = true;
+            this.bttnCancel.Click += new System.EventHandler(this.bttnCancel_Click);
             // 
             // textBox1
             // 
@@ -80,6 +83,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(74, 170);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(120, 20);
             this.textBox2.TabIndex = 5;
             // 
@@ -126,9 +130,11 @@
             // 
             // Form1
             // 
+            this.AcceptButton = this.bttnSubmit;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CancelButton = this.bttnCancel;
             this.ClientSize = new System.Drawing.Size(223, 266);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.checkBox1);
@@ -136,10 +142,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bttnCancel);
+            this.Controls.Add(this.bttnSubmit);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(239, 305);
+            this.MinimumSize = new System.Drawing.Size(239, 305);
             this.Name = "Form1";
             this.Text = "League Share";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -150,8 +158,8 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button bttnSubmit;
+        private System.Windows.Forms.Button bttnCancel;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;

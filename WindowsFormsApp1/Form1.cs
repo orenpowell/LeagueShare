@@ -19,7 +19,20 @@ namespace WindowsFormsApp1
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            
         }
+
+        private void bttnCancel_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void bttnSubmit_Click(object sender, EventArgs e)
+        {
+            Home next = new Home();
+            next.Show();
+            this.Hide();
+        }
+        
     }
 }

@@ -83,9 +83,29 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap League_Share {
+            get {
+                object obj = ResourceManager.GetObject("League-Share", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap League_Share_small {
             get {
                 object obj = ResourceManager.GetObject("League-Share-small", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap male_portrait_silhouette_small {
+            get {
+                object obj = ResourceManager.GetObject("male-portrait-silhouette-small", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

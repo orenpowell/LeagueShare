@@ -16,3 +16,5 @@ C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\LeagueShare.csproj
 C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.CoreCompileInputs.cache
 C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\LeagueShare.csprojResolveAssemblyReference.cache
+C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Home.resources
