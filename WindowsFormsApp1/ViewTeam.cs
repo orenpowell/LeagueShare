@@ -8,16 +8,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Home : WindowsFormsApp1.LSTemplate
+    public partial class ViewTeam : WindowsFormsApp1.LSTemplate
     {
-        public Home()
+        public ViewTeam()
         {
             InitializeComponent();
-        }
-
-        private void Home_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

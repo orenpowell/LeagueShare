@@ -38,9 +38,8 @@ namespace WindowsFormsApp1
             {
                 Home next = new Home();
                 next.Show();
-                next.name(User);
+                name.name(User);
                 this.Hide();
-                //Adding this to make edits and pushing it to GitHub
                 
             }
             else
