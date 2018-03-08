@@ -108,6 +108,7 @@
             this.tableBindingNavigator.Size = new System.Drawing.Size(524, 25);
             this.tableBindingNavigator.TabIndex = 16;
             this.tableBindingNavigator.Text = "bindingNavigator1";
+            this.tableBindingNavigator.Visible = false;
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -223,10 +224,13 @@
             this.tableDataGridView.Enabled = false;
             this.tableDataGridView.EnableHeadersVisualStyles = false;
             this.tableDataGridView.GridColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tableDataGridView.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.tableDataGridView.Location = new System.Drawing.Point(12, 115);
-            this.tableDataGridView.MultiSelect = false;
             this.tableDataGridView.Name = "tableDataGridView";
+            this.tableDataGridView.ReadOnly = true;
+            this.tableDataGridView.RowHeadersVisible = false;
             this.tableDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.tableDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.tableDataGridView.ShowCellErrors = false;
             this.tableDataGridView.ShowCellToolTips = false;
             this.tableDataGridView.ShowEditingIcon = false;
@@ -241,24 +245,28 @@
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Team";
             this.dataGridViewTextBoxColumn2.HeaderText = "Team";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "Wins";
             this.dataGridViewTextBoxColumn3.HeaderText = "Wins";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "Losses";
             this.dataGridViewTextBoxColumn4.HeaderText = "Losses";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "Ties";
             this.dataGridViewTextBoxColumn5.HeaderText = "Ties";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
             // ViewLeague
             // 
