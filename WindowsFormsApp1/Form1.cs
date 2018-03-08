@@ -38,7 +38,7 @@ namespace WindowsFormsApp1
             {
                 Home next = new Home();
                 next.Show();
-                name.name(User);
+                next.name(User);
                 this.Hide();
                 
             }
