@@ -12,13 +12,12 @@ namespace WindowsFormsApp1
 {
     public partial class LSTemplate : Form
     {
-        
-
+        Form1 frm1 = new Form1();
         public LSTemplate()
         {
             InitializeComponent();
         }
-  
+
         public void name (string a)
         {
             txtName.Text = a;
@@ -26,7 +25,7 @@ namespace WindowsFormsApp1
 
         private void Home_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label12_Click(object sender, EventArgs e)
@@ -73,6 +72,31 @@ namespace WindowsFormsApp1
         {
             ViewLeague vLeague = new ViewLeague();
             vLeague.Show();
+            vLeague.name(txtName.Text);
+            this.Close();
+        }
+
+        private void txtVGame_Click(object sender, EventArgs e)
+        {
+            ViewGame vGame = new ViewGame();
+            vGame.Show();
+            vGame.name(txtName.Text);
+            this.Close();
+        }
+
+        private void txtVTeam_Click(object sender, EventArgs e)
+        {
+            ViewTeam vTeam = new ViewTeam();
+            vTeam.Show();
+            vTeam.name(txtName.Text);
+            this.Close();
+        }
+
+        private void txtVPlayer_Click(object sender, EventArgs e)
+        {
+            ViewPlayer vPlayer = new ViewPlayer();
+            vPlayer.Show();
+            vPlayer.name(txtName.Text);
             this.Close();
         }
     }

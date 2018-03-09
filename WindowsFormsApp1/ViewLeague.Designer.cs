@@ -225,7 +225,7 @@
             this.tableDataGridView.EnableHeadersVisualStyles = false;
             this.tableDataGridView.GridColor = System.Drawing.SystemColors.ControlLightLight;
             this.tableDataGridView.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.tableDataGridView.Location = new System.Drawing.Point(12, 115);
+            this.tableDataGridView.Location = new System.Drawing.Point(61, 115);
             this.tableDataGridView.Name = "tableDataGridView";
             this.tableDataGridView.ReadOnly = true;
             this.tableDataGridView.RowHeadersVisible = false;
@@ -235,7 +235,7 @@
             this.tableDataGridView.ShowCellToolTips = false;
             this.tableDataGridView.ShowEditingIcon = false;
             this.tableDataGridView.ShowRowErrors = false;
-            this.tableDataGridView.Size = new System.Drawing.Size(500, 500);
+            this.tableDataGridView.Size = new System.Drawing.Size(406, 500);
             this.tableDataGridView.TabIndex = 17;
             this.tableDataGridView.TabStop = false;
             this.tableDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableDataGridView_CellContentClick);

@@ -171,15 +171,15 @@
 
         #endregion
         private System.Windows.Forms.Label txtLoginScrn;
-        private System.Windows.Forms.Button bttnSubmit;
         private System.Windows.Forms.Button bttnCancel;
-        private System.Windows.Forms.TextBox txtbxUser;
         private System.Windows.Forms.TextBox txtbxPWD;
         private System.Windows.Forms.Label txtUser;
         private System.Windows.Forms.Label txtPWD;
         private System.Windows.Forms.CheckBox cbRemPass;
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.Label txtError;
+        private System.Windows.Forms.TextBox txtbxUser;
+        private System.Windows.Forms.Button bttnSubmit;
     }
 }
 

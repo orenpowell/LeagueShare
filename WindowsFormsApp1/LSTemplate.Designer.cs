@@ -69,6 +69,7 @@
             this.txtVPlayer.Size = new System.Drawing.Size(62, 13);
             this.txtVPlayer.TabIndex = 2;
             this.txtVPlayer.Text = "View Player";
+            this.txtVPlayer.Click += new System.EventHandler(this.txtVPlayer_Click);
             // 
             // txtVTeam
             // 
@@ -79,6 +80,7 @@
             this.txtVTeam.Size = new System.Drawing.Size(60, 13);
             this.txtVTeam.TabIndex = 3;
             this.txtVTeam.Text = "View Team";
+            this.txtVTeam.Click += new System.EventHandler(this.txtVTeam_Click);
             // 
             // txtVGame
             // 
@@ -89,6 +91,7 @@
             this.txtVGame.Size = new System.Drawing.Size(61, 13);
             this.txtVGame.TabIndex = 4;
             this.txtVGame.Text = "View Game";
+            this.txtVGame.Click += new System.EventHandler(this.txtVGame_Click);
             // 
             // txtVLeague
             // 
