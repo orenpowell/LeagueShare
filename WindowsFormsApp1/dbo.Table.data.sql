@@ -1,0 +1,5 @@
+﻿INSERT INTO [dbo].[Table] ([Id], [Username], [Password]) VALUES (1, N'Oren', N'123')
+INSERT INTO [dbo].[Table] ([Id], [Username], [Password]) VALUES (2, N'JoshL', N'123')
+INSERT INTO [dbo].[Table] ([Id], [Username], [Password]) VALUES (3, N'Joshua', N'123')
+INSERT INTO [dbo].[Table] ([Id], [Username], [Password]) VALUES (4, N'Chris', N'123')
+INSERT INTO [dbo].[Table] ([Id], [Username], [Password]) VALUES (5, N'Brian', N'123')

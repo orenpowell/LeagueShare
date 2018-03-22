@@ -36,16 +36,19 @@ namespace WindowsFormsApp1
             string Password = txtbxPWD.Text;
             if (User == AdminUser && Password == AdminPWD)
             {
-                
+                //Validate Valid = new Validate();//testing Database
                 Home next = new Home();
                 next.Show();
                 next.name(User);
+                //Valid.ConnectDB(User, Password);//testing Database
                 this.Hide();
             }
             else
             {
                 txtError.Visible = true;
             }
+            
+            
           
         }
         public string FullName
@@ -56,6 +59,9 @@ namespace WindowsFormsApp1
             }
         }
 
-        
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

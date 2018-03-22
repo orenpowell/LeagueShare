@@ -163,6 +163,7 @@
             this.MinimumSize = new System.Drawing.Size(239, 325);
             this.Name = "Form1";
             this.Text = "League Share";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
