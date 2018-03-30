@@ -8,7 +8,7 @@
 
 README
 
-League Share is a program that allows youth and intramural sports leagues to share information about statistics about players, teams, and past wins and losses in the league so that parents and other members of the league can stay up to date. This software also provides live play by play results along with updated scores and times for current matches and games.
+League Share is a program that allows youth and intramural sports leagues to share information about statistics about players, teams, and past wins and losses in the league so that parents and other members of the league can stay up to date. This software also provides live play by play results along with updated scores and times for current matches and games. The current Username and Password is Eddy as the Username and 123 as the password.  
 
 CONTACT
 
