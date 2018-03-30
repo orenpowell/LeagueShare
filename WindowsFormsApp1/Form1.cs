@@ -13,7 +13,7 @@ namespace WindowsFormsApp1
     // This is a comment for testing purposes.
     public partial class Form1 : Form
     {
-        public String AdminUser = "Oren";
+        public String AdminUser = "Eddy";
         public String AdminPWD = "123";
 
         public Form1()
