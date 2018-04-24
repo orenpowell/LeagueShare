@@ -33,7 +33,7 @@
             this.tableBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.leagueDataSet = new WindowsFormsApp1.LeagueDataSet();
+            this.leagueDataSet = new WindowsFormsApp1.Database.LeagueDataSet();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -71,17 +71,17 @@
             this.sacksDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.interceptionsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.playerBindingSource7 = new System.Windows.Forms.BindingSource(this.components);
-            this.leagueDataSet1 = new WindowsFormsApp1.LeagueDataSet1();
+            this.leagueDataSet1 = new WindowsFormsApp1.Database.LeagueDataSet1();
             this.playerBindingSource6 = new System.Windows.Forms.BindingSource(this.components);
             this.playerBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.playerBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.tableTableAdapter = new WindowsFormsApp1.LeagueDataSetTableAdapters.TableTableAdapter();
-            this.tableAdapterManager = new WindowsFormsApp1.LeagueDataSetTableAdapters.TableAdapterManager();
+            this.tableTableAdapter = new WindowsFormsApp1.Database.LeagueDataSetTableAdapters.TableTableAdapter();
+            this.tableAdapterManager = new WindowsFormsApp1.Database.LeagueDataSetTableAdapters.TableAdapterManager();
             this.playerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.playerBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.playerBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.playerBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
-            this.playerTableAdapter = new WindowsFormsApp1.LeagueDataSet1TableAdapters.PlayerTableAdapter();
+            this.playerTableAdapter = new WindowsFormsApp1.Database.LeagueDataSet1TableAdapters.PlayerTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingNavigator)).BeginInit();
             this.tableBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
@@ -475,7 +475,7 @@
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.PlayerTableAdapter = null;
             this.tableAdapterManager.TableTableAdapter = this.tableTableAdapter;
-            this.tableAdapterManager.UpdateOrder = WindowsFormsApp1.LeagueDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = WindowsFormsApp1.Database.LeagueDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // playerBindingSource
             // 
@@ -533,10 +533,10 @@
 
         #endregion
 
-        private LeagueDataSet leagueDataSet;
+        private Database.LeagueDataSet leagueDataSet;
         private System.Windows.Forms.BindingSource tableBindingSource;
-        private LeagueDataSetTableAdapters.TableTableAdapter tableTableAdapter;
-        private LeagueDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private Database.LeagueDataSetTableAdapters.TableTableAdapter tableTableAdapter;
+        private Database.LeagueDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator tableBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
@@ -557,9 +557,9 @@
         private System.Windows.Forms.BindingSource playerBindingSource4;
         private System.Windows.Forms.BindingSource playerBindingSource3;
         private System.Windows.Forms.BindingSource playerBindingSource5;
-        private LeagueDataSet1 leagueDataSet1;
+        private Database.LeagueDataSet1 leagueDataSet1;
         private System.Windows.Forms.BindingSource playerBindingSource6;
-        private LeagueDataSet1TableAdapters.PlayerTableAdapter playerTableAdapter;
+        private Database.LeagueDataSet1TableAdapters.PlayerTableAdapter playerTableAdapter;
         private System.Windows.Forms.BindingSource playerBindingSource7;
         private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;

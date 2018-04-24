@@ -118,3 +118,22 @@ C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pd
 >>>>>>> 99eabbc2c48d1425d596ce06dea45648074f4a8c
 C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csprojResolveAssemblyReference.cache
 C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Landing.resources
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csprojResolveAssemblyReference.cache
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Home.resources
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Landing.resources
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LSTemplate.resources
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ViewLeague.resources
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ViewPlayer.resources
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.GenerateResource.cache
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.CoreCompileInputs.cache
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\League.mdf
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\League_log.ldf
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\Users.mdf
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\Users_log.ldf
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb

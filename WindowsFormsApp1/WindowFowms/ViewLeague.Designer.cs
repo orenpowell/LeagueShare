@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewLeague));
-            this.leagueDataSet = new WindowsFormsApp1.LeagueDataSet();
+            this.leagueDataSet = new WindowsFormsApp1.Database.LeagueDataSet();
             this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tableTableAdapter = new WindowsFormsApp1.LeagueDataSetTableAdapters.TableTableAdapter();
-            this.tableAdapterManager = new WindowsFormsApp1.LeagueDataSetTableAdapters.TableAdapterManager();
+            this.tableTableAdapter = new WindowsFormsApp1.Database.LeagueDataSetTableAdapters.TableTableAdapter();
+            this.tableAdapterManager = new WindowsFormsApp1.Database.LeagueDataSetTableAdapters.TableAdapterManager();
             this.tableBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -77,7 +77,7 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.TableTableAdapter = this.tableTableAdapter;
-            this.tableAdapterManager.UpdateOrder = WindowsFormsApp1.LeagueDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = WindowsFormsApp1.Database.LeagueDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // tableBindingNavigator
             // 
@@ -291,10 +291,10 @@
 
         #endregion
 
-        private LeagueDataSet leagueDataSet;
+        private Database.LeagueDataSet leagueDataSet;
         private System.Windows.Forms.BindingSource tableBindingSource;
-        private LeagueDataSetTableAdapters.TableTableAdapter tableTableAdapter;
-        private LeagueDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private Database.LeagueDataSetTableAdapters.TableTableAdapter tableTableAdapter;
+        private Database.LeagueDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator tableBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
