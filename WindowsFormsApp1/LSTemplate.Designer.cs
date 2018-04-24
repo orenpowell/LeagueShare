@@ -71,6 +71,7 @@
             this.txtVPlayer.Size = new System.Drawing.Size(101, 20);
             this.txtVPlayer.TabIndex = 2;
             this.txtVPlayer.Text = "View Player";
+            this.txtVPlayer.Visible = false;
             this.txtVPlayer.Click += new System.EventHandler(this.txtVPlayer_Click);
             // 
             // txtVTeam
@@ -83,6 +84,7 @@
             this.txtVTeam.Size = new System.Drawing.Size(96, 20);
             this.txtVTeam.TabIndex = 3;
             this.txtVTeam.Text = "View Team";
+            this.txtVTeam.Visible = false;
             this.txtVTeam.Click += new System.EventHandler(this.txtVTeam_Click);
             // 
             // txtVGame
@@ -95,6 +97,7 @@
             this.txtVGame.Size = new System.Drawing.Size(100, 20);
             this.txtVGame.TabIndex = 4;
             this.txtVGame.Text = "View Game";
+            this.txtVGame.Visible = false;
             this.txtVGame.Click += new System.EventHandler(this.txtVGame_Click);
             // 
             // txtVLeague
@@ -107,6 +110,7 @@
             this.txtVLeague.Size = new System.Drawing.Size(112, 20);
             this.txtVLeague.TabIndex = 5;
             this.txtVLeague.Text = "View League";
+            this.txtVLeague.Visible = false;
             this.txtVLeague.Click += new System.EventHandler(this.txtVLeague_Click);
             // 
             // txtULeague
@@ -119,6 +123,7 @@
             this.txtULeague.Size = new System.Drawing.Size(133, 20);
             this.txtULeague.TabIndex = 12;
             this.txtULeague.Text = "Update League";
+            this.txtULeague.Visible = false;
             this.txtULeague.Click += new System.EventHandler(this.label12_Click);
             // 
             // txtUGame
@@ -131,6 +136,7 @@
             this.txtUGame.Size = new System.Drawing.Size(121, 20);
             this.txtUGame.TabIndex = 11;
             this.txtUGame.Text = "Update Game";
+            this.txtUGame.Visible = false;
             this.txtUGame.Click += new System.EventHandler(this.label13_Click);
             // 
             // txtUTeam
@@ -143,6 +149,7 @@
             this.txtUTeam.Size = new System.Drawing.Size(117, 20);
             this.txtUTeam.TabIndex = 10;
             this.txtUTeam.Text = "Update Team";
+            this.txtUTeam.Visible = false;
             this.txtUTeam.Click += new System.EventHandler(this.label14_Click);
             // 
             // txtUPlayer
@@ -155,6 +162,7 @@
             this.txtUPlayer.Size = new System.Drawing.Size(122, 20);
             this.txtUPlayer.TabIndex = 9;
             this.txtUPlayer.Text = "Update Player";
+            this.txtUPlayer.Visible = false;
             this.txtUPlayer.Click += new System.EventHandler(this.label15_Click);
             // 
             // picProfilePic
