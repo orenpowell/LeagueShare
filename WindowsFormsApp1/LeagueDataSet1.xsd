@@ -281,7 +281,7 @@ SELECT Id, Team, Wins, Losses, Ties FROM [Table] WHERE (Team = @Team)</CommandTe
   <xs:element name="LeagueDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="LeagueDataSet1" msprop:Generator_UserDSName="LeagueDataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Player" msprop:Generator_TableClassName="PlayerDataTable" msprop:Generator_TableVarName="tablePlayer" msprop:Generator_TablePropName="Player" msprop:Generator_RowDeletingName="PlayerRowDeleting" msprop:Generator_RowChangingName="PlayerRowChanging" msprop:Generator_RowEvHandlerName="PlayerRowChangeEventHandler" msprop:Generator_RowDeletedName="PlayerRowDeleted" msprop:Generator_UserTableName="Player" msprop:Generator_RowChangedName="PlayerRowChanged" msprop:Generator_RowEvArgName="PlayerRowChangeEvent" msprop:Generator_RowClassName="PlayerRow">
+        <xs:element name="Player" msprop:Generator_TableClassName="PlayerDataTable" msprop:Generator_TableVarName="tablePlayer" msprop:Generator_RowChangedName="PlayerRowChanged" msprop:Generator_TablePropName="Player" msprop:Generator_RowDeletingName="PlayerRowDeleting" msprop:Generator_RowChangingName="PlayerRowChanging" msprop:Generator_RowEvHandlerName="PlayerRowChangeEventHandler" msprop:Generator_RowDeletedName="PlayerRowDeleted" msprop:Generator_RowClassName="PlayerRow" msprop:Generator_UserTableName="Player" msprop:Generator_RowEvArgName="PlayerRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -336,7 +336,7 @@ SELECT Id, Team, Wins, Losses, Ties FROM [Table] WHERE (Team = @Team)</CommandTe
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Table" msprop:Generator_TableClassName="TableDataTable" msprop:Generator_TableVarName="tableTable" msprop:Generator_TablePropName="Table" msprop:Generator_RowDeletingName="TableRowDeleting" msprop:Generator_RowChangingName="TableRowChanging" msprop:Generator_RowEvHandlerName="TableRowChangeEventHandler" msprop:Generator_RowDeletedName="TableRowDeleted" msprop:Generator_UserTableName="Table" msprop:Generator_RowChangedName="TableRowChanged" msprop:Generator_RowEvArgName="TableRowChangeEvent" msprop:Generator_RowClassName="TableRow">
+        <xs:element name="Table" msprop:Generator_TableClassName="TableDataTable" msprop:Generator_TableVarName="tableTable" msprop:Generator_RowChangedName="TableRowChanged" msprop:Generator_TablePropName="Table" msprop:Generator_RowDeletingName="TableRowDeleting" msprop:Generator_RowChangingName="TableRowChanging" msprop:Generator_RowEvHandlerName="TableRowChangeEventHandler" msprop:Generator_RowDeletedName="TableRowDeleted" msprop:Generator_RowClassName="TableRow" msprop:Generator_UserTableName="Table" msprop:Generator_RowEvArgName="TableRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -366,7 +366,7 @@ SELECT Id, Team, Wins, Losses, Ties FROM [Table] WHERE (Team = @Team)</CommandTe
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_Player_ToTable" msdata:parent="Table" msdata:child="Player" msdata:parentkey="Team" msdata:childkey="Team" msprop:Generator_UserChildTable="Player" msprop:Generator_ChildPropName="GetPlayerRows" msprop:Generator_UserRelationName="FK_Player_ToTable" msprop:Generator_RelationVarName="relationFK_Player_ToTable" msprop:Generator_UserParentTable="Table" msprop:Generator_ParentPropName="TableRow" />
+      <msdata:Relationship name="FK_Player_ToTable" msdata:parent="Table" msdata:child="Player" msdata:parentkey="Team" msdata:childkey="Team" msprop:Generator_UserChildTable="Player" msprop:Generator_ChildPropName="GetPlayerRows" msprop:Generator_UserRelationName="FK_Player_ToTable" msprop:Generator_ParentPropName="TableRow" msprop:Generator_RelationVarName="relationFK_Player_ToTable" msprop:Generator_UserParentTable="Table" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
