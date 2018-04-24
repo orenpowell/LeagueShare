@@ -35,17 +35,19 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.League_Share;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 115);
+            this.pictureBox1.Location = new System.Drawing.Point(20, 177);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(500, 500);
+            this.pictureBox1.Size = new System.Drawing.Size(833, 769);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(524, 627);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.ClientSize = new System.Drawing.Size(873, 965);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.Name = "Home";
             this.Load += new System.EventHandler(this.Home_Load);
             this.Controls.SetChildIndex(this.pictureBox1, 0);
