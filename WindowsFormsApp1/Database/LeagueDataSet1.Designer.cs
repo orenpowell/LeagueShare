@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace WindowsFormsApp1 {
+namespace WindowsFormsApp1.Database {
     
     
     /// <summary>
@@ -2159,7 +2159,7 @@ namespace WindowsFormsApp1 {
         }
     }
 }
-namespace WindowsFormsApp1.LeagueDataSet1TableAdapters {
+namespace WindowsFormsApp1.Database.LeagueDataSet1TableAdapters {
     
     
     /// <summary>
