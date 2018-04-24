@@ -16,6 +16,11 @@ namespace WindowsFormsApp1
         public LSTemplate()
         {
             InitializeComponent();
+            // no smaller than design time size
+            this.MinimumSize = new System.Drawing.Size(this.Width, this.Height);
+
+            this.AutoSize = true;
+            this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
         }
 
         public void name (string a)
@@ -100,9 +105,57 @@ namespace WindowsFormsApp1
             this.Close();
         }
 
-        private void teamBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void leagueButton_Click(object sender, EventArgs e)
         {
-            teamBox.Items.Add("View Teams");
+            txtULeague.Visible = true;
+            txtVLeague.Visible = true;
+            txtUGame.Visible = false;
+            txtVGame.Visible = false;
+            txtUPlayer.Visible = false;
+            txtVPlayer.Visible = false;
+            txtUTeam.Visible = false;
+            txtVTeam.Visible = false;
         }
+
+        private void playerButton_Click(object sender, EventArgs e)
+        {
+            txtUPlayer.Visible = true;
+            txtVPlayer.Visible = true;
+            txtULeague.Visible = false;
+            txtVLeague.Visible = false;
+            txtUGame.Visible = false;
+            txtVGame.Visible = false;
+            txtUTeam.Visible = false;
+            txtVTeam.Visible = false;
+
+        }
+        private void teamButton_Click(object sender, EventArgs e)
+        {
+            txtUTeam.Visible = true;
+            txtVTeam.Visible = true;
+            txtULeague.Visible = false;
+            txtVLeague.Visible = false;
+            txtUGame.Visible = false;
+            txtVGame.Visible = false;
+            txtUPlayer.Visible = false;
+            txtVPlayer.Visible = false;
+        }
+        private void gameButton_Click(object sender, EventArgs e)
+        {
+            txtUGame.Visible = true;
+            txtVGame.Visible = true;
+            txtULeague.Visible = false;
+            txtVLeague.Visible = false;
+            txtUPlayer.Visible = false;
+            txtVPlayer.Visible = false;
+            txtUTeam.Visible = false;
+            txtVTeam.Visible = false;
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+       
     }
 }
