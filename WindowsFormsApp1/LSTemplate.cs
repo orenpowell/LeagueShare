@@ -99,5 +99,10 @@ namespace WindowsFormsApp1
             vPlayer.name(txtName.Text);
             this.Close();
         }
+
+        private void teamBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            teamBox.Items.Add("View Teams");
+        }
     }
 }

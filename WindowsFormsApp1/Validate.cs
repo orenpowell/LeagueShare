@@ -15,17 +15,24 @@ namespace WindowsFormsApp1
         private SqlDataAdapter da;
         private DataTable dt;
 
+        public void DB()
+        {
+            con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + AppDomain.CurrentDomain.BaseDirectory + @"Users.mdf;Integrated Security=True");
+            con.Open();
+        }
+
         public void ConnectDB(string UN, string PW)
         {
             // Need to update Pathway "C:\Users\oap1\Desktop\LeagueShare" to whatever pathway it needs to be
-            con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="+ AppDomain.CurrentDomain.BaseDirectory + @"Users.mdf;Integrated Security=True");
+            con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + AppDomain.CurrentDomain.BaseDirectory + @"Users.mdf;Integrated Security=True");
             con.Open();
-            cmd = new SqlCommand("INSERT INTO [dbo].[Table] ([Username], [Password]) VALUES (N'"+UN+"', N'"+PW+"')");
+            cmd = new SqlCommand("INSERT INTO [dbo].[Table] ([Username], [Password]) VALUES (N'" + UN + "', N'" + PW + "')");
             cmd.Connection = con;
             da = new SqlDataAdapter(cmd);
             dt = new DataTable();
             da.Fill(dt);
         }
+
 
     }
 }

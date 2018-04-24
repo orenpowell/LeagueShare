@@ -38,7 +38,8 @@ namespace WindowsFormsApp1
             if (User == AdminUser && Password == AdminPWD)
             {
               //  Validate Valid = new Validate();//testing Database
-                Home next = new Home();
+                //Home next = new Home();
+                LSTemplate next = new LSTemplate();
                 next.Show();
                 next.name(User);
               //  Valid.ConnectDB(User, Password);//testing Database
