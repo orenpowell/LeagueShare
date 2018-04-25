@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.WindowFowms;
 
 namespace WindowsFormsApp1
 {
     public partial class LSTemplate : Form
     {
-        Form1 frm1 = new Form1();
         public LSTemplate()
         {
             InitializeComponent();
@@ -26,6 +26,7 @@ namespace WindowsFormsApp1
         public void name (string a)
         {
             txtName.Text = a;
+            button1.Text = "logout";
         }
 
         private void Home_Load(object sender, EventArgs e)
@@ -156,6 +157,21 @@ namespace WindowsFormsApp1
         {
 
         }
-       
+
+        private void userLogin_Click(object sender, EventArgs e)
+        {
+            if (button1.Text == "logout")
+            {
+                txtName.Text = "Anonymous";
+                button1.Text = "login";
+            }
+            else
+            {
+                Form1 login = new Form1();
+                login.Show();
+                this.Close();
+            }
+        }
+        
     }
 }
