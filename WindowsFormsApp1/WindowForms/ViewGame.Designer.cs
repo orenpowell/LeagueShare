@@ -28,18 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(15, 175);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(399, 543);
+            this.dataGridView1.TabIndex = 26;
             // 
             // ViewGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
-            this.ClientSize = new System.Drawing.Size(767, 378);
+            this.ClientSize = new System.Drawing.Size(996, 730);
+            this.Controls.Add(this.dataGridView1);
             this.Name = "ViewGame";
+            this.Controls.SetChildIndex(this.dataGridView1, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
