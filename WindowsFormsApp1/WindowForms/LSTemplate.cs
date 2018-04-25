@@ -26,7 +26,11 @@ namespace WindowsFormsApp1
         public void name (string a)
         {
             txtName.Text = a;
-            button1.Text = "logout";
+        }
+
+        public void logName(string a)
+        {
+            button1.Text = a;
         }
 
         private void Home_Load(object sender, EventArgs e)

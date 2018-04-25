@@ -42,6 +42,7 @@ namespace WindowsFormsApp1
                 Home next = new Home();
                 next.Show();
                 next.name(User);
+                next.logName("logout");
               //  Valid.ConnectDB(User, Password);//testing Database
                 this.Hide();
             }
