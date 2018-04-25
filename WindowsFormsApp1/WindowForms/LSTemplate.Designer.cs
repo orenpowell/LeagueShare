@@ -57,7 +57,7 @@
             this.txtName.Location = new System.Drawing.Point(566, 12);
             this.txtName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(126, 25);
+            this.txtName.Size = new System.Drawing.Size(102, 20);
             this.txtName.TabIndex = 1;
             this.txtName.Text = "Anonymous";
             this.txtName.Click += new System.EventHandler(this.txtName_Click);
@@ -69,7 +69,7 @@
             this.txtVPlayer.Location = new System.Drawing.Point(8, 22);
             this.txtVPlayer.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.txtVPlayer.Name = "txtVPlayer";
-            this.txtVPlayer.Size = new System.Drawing.Size(126, 25);
+            this.txtVPlayer.Size = new System.Drawing.Size(101, 20);
             this.txtVPlayer.TabIndex = 2;
             this.txtVPlayer.Text = "View Player";
             this.txtVPlayer.Visible = false;
@@ -82,7 +82,7 @@
             this.txtVTeam.Location = new System.Drawing.Point(8, 22);
             this.txtVTeam.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.txtVTeam.Name = "txtVTeam";
-            this.txtVTeam.Size = new System.Drawing.Size(120, 25);
+            this.txtVTeam.Size = new System.Drawing.Size(96, 20);
             this.txtVTeam.TabIndex = 3;
             this.txtVTeam.Text = "View Team";
             this.txtVTeam.Visible = false;
@@ -95,7 +95,7 @@
             this.txtVGame.Location = new System.Drawing.Point(8, 22);
             this.txtVGame.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.txtVGame.Name = "txtVGame";
-            this.txtVGame.Size = new System.Drawing.Size(122, 25);
+            this.txtVGame.Size = new System.Drawing.Size(100, 20);
             this.txtVGame.TabIndex = 4;
             this.txtVGame.Text = "View Game";
             this.txtVGame.Visible = false;
@@ -108,7 +108,7 @@
             this.txtVLeague.Location = new System.Drawing.Point(8, 22);
             this.txtVLeague.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.txtVLeague.Name = "txtVLeague";
-            this.txtVLeague.Size = new System.Drawing.Size(137, 25);
+            this.txtVLeague.Size = new System.Drawing.Size(112, 20);
             this.txtVLeague.TabIndex = 5;
             this.txtVLeague.Text = "View League";
             this.txtVLeague.Visible = false;
@@ -121,7 +121,7 @@
             this.txtULeague.Location = new System.Drawing.Point(172, 22);
             this.txtULeague.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.txtULeague.Name = "txtULeague";
-            this.txtULeague.Size = new System.Drawing.Size(159, 25);
+            this.txtULeague.Size = new System.Drawing.Size(133, 20);
             this.txtULeague.TabIndex = 12;
             this.txtULeague.Text = "Update League";
             this.txtULeague.Visible = false;
@@ -134,7 +134,7 @@
             this.txtUGame.Location = new System.Drawing.Point(172, 22);
             this.txtUGame.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.txtUGame.Name = "txtUGame";
-            this.txtUGame.Size = new System.Drawing.Size(144, 25);
+            this.txtUGame.Size = new System.Drawing.Size(121, 20);
             this.txtUGame.TabIndex = 11;
             this.txtUGame.Text = "Update Game";
             this.txtUGame.Visible = false;
@@ -147,7 +147,7 @@
             this.txtUTeam.Location = new System.Drawing.Point(172, 22);
             this.txtUTeam.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.txtUTeam.Name = "txtUTeam";
-            this.txtUTeam.Size = new System.Drawing.Size(142, 25);
+            this.txtUTeam.Size = new System.Drawing.Size(117, 20);
             this.txtUTeam.TabIndex = 10;
             this.txtUTeam.Text = "Update Team";
             this.txtUTeam.Visible = false;
@@ -160,7 +160,7 @@
             this.txtUPlayer.Location = new System.Drawing.Point(172, 22);
             this.txtUPlayer.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.txtUPlayer.Name = "txtUPlayer";
-            this.txtUPlayer.Size = new System.Drawing.Size(148, 25);
+            this.txtUPlayer.Size = new System.Drawing.Size(122, 20);
             this.txtUPlayer.TabIndex = 9;
             this.txtUPlayer.Text = "Update Player";
             this.txtUPlayer.Visible = false;
@@ -176,6 +176,7 @@
             this.picProfilePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picProfilePic.TabIndex = 0;
             this.picProfilePic.TabStop = false;
+            this.picProfilePic.Click += new System.EventHandler(this.picProfilePic_Click);
             // 
             // leagueButton
             // 
@@ -247,7 +248,7 @@
             // 
             // LSTemplate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(996, 730);

@@ -83,6 +83,7 @@ namespace WindowsFormsApp1
             ViewLeague vLeague = new ViewLeague();
             vLeague.Show();
             vLeague.name(txtName.Text);
+            vLeague.logName(button1.Text);
             this.Close();
         }
 
@@ -91,6 +92,7 @@ namespace WindowsFormsApp1
             ViewGame vGame = new ViewGame();
             vGame.Show();
             vGame.name(txtName.Text);
+            vGame.logName(button1.Text);
             this.Close();
         }
 
@@ -99,6 +101,7 @@ namespace WindowsFormsApp1
             ViewTeam vTeam = new ViewTeam();
             vTeam.Show();
             vTeam.name(txtName.Text);
+            vTeam.logName(button1.Text);
             this.Close();
         }
 
@@ -107,6 +110,7 @@ namespace WindowsFormsApp1
             ViewPlayer vPlayer = new ViewPlayer();
             vPlayer.Show();
             vPlayer.name(txtName.Text);
+            vPlayer.logName(button1.Text);
             this.Close();
         }
 
@@ -166,8 +170,8 @@ namespace WindowsFormsApp1
         {
             if (button1.Text == "logout")
             {
-                txtName.Text = "Anonymous";
-                button1.Text = "login";
+                name("anonymous");
+                logName("login");
             }
             else
             {
@@ -175,6 +179,16 @@ namespace WindowsFormsApp1
                 login.Show();
                 this.Close();
             }
+        }
+
+        private void picProfilePic_Click(object sender, EventArgs e)
+        {
+            Home next = new Home();
+            next.name(txtName.Text);
+            next.logName(button1.Text);
+            next.Show();
+            this.Hide();
+            
         }
     }
 }
