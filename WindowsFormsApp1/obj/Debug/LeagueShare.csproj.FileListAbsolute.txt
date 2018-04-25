@@ -31,3 +31,10 @@ C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.cspro
 C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.CoreCompileInputs.cache
 C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\League.mdf
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\League_log.ldf
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\Users.mdf
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\Users_log.ldf
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb

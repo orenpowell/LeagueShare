@@ -44,6 +44,7 @@
             this.gameButton = new System.Windows.Forms.Button();
             this.playerButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picProfilePic)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -53,12 +54,12 @@
             this.txtName.AutoSize = true;
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.txtName.Location = new System.Drawing.Point(566, 15);
+            this.txtName.Location = new System.Drawing.Point(566, 12);
             this.txtName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(127, 20);
+            this.txtName.Size = new System.Drawing.Size(102, 20);
             this.txtName.TabIndex = 1;
-            this.txtName.Text = "FName LName";
+            this.txtName.Text = "Anonymous";
             this.txtName.Click += new System.EventHandler(this.txtName_Click);
             // 
             // txtVPlayer
@@ -167,11 +168,11 @@
             // 
             // picProfilePic
             // 
-            this.picProfilePic.Image = global::WindowsFormsApp1.Properties.Resources.male_portrait_silhouette_small;
-            this.picProfilePic.Location = new System.Drawing.Point(703, 11);
+            this.picProfilePic.Image = global::WindowsFormsApp1.Properties.Resources.League_Share_small;
+            this.picProfilePic.Location = new System.Drawing.Point(697, 11);
             this.picProfilePic.Margin = new System.Windows.Forms.Padding(5);
             this.picProfilePic.Name = "picProfilePic";
-            this.picProfilePic.Size = new System.Drawing.Size(50, 46);
+            this.picProfilePic.Size = new System.Drawing.Size(55, 55);
             this.picProfilePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picProfilePic.TabIndex = 0;
             this.picProfilePic.TabStop = false;
@@ -233,12 +234,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(570, 38);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 28);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "login";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.userLogin_Click);
+            // 
             // LSTemplate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(767, 378);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.playerButton);
             this.Controls.Add(this.gameButton);
@@ -279,5 +292,6 @@
         private System.Windows.Forms.Button gameButton;
         private System.Windows.Forms.Button playerButton;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

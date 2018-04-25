@@ -37,26 +37,26 @@
             this.txtUser = new System.Windows.Forms.Label();
             this.txtPWD = new System.Windows.Forms.Label();
             this.cbRemPass = new System.Windows.Forms.CheckBox();
-            this.picLogo = new System.Windows.Forms.PictureBox();
             this.txtError = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // txtLoginScrn
             // 
             this.txtLoginScrn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.txtLoginScrn.Location = new System.Drawing.Point(71, 115);
+            this.txtLoginScrn.Location = new System.Drawing.Point(118, 177);
+            this.txtLoginScrn.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.txtLoginScrn.Name = "txtLoginScrn";
-            this.txtLoginScrn.Size = new System.Drawing.Size(77, 26);
+            this.txtLoginScrn.Size = new System.Drawing.Size(128, 40);
             this.txtLoginScrn.TabIndex = 1;
             this.txtLoginScrn.Text = "Login Screen";
             this.txtLoginScrn.Click += new System.EventHandler(this.label1_Click);
             // 
             // bttnSubmit
             // 
-            this.bttnSubmit.Location = new System.Drawing.Point(37, 220);
+            this.bttnSubmit.Location = new System.Drawing.Point(62, 338);
+            this.bttnSubmit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bttnSubmit.Name = "bttnSubmit";
-            this.bttnSubmit.Size = new System.Drawing.Size(75, 23);
+            this.bttnSubmit.Size = new System.Drawing.Size(125, 35);
             this.bttnSubmit.TabIndex = 2;
             this.bttnSubmit.Text = "Submit";
             this.bttnSubmit.UseVisualStyleBackColor = true;
@@ -65,9 +65,10 @@
             // bttnCancel
             // 
             this.bttnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.bttnCancel.Location = new System.Drawing.Point(119, 220);
+            this.bttnCancel.Location = new System.Drawing.Point(198, 338);
+            this.bttnCancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bttnCancel.Name = "bttnCancel";
-            this.bttnCancel.Size = new System.Drawing.Size(75, 23);
+            this.bttnCancel.Size = new System.Drawing.Size(125, 35);
             this.bttnCancel.TabIndex = 3;
             this.bttnCancel.Text = "Cancel";
             this.bttnCancel.UseVisualStyleBackColor = true;
@@ -75,26 +76,29 @@
             // 
             // txtbxUser
             // 
-            this.txtbxUser.Location = new System.Drawing.Point(74, 144);
+            this.txtbxUser.Location = new System.Drawing.Point(123, 222);
+            this.txtbxUser.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtbxUser.Name = "txtbxUser";
-            this.txtbxUser.Size = new System.Drawing.Size(120, 20);
+            this.txtbxUser.Size = new System.Drawing.Size(197, 26);
             this.txtbxUser.TabIndex = 4;
             // 
             // txtbxPWD
             // 
-            this.txtbxPWD.Location = new System.Drawing.Point(74, 170);
+            this.txtbxPWD.Location = new System.Drawing.Point(123, 262);
+            this.txtbxPWD.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtbxPWD.Name = "txtbxPWD";
             this.txtbxPWD.PasswordChar = '*';
-            this.txtbxPWD.Size = new System.Drawing.Size(120, 20);
+            this.txtbxPWD.Size = new System.Drawing.Size(197, 26);
             this.txtbxPWD.TabIndex = 5;
             // 
             // txtUser
             // 
             this.txtUser.AutoSize = true;
             this.txtUser.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.txtUser.Location = new System.Drawing.Point(13, 147);
+            this.txtUser.Location = new System.Drawing.Point(22, 226);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(55, 13);
+            this.txtUser.Size = new System.Drawing.Size(91, 20);
             this.txtUser.TabIndex = 6;
             this.txtUser.Text = "Username";
             // 
@@ -102,9 +106,10 @@
             // 
             this.txtPWD.AutoSize = true;
             this.txtPWD.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.txtPWD.Location = new System.Drawing.Point(15, 173);
+            this.txtPWD.Location = new System.Drawing.Point(25, 266);
+            this.txtPWD.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.txtPWD.Name = "txtPWD";
-            this.txtPWD.Size = new System.Drawing.Size(53, 13);
+            this.txtPWD.Size = new System.Drawing.Size(86, 20);
             this.txtPWD.TabIndex = 7;
             this.txtPWD.Text = "Password";
             // 
@@ -112,30 +117,22 @@
             // 
             this.cbRemPass.AutoSize = true;
             this.cbRemPass.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.cbRemPass.Location = new System.Drawing.Point(53, 197);
+            this.cbRemPass.Location = new System.Drawing.Point(88, 303);
+            this.cbRemPass.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.cbRemPass.Name = "cbRemPass";
-            this.cbRemPass.Size = new System.Drawing.Size(132, 17);
+            this.cbRemPass.Size = new System.Drawing.Size(207, 24);
             this.cbRemPass.TabIndex = 9;
             this.cbRemPass.Text = "Remember Password?";
             this.cbRemPass.UseVisualStyleBackColor = true;
-            // 
-            // picLogo
-            // 
-            this.picLogo.Image = global::WindowsFormsApp1.Properties.Resources.League_Share_small;
-            this.picLogo.Location = new System.Drawing.Point(53, 12);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(100, 100);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.picLogo.TabIndex = 10;
-            this.picLogo.TabStop = false;
             // 
             // txtError
             // 
             this.txtError.AutoSize = true;
             this.txtError.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.txtError.Location = new System.Drawing.Point(50, 246);
+            this.txtError.Location = new System.Drawing.Point(83, 378);
+            this.txtError.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.txtError.Name = "txtError";
-            this.txtError.Size = new System.Drawing.Size(137, 13);
+            this.txtError.Size = new System.Drawing.Size(229, 20);
             this.txtError.TabIndex = 11;
             this.txtError.Text = "Incorrect Logins. Try Again.";
             this.txtError.Visible = false;
@@ -143,13 +140,12 @@
             // Form1
             // 
             this.AcceptButton = this.bttnSubmit;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CancelButton = this.bttnCancel;
-            this.ClientSize = new System.Drawing.Size(223, 286);
+            this.ClientSize = new System.Drawing.Size(757, 398);
             this.Controls.Add(this.txtError);
-            this.Controls.Add(this.picLogo);
             this.Controls.Add(this.cbRemPass);
             this.Controls.Add(this.txtPWD);
             this.Controls.Add(this.txtUser);
@@ -159,12 +155,19 @@
             this.Controls.Add(this.bttnSubmit);
             this.Controls.Add(this.txtLoginScrn);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(239, 325);
-            this.MinimumSize = new System.Drawing.Size(239, 325);
+            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.MinimumSize = new System.Drawing.Size(0, 0);
             this.Name = "Form1";
-            this.Text = "League Share";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            this.Controls.SetChildIndex(this.txtLoginScrn, 0);
+            this.Controls.SetChildIndex(this.bttnSubmit, 0);
+            this.Controls.SetChildIndex(this.bttnCancel, 0);
+            this.Controls.SetChildIndex(this.txtbxUser, 0);
+            this.Controls.SetChildIndex(this.txtbxPWD, 0);
+            this.Controls.SetChildIndex(this.txtUser, 0);
+            this.Controls.SetChildIndex(this.txtPWD, 0);
+            this.Controls.SetChildIndex(this.cbRemPass, 0);
+            this.Controls.SetChildIndex(this.txtError, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,7 +180,6 @@
         private System.Windows.Forms.Label txtUser;
         private System.Windows.Forms.Label txtPWD;
         private System.Windows.Forms.CheckBox cbRemPass;
-        private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.Label txtError;
         private System.Windows.Forms.TextBox txtbxUser;
         private System.Windows.Forms.Button bttnSubmit;

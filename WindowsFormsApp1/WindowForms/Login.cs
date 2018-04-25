@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace WindowsFormsApp1
 {
     // This is a comment for testing purposes.
-    public partial class Form1 : Form
+    public partial class Form1 : LSTemplate
     {
         public String AdminUser = "Eddy";
         public String AdminPWD = "123";
@@ -39,7 +39,7 @@ namespace WindowsFormsApp1
             {
               //  Validate Valid = new Validate();//testing Database
                 //Home next = new Home();
-                LSTemplate next = new LSTemplate();
+                Home next = new Home();
                 next.Show();
                 next.name(User);
               //  Valid.ConnectDB(User, Password);//testing Database
