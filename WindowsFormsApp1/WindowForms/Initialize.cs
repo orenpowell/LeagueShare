@@ -18,7 +18,6 @@ namespace WindowsFormsApp1.WindowFowms
             Home vhome = new Home();
             vhome.Show();
             this.Hide();
-            this.Visible = false;
         }
 
         private void Form2_Load(object sender, EventArgs e)
