@@ -28,7 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // ViewGame
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
+            this.ClientSize = new System.Drawing.Size(767, 378);
+            this.Name = "ViewGame";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

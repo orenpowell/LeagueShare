@@ -24,6 +24,8 @@ namespace WindowsFormsApp1
 
         private void ViewPlayer_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'leagueDataSet.Player' table. You can move, or remove it, as needed.
+            this.playerTableAdapter.Fill(this.leagueDataSet.Player);
 
         }
 

@@ -166,6 +166,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="WindowForms\ViewGame.resx">
+      <DependentUpon>ViewGame.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WindowForms\ViewLeague.resx">
       <DependentUpon>ViewLeague.cs</DependentUpon>
     </EmbeddedResource>
