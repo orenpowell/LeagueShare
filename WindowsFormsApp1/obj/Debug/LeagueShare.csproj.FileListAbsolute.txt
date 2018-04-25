@@ -137,3 +137,7 @@ C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\Users_lo
 C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
 C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
 C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\League.mdf
+C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\League_log.ldf
+C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\Users.mdf
+C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\Users_log.ldf
