@@ -1,112 +1,14 @@
-C:\Users\oap1\source\repos\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
-C:\Users\oap1\source\repos\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
-C:\Users\oap1\source\repos\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
-C:\Users\oap1\source\repos\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
-C:\Users\oap1\source\repos\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
-C:\Users\oap1\source\repos\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.GenerateResource.Cache
-C:\Users\oap1\source\repos\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.CoreCompileInputs.cache
-C:\Users\oap1\source\repos\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
-C:\Users\oap1\source\repos\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
-C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
-C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
-C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
-C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
-C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
-C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.GenerateResource.Cache
-C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.CoreCompileInputs.cache
-C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
-C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
-C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\LeagueShare.csprojResolveAssemblyReference.cache
-C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LSTemplate.resources
-C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Home.resources
-C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\bin\Debug\League.mdf
-C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\bin\Debug\League_log.ldf
-C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ViewPlayer.resources
-C:\Users\oap1\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ViewLeague.resources
-C:\Users\Lavan\Desktop\League Share\WindowsFormsApp1\bin\Debug\League.mdf
-C:\Users\Lavan\Desktop\League Share\WindowsFormsApp1\bin\Debug\League_log.ldf
-C:\Users\Lavan\Desktop\League Share\WindowsFormsApp1\bin\Debug\Users.mdf
-C:\Users\Lavan\Desktop\League Share\WindowsFormsApp1\bin\Debug\Users_log.ldf
-C:\Users\Lavan\Desktop\League Share\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
-C:\Users\Lavan\Desktop\League Share\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
-C:\Users\Lavan\Desktop\League Share\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
-C:\Users\Lavan\Desktop\League Share\WindowsFormsApp1\obj\Debug\LeagueShare.csprojResolveAssemblyReference.cache
-C:\Users\Lavan\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
-C:\Users\Lavan\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Home.resources
-C:\Users\Lavan\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LSTemplate.resources
-C:\Users\Lavan\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
-C:\Users\Lavan\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ViewLeague.resources
-C:\Users\Lavan\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ViewPlayer.resources
-C:\Users\Lavan\Desktop\League Share\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.GenerateResource.Cache
-C:\Users\Lavan\Desktop\League Share\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.CoreCompileInputs.cache
-C:\Users\Lavan\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
-C:\Users\Lavan\Desktop\League Share\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
-C:\Users\LocalUser\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\League.mdf
-C:\Users\LocalUser\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\League_log.ldf
-C:\Users\LocalUser\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Users.mdf
-C:\Users\LocalUser\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Users_log.ldf
-C:\Users\LocalUser\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
-C:\Users\LocalUser\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
-C:\Users\LocalUser\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
-C:\Users\LocalUser\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csprojResolveAssemblyReference.cache
-C:\Users\LocalUser\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
-C:\Users\LocalUser\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Home.resources
-C:\Users\LocalUser\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LSTemplate.resources
-C:\Users\LocalUser\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
-C:\Users\LocalUser\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ViewLeague.resources
-C:\Users\LocalUser\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ViewPlayer.resources
-C:\Users\LocalUser\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.GenerateResource.Cache
-C:\Users\LocalUser\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.CoreCompileInputs.cache
-C:\Users\LocalUser\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
-C:\Users\LocalUser\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
-C:\Users\Joshua\Source\Repos\LeagueShare\WindowsFormsApp1\bin\Debug\League.mdf
-C:\Users\Joshua\Source\Repos\LeagueShare\WindowsFormsApp1\bin\Debug\League_log.ldf
-C:\Users\Joshua\Source\Repos\LeagueShare\WindowsFormsApp1\bin\Debug\Users.mdf
-C:\Users\Joshua\Source\Repos\LeagueShare\WindowsFormsApp1\bin\Debug\Users_log.ldf
-C:\Users\Joshua\Source\Repos\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
-C:\Users\Joshua\Source\Repos\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
-C:\Users\Joshua\Source\Repos\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
-C:\Users\Joshua\Source\Repos\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csprojResolveAssemblyReference.cache
-C:\Users\Joshua\Source\Repos\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
-C:\Users\Joshua\Source\Repos\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Home.resources
-C:\Users\Joshua\Source\Repos\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LSTemplate.resources
-C:\Users\Joshua\Source\Repos\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
-C:\Users\Joshua\Source\Repos\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ViewLeague.resources
-C:\Users\Joshua\Source\Repos\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ViewPlayer.resources
-C:\Users\Joshua\Source\Repos\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.GenerateResource.cache
-C:\Users\Joshua\Source\Repos\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.CoreCompileInputs.cache
-C:\Users\Joshua\Source\Repos\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
-C:\Users\Joshua\Source\Repos\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
-<<<<<<< HEAD
-C:\Users\Joshua\source\repos\LeagueShare\LeagueShare\WindowsFormsApp1\bin\Debug\League.mdf
-C:\Users\Joshua\source\repos\LeagueShare\LeagueShare\WindowsFormsApp1\bin\Debug\League_log.ldf
-C:\Users\Joshua\source\repos\LeagueShare\LeagueShare\WindowsFormsApp1\bin\Debug\Users.mdf
-C:\Users\Joshua\source\repos\LeagueShare\LeagueShare\WindowsFormsApp1\bin\Debug\Users_log.ldf
-C:\Users\Joshua\source\repos\LeagueShare\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
-C:\Users\Joshua\source\repos\LeagueShare\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
-C:\Users\Joshua\source\repos\LeagueShare\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
-C:\Users\Joshua\source\repos\LeagueShare\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csprojResolveAssemblyReference.cache
-C:\Users\Joshua\source\repos\LeagueShare\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
-C:\Users\Joshua\source\repos\LeagueShare\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Home.resources
-C:\Users\Joshua\source\repos\LeagueShare\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LSTemplate.resources
-C:\Users\Joshua\source\repos\LeagueShare\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
-C:\Users\Joshua\source\repos\LeagueShare\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ViewLeague.resources
-C:\Users\Joshua\source\repos\LeagueShare\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ViewPlayer.resources
-C:\Users\Joshua\source\repos\LeagueShare\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.GenerateResource.cache
-C:\Users\Joshua\source\repos\LeagueShare\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.CoreCompileInputs.cache
-C:\Users\Joshua\source\repos\LeagueShare\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
-C:\Users\Joshua\source\repos\LeagueShare\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
-C:\Users\Joshua\source\repos\LeagueShare\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Landing.resources
-=======
-C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\League.mdf
-C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\League_log.ldf
-C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Users.mdf
-C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Users_log.ldf
+C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\League.mdf
+C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\League_log.ldf
+C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\Users.mdf
+C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\Users_log.ldf
 C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
 C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
 C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csprojResolveAssemblyReference.cache
 C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
 C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Home.resources
+C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Landing.resources
 C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LSTemplate.resources
 C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
 C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ViewLeague.resources
@@ -115,29 +17,4 @@ C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.
 C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.CoreCompileInputs.cache
 C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
->>>>>>> 99eabbc2c48d1425d596ce06dea45648074f4a8c
-C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csprojResolveAssemblyReference.cache
-C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Landing.resources
-C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csprojResolveAssemblyReference.cache
-C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
-C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Home.resources
-C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Landing.resources
-C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.LSTemplate.resources
-C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
-C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ViewLeague.resources
-C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ViewPlayer.resources
-C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.GenerateResource.cache
-C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\LeagueShare.csproj.CoreCompileInputs.cache
-C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
-C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
-C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\League.mdf
-C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\League_log.ldf
-C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\Users.mdf
-C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\Users_log.ldf
-C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
-C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
-C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
-C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\League.mdf
-C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\League_log.ldf
-C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\Users.mdf
-C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\Database\Users_log.ldf
+C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.WindowFowms.Initialize.resources

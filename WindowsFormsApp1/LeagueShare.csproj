@@ -63,22 +63,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="WindowFowms\Form1.cs">
+    <Compile Include="LeagueDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeagueDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WindowForms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WindowFowms\Form1.Designer.cs">
+    <Compile Include="WindowForms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="WindowFowms\Home.cs">
+    <Compile Include="WindowForms\Initialize.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WindowFowms\Home.Designer.cs">
+    <Compile Include="WindowForms\Initialize.Designer.cs">
+      <DependentUpon>Initialize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowForms\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowForms\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="WindowFowms\Landing.cs">
+    <Compile Include="WindowForms\Landing.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WindowFowms\Landing.Designer.cs">
+    <Compile Include="WindowForms\Landing.Designer.cs">
       <DependentUpon>Landing.cs</DependentUpon>
     </Compile>
     <Compile Include="Database\LeagueDataSet.cs">
@@ -97,49 +108,52 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LeagueDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="WindowFowms\LSTemplate.cs">
+    <Compile Include="WindowForms\LSTemplate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WindowFowms\LSTemplate.Designer.cs">
+    <Compile Include="WindowForms\LSTemplate.Designer.cs">
       <DependentUpon>LSTemplate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Functionality\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Validate.cs" />
-    <Compile Include="WindowFowms\ViewGame.cs">
+    <Compile Include="Functionality\Validate.cs" />
+    <Compile Include="WindowForms\ViewGame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WindowFowms\ViewGame.Designer.cs">
+    <Compile Include="WindowForms\ViewGame.Designer.cs">
       <DependentUpon>ViewGame.cs</DependentUpon>
     </Compile>
-    <Compile Include="WindowFowms\ViewLeague.cs">
+    <Compile Include="WindowForms\ViewLeague.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WindowFowms\ViewLeague.Designer.cs">
+    <Compile Include="WindowForms\ViewLeague.Designer.cs">
       <DependentUpon>ViewLeague.cs</DependentUpon>
     </Compile>
-    <Compile Include="WindowFowms\ViewPlayer.cs">
+    <Compile Include="WindowForms\ViewPlayer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WindowFowms\ViewPlayer.Designer.cs">
+    <Compile Include="WindowForms\ViewPlayer.Designer.cs">
       <DependentUpon>ViewPlayer.cs</DependentUpon>
     </Compile>
-    <Compile Include="WindowFowms\ViewTeam.cs">
+    <Compile Include="WindowForms\ViewTeam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WindowFowms\ViewTeam.Designer.cs">
+    <Compile Include="WindowForms\ViewTeam.Designer.cs">
       <DependentUpon>ViewTeam.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="WindowFowms\Form1.resx">
+    <EmbeddedResource Include="WindowForms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WindowFowms\Home.resx">
+    <EmbeddedResource Include="WindowForms\Initialize.resx">
+      <DependentUpon>Initialize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowForms\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WindowFowms\Landing.resx">
+    <EmbeddedResource Include="WindowForms\Landing.resx">
       <DependentUpon>Landing.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WindowFowms\LSTemplate.resx">
+    <EmbeddedResource Include="WindowForms\LSTemplate.resx">
       <DependentUpon>LSTemplate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -152,10 +166,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="WindowFowms\ViewLeague.resx">
+    <EmbeddedResource Include="WindowForms\ViewLeague.resx">
       <DependentUpon>ViewLeague.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WindowFowms\ViewPlayer.resx">
+    <EmbeddedResource Include="WindowForms\ViewPlayer.resx">
       <DependentUpon>ViewPlayer.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Database\LeagueDataSet.xsc">
@@ -180,6 +194,17 @@
     <None Include="Database\LeagueDataSet1.xss">
       <DependentUpon>LeagueDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="LeagueDataSet.xsc">
+      <DependentUpon>LeagueDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LeagueDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LeagueDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LeagueDataSet.xss">
+      <DependentUpon>LeagueDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -194,7 +219,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Fantasy-League.png" />
     <Content Include="Database\League.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
