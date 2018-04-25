@@ -28,7 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // ViewTeam
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
+            this.ClientSize = new System.Drawing.Size(996, 730);
+            this.Name = "ViewTeam";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

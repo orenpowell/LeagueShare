@@ -68,6 +68,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LeagueDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="LeagueDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeagueDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="WindowForms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +180,9 @@
     <EmbeddedResource Include="WindowForms\ViewPlayer.resx">
       <DependentUpon>ViewPlayer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WindowForms\ViewTeam.resx">
+      <DependentUpon>ViewTeam.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Database\LeagueDataSet.xsc">
       <DependentUpon>LeagueDataSet.xsd</DependentUpon>
     </None>
@@ -208,6 +216,17 @@
     <None Include="LeagueDataSet.xss">
       <DependentUpon>LeagueDataSet.xsd</DependentUpon>
     </None>
+    <None Include="LeagueDataSet1.xsc">
+      <DependentUpon>LeagueDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LeagueDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LeagueDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LeagueDataSet1.xss">
+      <DependentUpon>LeagueDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -235,6 +254,13 @@
     <Content Include="Database\Users_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Users.mdf</DependentUpon>
+    </Content>
+    <Content Include="League.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="League_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>League.mdf</DependentUpon>
     </Content>
     <None Include="Resources\League-Share.png" />
     <None Include="Resources\male-portrait-silhouette-small.png" />

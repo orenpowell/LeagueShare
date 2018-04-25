@@ -14,5 +14,12 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void ViewGame_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'leagueDataSet1.Game' table. You can move, or remove it, as needed.
+            this.gameTableAdapter.Fill(this.leagueDataSet1.Game);
+
+        }
     }
 }
