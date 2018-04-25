@@ -164,7 +164,7 @@
             this.txtUPlayer.TabIndex = 9;
             this.txtUPlayer.Text = "Update Player";
             this.txtUPlayer.Visible = false;
-            this.txtUPlayer.Click += new System.EventHandler(this.label15_Click);
+            this.txtUPlayer.Click += new System.EventHandler(this.txtUPlayer_Click);
             // 
             // picProfilePic
             // 

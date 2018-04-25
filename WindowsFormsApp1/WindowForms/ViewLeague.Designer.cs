@@ -219,7 +219,7 @@
             this.tableDataGridView.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tableDataGridView.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.tableDataGridView.Location = new System.Drawing.Point(12, 134);
-            this.tableDataGridView.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tableDataGridView.Margin = new System.Windows.Forms.Padding(5);
             this.tableDataGridView.MultiSelect = false;
             this.tableDataGridView.Name = "tableDataGridView";
             this.tableDataGridView.ReadOnly = true;
@@ -240,7 +240,7 @@
             this.ClientSize = new System.Drawing.Size(1037, 575);
             this.Controls.Add(this.tableDataGridView);
             this.Controls.Add(this.tableBindingNavigator);
-            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Margin = new System.Windows.Forms.Padding(8);
             this.MinimumSize = new System.Drawing.Size(1053, 597);
             this.Name = "ViewLeague";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

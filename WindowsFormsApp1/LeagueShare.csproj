@@ -73,6 +73,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LeagueDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="UpdateLeague.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateLeague.Designer.cs">
+      <DependentUpon>UpdateLeague.cs</DependentUpon>
+    </Compile>
     <Compile Include="WindowForms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,9 @@
     <Compile Include="WindowForms\ViewTeam.Designer.cs">
       <DependentUpon>ViewTeam.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UpdateLeague.resx">
+      <DependentUpon>UpdateLeague.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WindowForms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>

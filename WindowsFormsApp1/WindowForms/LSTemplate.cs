@@ -68,7 +68,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void label15_Click(object sender, EventArgs e)
+        private void txtUPlayer_Click(object sender, EventArgs e)
         {
 
         }
