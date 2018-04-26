@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.WindowForms;
 using WindowsFormsApp1.WindowFowms;
 
 namespace WindowsFormsApp1
@@ -38,39 +39,40 @@ namespace WindowsFormsApp1
             
         }
 
-        private void label12_Click(object sender, EventArgs e)
+        private void txtULeague_Click(object sender, EventArgs e)
         {
-
+            UpdateLeague uLeague = new UpdateLeague();
+            uLeague.Show();
+            uLeague.name(txtName.Text);
+            uLeague.logName(button1.Text);
+            this.Close();
         }
 
-        private void label11_Click(object sender, EventArgs e)
+        private void txtUGame_Click(object sender, EventArgs e)
         {
-
+            UpdateGame uGame = new UpdateGame();
+            uGame.Show();
+            uGame.name(txtName.Text);
+            uGame.logName(button1.Text);
+            this.Close();
         }
 
-        private void label13_Click(object sender, EventArgs e)
+        private void txtUTeam_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
+            UpdateTeam uTeam = new UpdateTeam();
+            uTeam.Show();
+            uTeam.name(txtName.Text);
+            uTeam.logName(button1.Text);
+            this.Close();
         }
 
         private void txtUPlayer_Click(object sender, EventArgs e)
         {
-
+            UpdatePlayer uPlayer = new UpdatePlayer();
+            uPlayer.Show();
+            uPlayer.name(txtName.Text);
+            uPlayer.logName(button1.Text);
+            this.Close();
         }
 
         private void txtName_Click(object sender, EventArgs e)

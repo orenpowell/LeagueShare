@@ -125,7 +125,7 @@
             this.txtULeague.TabIndex = 12;
             this.txtULeague.Text = "Update League";
             this.txtULeague.Visible = false;
-            this.txtULeague.Click += new System.EventHandler(this.label12_Click);
+            this.txtULeague.Click += new System.EventHandler(this.txtULeague_Click);
             // 
             // txtUGame
             // 
@@ -138,7 +138,7 @@
             this.txtUGame.TabIndex = 11;
             this.txtUGame.Text = "Update Game";
             this.txtUGame.Visible = false;
-            this.txtUGame.Click += new System.EventHandler(this.label13_Click);
+            this.txtUGame.Click += new System.EventHandler(this.txtUGame_Click);
             // 
             // txtUTeam
             // 
@@ -151,7 +151,7 @@
             this.txtUTeam.TabIndex = 10;
             this.txtUTeam.Text = "Update Team";
             this.txtUTeam.Visible = false;
-            this.txtUTeam.Click += new System.EventHandler(this.label14_Click);
+            this.txtUTeam.Click += new System.EventHandler(this.txtUTeam_Click);
             // 
             // txtUPlayer
             // 
@@ -221,9 +221,9 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtUPlayer);
+            this.groupBox1.Controls.Add(this.txtUGame);
             this.groupBox1.Controls.Add(this.txtVLeague);
             this.groupBox1.Controls.Add(this.txtULeague);
-            this.groupBox1.Controls.Add(this.txtUGame);
             this.groupBox1.Controls.Add(this.txtVPlayer);
             this.groupBox1.Controls.Add(this.txtUTeam);
             this.groupBox1.Controls.Add(this.txtVTeam);

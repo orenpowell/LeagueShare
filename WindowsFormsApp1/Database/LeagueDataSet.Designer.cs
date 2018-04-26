@@ -1285,9 +1285,7 @@ SELECT Id, Team, Wins, Losses, Ties FROM [Table] WHERE (Id = @Id)";
                 return count;
             }
         }
-
-        public object PlayerTableAdapter { get; internal set; }
-
+        
         /// <summary>
         ///Update rows in top-down order.
         ///</summary>

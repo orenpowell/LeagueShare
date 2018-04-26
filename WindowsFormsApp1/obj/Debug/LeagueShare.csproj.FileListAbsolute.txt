@@ -67,3 +67,4 @@ C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\League_log.ldf
 C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ViewGame.resources
 C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ViewTeam.resources
 C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UpdateLeague.resources
+C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.WindowForms.UpdateTeam.resources
