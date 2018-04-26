@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.leagueDataSet = new WindowsFormsApp1.LeagueDataSet();
-            this.playerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.playerTableAdapter = new WindowsFormsApp1.LeagueDataSetTableAdapters.PlayerTableAdapter();
             this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.playerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.leagueDataSet = new WindowsFormsApp1.LeagueDataSet();
+            this.playerTableAdapter = new WindowsFormsApp1.LeagueDataSetTableAdapters.PlayerTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leagueDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playerBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leagueDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -56,27 +56,15 @@
             this.lastNameDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.playerBindingSource;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 192);
+            this.dataGridView1.Location = new System.Drawing.Point(15, 121);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(399, 493);
+            this.dataGridView1.Size = new System.Drawing.Size(307, 394);
             this.dataGridView1.TabIndex = 26;
-            // 
-            // leagueDataSet
-            // 
-            this.leagueDataSet.DataSetName = "LeagueDataSet";
-            this.leagueDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // playerBindingSource
-            // 
-            this.playerBindingSource.DataMember = "Player";
-            this.playerBindingSource.DataSource = this.leagueDataSet;
-            // 
-            // playerTableAdapter
-            // 
-            this.playerTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // firstNameDataGridViewTextBoxColumn
             // 
@@ -84,7 +72,7 @@
             this.firstNameDataGridViewTextBoxColumn.HeaderText = "First Name";
             this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
             this.firstNameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.firstNameDataGridViewTextBoxColumn.Width = 133;
+            this.firstNameDataGridViewTextBoxColumn.Width = 121;
             // 
             // lastNameDataGridViewTextBoxColumn
             // 
@@ -92,23 +80,37 @@
             this.lastNameDataGridViewTextBoxColumn.HeaderText = "Last Name";
             this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
             this.lastNameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.lastNameDataGridViewTextBoxColumn.Width = 132;
+            this.lastNameDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // playerBindingSource
+            // 
+            this.playerBindingSource.DataMember = "Player";
+            this.playerBindingSource.DataSource = this.leagueDataSet;
+            // 
+            // leagueDataSet
+            // 
+            this.leagueDataSet.DataSetName = "LeagueDataSet";
+            this.leagueDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // playerTableAdapter
+            // 
+            this.playerTableAdapter.ClearBeforeFill = true;
             // 
             // ViewPlayer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1659, 718);
+            this.ClientSize = new System.Drawing.Size(1037, 558);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
-            this.MinimumSize = new System.Drawing.Size(1677, 765);
+            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.MinimumSize = new System.Drawing.Size(1053, 597);
             this.Name = "ViewPlayer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.ViewPlayer_Load);
             this.Controls.SetChildIndex(this.dataGridView1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leagueDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.playerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leagueDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -13,6 +13,9 @@ namespace WindowsFormsApp1
 {
     public partial class UpdateLeague : WindowsFormsApp1.LSTemplate
     {
+
+
+
         private SqlConnection con;
         private SqlCommand cmd;
         private SqlDataAdapter da;
@@ -25,19 +28,7 @@ namespace WindowsFormsApp1
 
         private void enterButton_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + AppDomain.CurrentDomain.BaseDirectory + @"Users.mdf;Integrated Security=True");
-
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            SqlCommand command = new SqlCommand();
-
-            command = new SqlCommand(
-            "INSERT INTO Table (Team) " +
-            "VALUES (" + nameBox.Text + ")", conn);
-
-            // Add the parameters for the InsertCommand.
-            command.Parameters.Add("@Team", "Team");
-
-            adapter.InsertCommand = command;
+            
         }
 
         private void nameLabel_Click(object sender, EventArgs e)
