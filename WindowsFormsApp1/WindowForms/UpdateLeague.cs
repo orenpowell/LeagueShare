@@ -47,5 +47,10 @@ namespace WindowsFormsApp1
             this.tableTableAdapter.Fill(this.leagueDataSet.Table);
 
         }
+
+        private void tableDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
