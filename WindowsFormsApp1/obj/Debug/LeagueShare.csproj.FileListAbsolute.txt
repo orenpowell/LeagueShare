@@ -68,3 +68,11 @@ C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.
 C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ViewTeam.resources
 C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UpdateLeague.resources
 C:\Users\Joshua\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.WindowForms.UpdateTeam.resources
+C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.WindowForms.UpdateGame.resources
+C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UpdateLeague.resources
+C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.WindowForms.UpdatePlayer.resources
+C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.WindowForms.UpdateTeam.resources
+C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ViewGame.resources
+C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ViewTeam.resources
+C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\League.mdf
+C:\Users\oap1\Desktop\LeagueShare\WindowsFormsApp1\bin\Debug\League_log.ldf

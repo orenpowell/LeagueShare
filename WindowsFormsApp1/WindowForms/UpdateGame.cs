@@ -17,8 +17,21 @@ namespace WindowsFormsApp1.WindowForms
 
         private void UpdateGame_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'leagueDataSet1.Game' table. You can move, or remove it, as needed.
-            this.gameTableAdapter.Fill(this.leagueDataSet1.Game);
+            // TODO: This line of code loads data into the 'leagueDataSet1.Table' table. You can move, or remove it, as needed.
+            this.tableTableAdapter.Fill(this.leagueDataSet1.Table);
+
+        }
+
+        private void bindingNavigator2_RefreshItems(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.tableBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.leagueDataSet1);
 
         }
     }

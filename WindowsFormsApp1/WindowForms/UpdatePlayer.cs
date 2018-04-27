@@ -19,6 +19,8 @@ namespace WindowsFormsApp1.WindowForms
         {
             // TODO: This line of code loads data into the 'leagueDataSet1.Player' table. You can move, or remove it, as needed.
             this.playerTableAdapter.Fill(this.leagueDataSet1.Player);
+            // TODO: This line of code loads data into the 'leagueDataSet1.Player' table. You can move, or remove it, as needed.
+            this.playerTableAdapter.Fill(this.leagueDataSet1.Player);
 
         }
     }
