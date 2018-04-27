@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Functionality;
 using WindowsFormsApp1.WindowForms;
 using WindowsFormsApp1.WindowFowms;
 
@@ -14,6 +15,7 @@ namespace WindowsFormsApp1
 {
     public partial class LSTemplate : Form
     {
+        UserType UT = new UserType();
         public LSTemplate()
         {
             InitializeComponent();
@@ -118,8 +120,7 @@ namespace WindowsFormsApp1
 
         private void leagueButton_Click(object sender, EventArgs e)
         {
-            if(button1.Text == "logout") {txtULeague.Visible = true;}
-            else{txtULeague.Visible = false;}
+            txtULeague.Visible = UT.MenuItemVisible(button1.Text);
             txtVLeague.Visible = true;
             txtUGame.Visible = false;
             txtVGame.Visible = false;
@@ -131,8 +132,7 @@ namespace WindowsFormsApp1
 
         private void playerButton_Click(object sender, EventArgs e)
         {
-            if(button1.Text == "logout") {txtUPlayer.Visible = true;}
-            else{txtUPlayer.Visible = false;}
+            txtUPlayer.Visible = UT.MenuItemVisible(button1.Text);
             txtVPlayer.Visible = true;
             txtULeague.Visible = false;
             txtVLeague.Visible = false;
@@ -144,8 +144,7 @@ namespace WindowsFormsApp1
         }
         private void teamButton_Click(object sender, EventArgs e)
         {
-            if(button1.Text == "logout") {txtUTeam.Visible = true;}
-            else {txtUTeam.Visible = false;}
+            txtUTeam.Visible = UT.MenuItemVisible(button1.Text);
             txtVTeam.Visible = true;
             txtULeague.Visible = false;
             txtVLeague.Visible = false;
@@ -156,8 +155,8 @@ namespace WindowsFormsApp1
         }
         private void gameButton_Click(object sender, EventArgs e)
         {
-            if(button1.Text == "logout"){txtUGame.Visible = true;}
-            else{txtUGame.Visible = false;}
+
+            txtUGame.Visible = UT.MenuItemVisible(button1.Text);
             txtVGame.Visible = true;
             txtULeague.Visible = false;
             txtVLeague.Visible = false;
@@ -194,7 +193,6 @@ namespace WindowsFormsApp1
             next.logName(button1.Text);
             next.Show();
             this.Hide();
-            
         }
     }
 }
