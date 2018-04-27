@@ -32,16 +32,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableDataGridView = new System.Windows.Forms.DataGridView();
-            this.leagueDataSet = new WindowsFormsApp1.Database.LeagueDataSet();
-            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tableTableAdapter = new WindowsFormsApp1.Database.LeagueDataSetTableAdapters.TableTableAdapter();
             this.teamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.winsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lossesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tiesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.leagueDataSet = new WindowsFormsApp1.Database.LeagueDataSet();
+            this.tableTableAdapter = new WindowsFormsApp1.Database.LeagueDataSetTableAdapters.TableTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.tableDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leagueDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leagueDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // tableDataGridView
@@ -88,20 +88,6 @@
             this.tableDataGridView.Size = new System.Drawing.Size(591, 431);
             this.tableDataGridView.TabIndex = 30;
             // 
-            // leagueDataSet
-            // 
-            this.leagueDataSet.DataSetName = "LeagueDataSet";
-            this.leagueDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tableBindingSource
-            // 
-            this.tableBindingSource.DataMember = "Table";
-            this.tableBindingSource.DataSource = this.leagueDataSet;
-            // 
-            // tableTableAdapter
-            // 
-            this.tableTableAdapter.ClearBeforeFill = true;
-            // 
             // teamDataGridViewTextBoxColumn
             // 
             this.teamDataGridViewTextBoxColumn.DataPropertyName = "Team";
@@ -130,20 +116,33 @@
             this.tiesDataGridViewTextBoxColumn.Name = "tiesDataGridViewTextBoxColumn";
             this.tiesDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // tableBindingSource
+            // 
+            this.tableBindingSource.DataMember = "Table";
+            this.tableBindingSource.DataSource = this.leagueDataSet;
+            // 
+            // leagueDataSet
+            // 
+            this.leagueDataSet.DataSetName = "LeagueDataSet";
+            this.leagueDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tableTableAdapter
+            // 
+            this.tableTableAdapter.ClearBeforeFill = true;
+            // 
             // ViewTeam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.ClientSize = new System.Drawing.Size(766, 558);
             this.Controls.Add(this.tableDataGridView);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(782, 597);
             this.Name = "ViewTeam";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.ViewTeam_Load);
             this.Controls.SetChildIndex(this.tableDataGridView, 0);
             ((System.ComponentModel.ISupportInitialize)(this.tableDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leagueDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leagueDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

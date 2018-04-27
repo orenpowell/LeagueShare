@@ -33,9 +33,11 @@ namespace WindowsFormsApp1
 
         private void bttnSubmit_Click(object sender, EventArgs e)
         {
+            Functionality.ValidateLogin valid = new Functionality.ValidateLogin();
             string User = txtbxUser.Text;
             string Password = txtbxPWD.Text;
-            if (User == AdminUser && Password == AdminPWD)
+            int permissions = valid.Validation(User, Password);
+            if (permissions > 0)
             {
               //  Validate Valid = new Validate();//testing Database
                 //Home next = new Home();

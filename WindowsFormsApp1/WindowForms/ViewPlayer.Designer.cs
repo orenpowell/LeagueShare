@@ -114,9 +114,8 @@
             this.ClientSize = new System.Drawing.Size(1037, 558);
             this.Controls.Add(this.dataGridView1);
             this.Margin = new System.Windows.Forms.Padding(8);
-            this.MinimumSize = new System.Drawing.Size(1053, 597);
+            this.MinimumSize = new System.Drawing.Size(782, 597);
             this.Name = "ViewPlayer";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.ViewPlayer_Load);
             this.Controls.SetChildIndex(this.dataGridView1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

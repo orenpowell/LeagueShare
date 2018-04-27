@@ -15,7 +15,7 @@ namespace WindowsFormsApp1
 {
     public partial class LSTemplate : Form
     {
-        UserType UT = new UserType();
+        UserType usertype = new UserType();
         public LSTemplate()
         {
             InitializeComponent();
@@ -120,7 +120,7 @@ namespace WindowsFormsApp1
 
         private void leagueButton_Click(object sender, EventArgs e)
         {
-            txtULeague.Visible = UT.MenuItemVisible(button1.Text);
+            txtULeague.Visible = usertype.MenuItemVisible(button1.Text);
             txtVLeague.Visible = true;
             txtUGame.Visible = false;
             txtVGame.Visible = false;
@@ -132,7 +132,7 @@ namespace WindowsFormsApp1
 
         private void playerButton_Click(object sender, EventArgs e)
         {
-            txtUPlayer.Visible = UT.MenuItemVisible(button1.Text);
+            txtUPlayer.Visible = usertype.MenuItemVisible(button1.Text);
             txtVPlayer.Visible = true;
             txtULeague.Visible = false;
             txtVLeague.Visible = false;
@@ -144,7 +144,7 @@ namespace WindowsFormsApp1
         }
         private void teamButton_Click(object sender, EventArgs e)
         {
-            txtUTeam.Visible = UT.MenuItemVisible(button1.Text);
+            txtUTeam.Visible = usertype.MenuItemVisible(button1.Text);
             txtVTeam.Visible = true;
             txtULeague.Visible = false;
             txtVLeague.Visible = false;
@@ -156,7 +156,7 @@ namespace WindowsFormsApp1
         private void gameButton_Click(object sender, EventArgs e)
         {
 
-            txtUGame.Visible = UT.MenuItemVisible(button1.Text);
+            txtUGame.Visible = usertype.MenuItemVisible(button1.Text);
             txtVGame.Visible = true;
             txtULeague.Visible = false;
             txtVLeague.Visible = false;

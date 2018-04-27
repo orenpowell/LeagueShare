@@ -43,7 +43,7 @@
             // txtLoginScrn
             // 
             this.txtLoginScrn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.txtLoginScrn.Location = new System.Drawing.Point(118, 177);
+            this.txtLoginScrn.Location = new System.Drawing.Point(281, 181);
             this.txtLoginScrn.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.txtLoginScrn.Name = "txtLoginScrn";
             this.txtLoginScrn.Size = new System.Drawing.Size(128, 40);
@@ -53,8 +53,8 @@
             // 
             // bttnSubmit
             // 
-            this.bttnSubmit.Location = new System.Drawing.Point(62, 338);
-            this.bttnSubmit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bttnSubmit.Location = new System.Drawing.Point(225, 342);
+            this.bttnSubmit.Margin = new System.Windows.Forms.Padding(5);
             this.bttnSubmit.Name = "bttnSubmit";
             this.bttnSubmit.Size = new System.Drawing.Size(125, 35);
             this.bttnSubmit.TabIndex = 2;
@@ -65,8 +65,8 @@
             // bttnCancel
             // 
             this.bttnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.bttnCancel.Location = new System.Drawing.Point(198, 338);
-            this.bttnCancel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bttnCancel.Location = new System.Drawing.Point(361, 342);
+            this.bttnCancel.Margin = new System.Windows.Forms.Padding(5);
             this.bttnCancel.Name = "bttnCancel";
             this.bttnCancel.Size = new System.Drawing.Size(125, 35);
             this.bttnCancel.TabIndex = 3;
@@ -76,16 +76,16 @@
             // 
             // txtbxUser
             // 
-            this.txtbxUser.Location = new System.Drawing.Point(123, 222);
-            this.txtbxUser.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtbxUser.Location = new System.Drawing.Point(286, 226);
+            this.txtbxUser.Margin = new System.Windows.Forms.Padding(5);
             this.txtbxUser.Name = "txtbxUser";
             this.txtbxUser.Size = new System.Drawing.Size(197, 26);
             this.txtbxUser.TabIndex = 4;
             // 
             // txtbxPWD
             // 
-            this.txtbxPWD.Location = new System.Drawing.Point(123, 262);
-            this.txtbxPWD.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtbxPWD.Location = new System.Drawing.Point(286, 266);
+            this.txtbxPWD.Margin = new System.Windows.Forms.Padding(5);
             this.txtbxPWD.Name = "txtbxPWD";
             this.txtbxPWD.PasswordChar = '*';
             this.txtbxPWD.Size = new System.Drawing.Size(197, 26);
@@ -95,7 +95,7 @@
             // 
             this.txtUser.AutoSize = true;
             this.txtUser.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.txtUser.Location = new System.Drawing.Point(22, 226);
+            this.txtUser.Location = new System.Drawing.Point(185, 230);
             this.txtUser.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(91, 20);
@@ -106,7 +106,7 @@
             // 
             this.txtPWD.AutoSize = true;
             this.txtPWD.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.txtPWD.Location = new System.Drawing.Point(25, 266);
+            this.txtPWD.Location = new System.Drawing.Point(188, 270);
             this.txtPWD.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.txtPWD.Name = "txtPWD";
             this.txtPWD.Size = new System.Drawing.Size(86, 20);
@@ -117,8 +117,8 @@
             // 
             this.cbRemPass.AutoSize = true;
             this.cbRemPass.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.cbRemPass.Location = new System.Drawing.Point(88, 303);
-            this.cbRemPass.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.cbRemPass.Location = new System.Drawing.Point(251, 307);
+            this.cbRemPass.Margin = new System.Windows.Forms.Padding(5);
             this.cbRemPass.Name = "cbRemPass";
             this.cbRemPass.Size = new System.Drawing.Size(207, 24);
             this.cbRemPass.TabIndex = 9;
@@ -129,7 +129,7 @@
             // 
             this.txtError.AutoSize = true;
             this.txtError.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.txtError.Location = new System.Drawing.Point(83, 378);
+            this.txtError.Location = new System.Drawing.Point(246, 382);
             this.txtError.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.txtError.Name = "txtError";
             this.txtError.Size = new System.Drawing.Size(229, 20);
@@ -142,9 +142,10 @@
             this.AcceptButton = this.bttnSubmit;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CancelButton = this.bttnCancel;
-            this.ClientSize = new System.Drawing.Size(757, 398);
+            this.ClientSize = new System.Drawing.Size(766, 558);
             this.Controls.Add(this.txtError);
             this.Controls.Add(this.cbRemPass);
             this.Controls.Add(this.txtPWD);
@@ -155,7 +156,7 @@
             this.Controls.Add(this.bttnSubmit);
             this.Controls.Add(this.txtLoginScrn);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.Margin = new System.Windows.Forms.Padding(8);
             this.MinimumSize = new System.Drawing.Size(0, 0);
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

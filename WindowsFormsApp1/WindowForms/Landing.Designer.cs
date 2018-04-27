@@ -34,7 +34,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(996, 730);
+            this.MinimumSize = new System.Drawing.Size(782, 597);
             this.Name = "Landing";
             this.Text = "Landing";
             this.ResumeLayout(false);

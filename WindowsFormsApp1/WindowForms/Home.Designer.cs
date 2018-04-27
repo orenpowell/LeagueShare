@@ -45,10 +45,11 @@
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
-            this.ClientSize = new System.Drawing.Size(763, 581);
+            this.ClientSize = new System.Drawing.Size(992, 726);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(8);
+            this.MinimumSize = new System.Drawing.Size(782, 597);
             this.Name = "Home";
             this.Load += new System.EventHandler(this.Home_Load);
             this.Controls.SetChildIndex(this.pictureBox1, 0);

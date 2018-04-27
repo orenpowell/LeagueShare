@@ -63,6 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Functionality\ValidateLogin.cs" />
     <Compile Include="Functionality\UserType.cs" />
     <Compile Include="LeagueDataSet.Designer.cs">
       <AutoGen>True</AutoGen>

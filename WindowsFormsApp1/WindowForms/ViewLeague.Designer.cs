@@ -269,9 +269,8 @@
             this.Controls.Add(this.tableDataGridView);
             this.Controls.Add(this.tableBindingNavigator);
             this.Margin = new System.Windows.Forms.Padding(8);
-            this.MinimumSize = new System.Drawing.Size(1053, 597);
+            this.MinimumSize = new System.Drawing.Size(782, 597);
             this.Name = "ViewLeague";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.ViewLeague_Load);
             this.Controls.SetChildIndex(this.tableBindingNavigator, 0);
             this.Controls.SetChildIndex(this.tableDataGridView, 0);

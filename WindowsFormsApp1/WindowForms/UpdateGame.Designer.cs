@@ -101,14 +101,14 @@
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.tableBindingNavigatorSaveItem});
-            this.tableBindingNavigator.Location = new System.Drawing.Point(0, 705);
+            this.tableBindingNavigator.Location = new System.Drawing.Point(0, 533);
             this.tableBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.tableBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.tableBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.tableBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.tableBindingNavigator.Name = "tableBindingNavigator";
             this.tableBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.tableBindingNavigator.Size = new System.Drawing.Size(996, 25);
+            this.tableBindingNavigator.Size = new System.Drawing.Size(766, 25);
             this.tableBindingNavigator.TabIndex = 26;
             this.tableBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -221,7 +221,7 @@
             this.tableDataGridView.DataSource = this.tableBindingSource;
             this.tableDataGridView.Location = new System.Drawing.Point(12, 113);
             this.tableDataGridView.Name = "tableDataGridView";
-            this.tableDataGridView.Size = new System.Drawing.Size(740, 589);
+            this.tableDataGridView.Size = new System.Drawing.Size(740, 417);
             this.tableDataGridView.TabIndex = 26;
             // 
             // Id
@@ -257,9 +257,10 @@
             // UpdateGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
-            this.ClientSize = new System.Drawing.Size(996, 730);
+            this.ClientSize = new System.Drawing.Size(766, 558);
             this.Controls.Add(this.tableDataGridView);
             this.Controls.Add(this.tableBindingNavigator);
+            this.MinimumSize = new System.Drawing.Size(782, 597);
             this.Name = "UpdateGame";
             this.Load += new System.EventHandler(this.UpdateGame_Load);
             this.Controls.SetChildIndex(this.tableBindingNavigator, 0);
