@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tieLabel = new System.Windows.Forms.Label();
             this.lossLabel = new System.Windows.Forms.Label();
             this.winLabel = new System.Windows.Forms.Label();
@@ -37,6 +38,19 @@
             this.nameLabel = new System.Windows.Forms.Label();
             this.nameBox = new System.Windows.Forms.TextBox();
             this.enterButton = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tableBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.leagueDataSet1 = new WindowsFormsApp1.Database.LeagueDataSet1();
+            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tableTableAdapter = new WindowsFormsApp1.Database.LeagueDataSet1TableAdapters.TableTableAdapter();
+            this.teamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.winsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lossesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tiesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leagueDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tieLabel
@@ -123,10 +137,65 @@
             this.enterButton.Text = "Enter";
             this.enterButton.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.teamDataGridViewTextBoxColumn,
+            this.winsDataGridViewTextBoxColumn,
+            this.lossesDataGridViewTextBoxColumn,
+            this.tiesDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.tableBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(13, 251);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(739, 467);
+            this.dataGridView1.TabIndex = 44;
+            // 
+            // leagueDataSet1
+            // 
+            this.leagueDataSet1.DataSetName = "LeagueDataSet1";
+            this.leagueDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tableBindingSource
+            // 
+            this.tableBindingSource.DataMember = "Table";
+            this.tableBindingSource.DataSource = this.leagueDataSet1;
+            // 
+            // tableTableAdapter
+            // 
+            this.tableTableAdapter.ClearBeforeFill = true;
+            // 
+            // teamDataGridViewTextBoxColumn
+            // 
+            this.teamDataGridViewTextBoxColumn.DataPropertyName = "Team";
+            this.teamDataGridViewTextBoxColumn.HeaderText = "Team";
+            this.teamDataGridViewTextBoxColumn.Name = "teamDataGridViewTextBoxColumn";
+            // 
+            // winsDataGridViewTextBoxColumn
+            // 
+            this.winsDataGridViewTextBoxColumn.DataPropertyName = "Wins";
+            this.winsDataGridViewTextBoxColumn.HeaderText = "Wins";
+            this.winsDataGridViewTextBoxColumn.Name = "winsDataGridViewTextBoxColumn";
+            // 
+            // lossesDataGridViewTextBoxColumn
+            // 
+            this.lossesDataGridViewTextBoxColumn.DataPropertyName = "Losses";
+            this.lossesDataGridViewTextBoxColumn.HeaderText = "Losses";
+            this.lossesDataGridViewTextBoxColumn.Name = "lossesDataGridViewTextBoxColumn";
+            // 
+            // tiesDataGridViewTextBoxColumn
+            // 
+            this.tiesDataGridViewTextBoxColumn.DataPropertyName = "Ties";
+            this.tiesDataGridViewTextBoxColumn.HeaderText = "Ties";
+            this.tiesDataGridViewTextBoxColumn.Name = "tiesDataGridViewTextBoxColumn";
+            // 
             // UpdateTeam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
-            this.ClientSize = new System.Drawing.Size(996, 697);
+            this.ClientSize = new System.Drawing.Size(996, 730);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.tieLabel);
             this.Controls.Add(this.lossLabel);
             this.Controls.Add(this.winLabel);
@@ -137,6 +206,7 @@
             this.Controls.Add(this.nameBox);
             this.Controls.Add(this.enterButton);
             this.Name = "UpdateTeam";
+            this.Load += new System.EventHandler(this.UpdateTeam_Load);
             this.Controls.SetChildIndex(this.enterButton, 0);
             this.Controls.SetChildIndex(this.nameBox, 0);
             this.Controls.SetChildIndex(this.nameLabel, 0);
@@ -146,6 +216,11 @@
             this.Controls.SetChildIndex(this.winLabel, 0);
             this.Controls.SetChildIndex(this.lossLabel, 0);
             this.Controls.SetChildIndex(this.tieLabel, 0);
+            this.Controls.SetChildIndex(this.dataGridView1, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leagueDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,5 +237,14 @@
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.TextBox nameBox;
         private System.Windows.Forms.Button enterButton;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.BindingSource tableBindingSource4;
+        private Database.LeagueDataSet1 leagueDataSet1;
+        private System.Windows.Forms.BindingSource tableBindingSource;
+        private Database.LeagueDataSet1TableAdapters.TableTableAdapter tableTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn teamDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn winsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lossesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tiesDataGridViewTextBoxColumn;
     }
 }

@@ -170,6 +170,9 @@
     <Compile Include="WindowForms\ViewTeam.Designer.cs">
       <DependentUpon>ViewTeam.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="WindowForms\UpdateGame.resx">
+      <DependentUpon>UpdateGame.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WindowForms\UpdateLeague.resx">
       <DependentUpon>UpdateLeague.cs</DependentUpon>
     </EmbeddedResource>
@@ -198,6 +201,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="WindowForms\UpdatePlayer.resx">
+      <DependentUpon>UpdatePlayer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WindowForms\UpdateTeam.resx">
       <DependentUpon>UpdateTeam.cs</DependentUpon>
     </EmbeddedResource>

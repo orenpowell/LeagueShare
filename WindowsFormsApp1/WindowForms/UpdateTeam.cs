@@ -51,5 +51,18 @@ namespace WindowsFormsApp1.WindowForms
         {
 
         }
+
+        private void UpdateTeam_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'leagueDataSet1.Table' table. You can move, or remove it, as needed.
+            this.tableTableAdapter.Fill(this.leagueDataSet1.Table);
+            // TODO: This line of code loads data into the 'leagueDataSet1.Player' table. You can move, or remove it, as needed.
+            this.playerTableAdapter.Fill(this.leagueDataSet1.Player);
+            // TODO: This line of code loads data into the 'leagueDataSet.Table' table. You can move, or remove it, as needed.
+            this.tableTableAdapter1.Fill(this.leagueDataSet.Table);
+            // TODO: This line of code loads data into the 'leagueDataSet1.Table' table. You can move, or remove it, as needed.
+            this.tableTableAdapter.Fill(this.leagueDataSet1.Table);
+
+        }
     }
 }

@@ -39,6 +39,9 @@
             this.tableTableAdapter = new WindowsFormsApp1.Database.LeagueDataSetTableAdapters.TableTableAdapter();
             this.tableDataGridView = new System.Windows.Forms.DataGridView();
             this.teamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Wins = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Losses = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ties = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.leagueDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableDataGridView)).BeginInit();
@@ -90,7 +93,6 @@
             // 
             // tableDataGridView
             // 
-            this.tableDataGridView.AllowUserToDeleteRows = false;
             this.tableDataGridView.AllowUserToOrderColumns = true;
             this.tableDataGridView.AllowUserToResizeColumns = false;
             this.tableDataGridView.AllowUserToResizeRows = false;
@@ -107,7 +109,10 @@
             this.tableDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.tableDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.teamDataGridViewTextBoxColumn});
+            this.teamDataGridViewTextBoxColumn,
+            this.Wins,
+            this.Losses,
+            this.Ties});
             this.tableDataGridView.DataSource = this.tableBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ScrollBar;
@@ -135,12 +140,30 @@
             this.teamDataGridViewTextBoxColumn.Name = "teamDataGridViewTextBoxColumn";
             this.teamDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // Wins
+            // 
+            this.Wins.DataPropertyName = "Wins";
+            this.Wins.HeaderText = "Wins";
+            this.Wins.Name = "Wins";
+            // 
+            // Losses
+            // 
+            this.Losses.DataPropertyName = "Losses";
+            this.Losses.HeaderText = "Losses";
+            this.Losses.Name = "Losses";
+            // 
+            // Ties
+            // 
+            this.Ties.DataPropertyName = "Ties";
+            this.Ties.HeaderText = "Ties";
+            this.Ties.Name = "Ties";
+            // 
             // UpdateLeague
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(996, 697);
+            this.ClientSize = new System.Drawing.Size(996, 730);
             this.Controls.Add(this.tableDataGridView);
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.nameBox);
@@ -168,5 +191,8 @@
         private Database.LeagueDataSetTableAdapters.TableTableAdapter tableTableAdapter;
         private System.Windows.Forms.DataGridView tableDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn teamDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Wins;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Losses;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ties;
     }
 }
