@@ -211,6 +211,7 @@
             // 
             this.tableDataGridView.AllowUserToAddRows = false;
             this.tableDataGridView.AllowUserToDeleteRows = false;
+            this.tableDataGridView.AllowUserToOrderColumns = true;
             this.tableDataGridView.AllowUserToResizeColumns = false;
             this.tableDataGridView.AllowUserToResizeRows = false;
             this.tableDataGridView.AutoGenerateColumns = false;
