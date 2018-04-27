@@ -30,35 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdatePlayer));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.teamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gamePlayedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passingYardsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passingTouchdownsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.interceptionThrownDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fumblesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rushingYardsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rushingTouchdownsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fumblesRecoveryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.receptionsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.receivingYardsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.receivingTouchdownsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.returnTouchdownsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pATDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fGDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.puntsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.longestPuntsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.totalPuntingYardsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sacksDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.interceptionsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.playerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.leagueDataSet1 = new WindowsFormsApp1.Database.LeagueDataSet1();
+            this.playerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.playerTableAdapter = new WindowsFormsApp1.Database.LeagueDataSet1TableAdapters.PlayerTableAdapter();
-            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.tableAdapterManager = new WindowsFormsApp1.Database.LeagueDataSet1TableAdapters.TableAdapterManager();
+            this.playerBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -70,214 +46,69 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerBindingSource)).BeginInit();
+            this.playerBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.playerDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn24 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.leagueDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
-            this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.playerBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playerBindingNavigator)).BeginInit();
+            this.playerBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.playerDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.firstNameDataGridViewTextBoxColumn,
-            this.lastNameDataGridViewTextBoxColumn,
-            this.teamDataGridViewTextBoxColumn,
-            this.gamePlayedDataGridViewTextBoxColumn,
-            this.passingYardsDataGridViewTextBoxColumn,
-            this.passingTouchdownsDataGridViewTextBoxColumn,
-            this.interceptionThrownDataGridViewTextBoxColumn,
-            this.fumblesDataGridViewTextBoxColumn,
-            this.rushingYardsDataGridViewTextBoxColumn,
-            this.rushingTouchdownsDataGridViewTextBoxColumn,
-            this.fumblesRecoveryDataGridViewTextBoxColumn,
-            this.receptionsDataGridViewTextBoxColumn,
-            this.receivingYardsDataGridViewTextBoxColumn,
-            this.receivingTouchdownsDataGridViewTextBoxColumn,
-            this.returnTouchdownsDataGridViewTextBoxColumn,
-            this.pTDataGridViewTextBoxColumn,
-            this.pATDataGridViewTextBoxColumn,
-            this.fGDataGridViewTextBoxColumn,
-            this.puntsDataGridViewTextBoxColumn,
-            this.longestPuntsDataGridViewTextBoxColumn,
-            this.totalPuntingYardsDataGridViewTextBoxColumn,
-            this.positionDataGridViewTextBoxColumn,
-            this.sacksDataGridViewTextBoxColumn,
-            this.interceptionsDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.playerBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 161);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(739, 557);
-            this.dataGridView1.TabIndex = 26;
-            // 
-            // firstNameDataGridViewTextBoxColumn
-            // 
-            this.firstNameDataGridViewTextBoxColumn.DataPropertyName = "First Name";
-            this.firstNameDataGridViewTextBoxColumn.HeaderText = "First Name";
-            this.firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
-            // 
-            // lastNameDataGridViewTextBoxColumn
-            // 
-            this.lastNameDataGridViewTextBoxColumn.DataPropertyName = "Last Name";
-            this.lastNameDataGridViewTextBoxColumn.HeaderText = "Last Name";
-            this.lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-            // 
-            // teamDataGridViewTextBoxColumn
-            // 
-            this.teamDataGridViewTextBoxColumn.DataPropertyName = "Team";
-            this.teamDataGridViewTextBoxColumn.HeaderText = "Team";
-            this.teamDataGridViewTextBoxColumn.Name = "teamDataGridViewTextBoxColumn";
-            // 
-            // gamePlayedDataGridViewTextBoxColumn
-            // 
-            this.gamePlayedDataGridViewTextBoxColumn.DataPropertyName = "Game Played";
-            this.gamePlayedDataGridViewTextBoxColumn.HeaderText = "Game Played";
-            this.gamePlayedDataGridViewTextBoxColumn.Name = "gamePlayedDataGridViewTextBoxColumn";
-            // 
-            // passingYardsDataGridViewTextBoxColumn
-            // 
-            this.passingYardsDataGridViewTextBoxColumn.DataPropertyName = "Passing Yards";
-            this.passingYardsDataGridViewTextBoxColumn.HeaderText = "Passing Yards";
-            this.passingYardsDataGridViewTextBoxColumn.Name = "passingYardsDataGridViewTextBoxColumn";
-            // 
-            // passingTouchdownsDataGridViewTextBoxColumn
-            // 
-            this.passingTouchdownsDataGridViewTextBoxColumn.DataPropertyName = "Passing Touchdowns";
-            this.passingTouchdownsDataGridViewTextBoxColumn.HeaderText = "Passing Touchdowns";
-            this.passingTouchdownsDataGridViewTextBoxColumn.Name = "passingTouchdownsDataGridViewTextBoxColumn";
-            // 
-            // interceptionThrownDataGridViewTextBoxColumn
-            // 
-            this.interceptionThrownDataGridViewTextBoxColumn.DataPropertyName = "Interception Thrown";
-            this.interceptionThrownDataGridViewTextBoxColumn.HeaderText = "Interception Thrown";
-            this.interceptionThrownDataGridViewTextBoxColumn.Name = "interceptionThrownDataGridViewTextBoxColumn";
-            // 
-            // fumblesDataGridViewTextBoxColumn
-            // 
-            this.fumblesDataGridViewTextBoxColumn.DataPropertyName = "Fumbles";
-            this.fumblesDataGridViewTextBoxColumn.HeaderText = "Fumbles";
-            this.fumblesDataGridViewTextBoxColumn.Name = "fumblesDataGridViewTextBoxColumn";
-            // 
-            // rushingYardsDataGridViewTextBoxColumn
-            // 
-            this.rushingYardsDataGridViewTextBoxColumn.DataPropertyName = "Rushing Yards";
-            this.rushingYardsDataGridViewTextBoxColumn.HeaderText = "Rushing Yards";
-            this.rushingYardsDataGridViewTextBoxColumn.Name = "rushingYardsDataGridViewTextBoxColumn";
-            // 
-            // rushingTouchdownsDataGridViewTextBoxColumn
-            // 
-            this.rushingTouchdownsDataGridViewTextBoxColumn.DataPropertyName = "Rushing Touchdowns";
-            this.rushingTouchdownsDataGridViewTextBoxColumn.HeaderText = "Rushing Touchdowns";
-            this.rushingTouchdownsDataGridViewTextBoxColumn.Name = "rushingTouchdownsDataGridViewTextBoxColumn";
-            // 
-            // fumblesRecoveryDataGridViewTextBoxColumn
-            // 
-            this.fumblesRecoveryDataGridViewTextBoxColumn.DataPropertyName = "Fumbles Recovery";
-            this.fumblesRecoveryDataGridViewTextBoxColumn.HeaderText = "Fumbles Recovery";
-            this.fumblesRecoveryDataGridViewTextBoxColumn.Name = "fumblesRecoveryDataGridViewTextBoxColumn";
-            // 
-            // receptionsDataGridViewTextBoxColumn
-            // 
-            this.receptionsDataGridViewTextBoxColumn.DataPropertyName = "Receptions";
-            this.receptionsDataGridViewTextBoxColumn.HeaderText = "Receptions";
-            this.receptionsDataGridViewTextBoxColumn.Name = "receptionsDataGridViewTextBoxColumn";
-            // 
-            // receivingYardsDataGridViewTextBoxColumn
-            // 
-            this.receivingYardsDataGridViewTextBoxColumn.DataPropertyName = "Receiving Yards";
-            this.receivingYardsDataGridViewTextBoxColumn.HeaderText = "Receiving Yards";
-            this.receivingYardsDataGridViewTextBoxColumn.Name = "receivingYardsDataGridViewTextBoxColumn";
-            // 
-            // receivingTouchdownsDataGridViewTextBoxColumn
-            // 
-            this.receivingTouchdownsDataGridViewTextBoxColumn.DataPropertyName = "Receiving Touchdowns";
-            this.receivingTouchdownsDataGridViewTextBoxColumn.HeaderText = "Receiving Touchdowns";
-            this.receivingTouchdownsDataGridViewTextBoxColumn.Name = "receivingTouchdownsDataGridViewTextBoxColumn";
-            // 
-            // returnTouchdownsDataGridViewTextBoxColumn
-            // 
-            this.returnTouchdownsDataGridViewTextBoxColumn.DataPropertyName = "Return Touchdowns";
-            this.returnTouchdownsDataGridViewTextBoxColumn.HeaderText = "Return Touchdowns";
-            this.returnTouchdownsDataGridViewTextBoxColumn.Name = "returnTouchdownsDataGridViewTextBoxColumn";
-            // 
-            // pTDataGridViewTextBoxColumn
-            // 
-            this.pTDataGridViewTextBoxColumn.DataPropertyName = "2PT";
-            this.pTDataGridViewTextBoxColumn.HeaderText = "2PT";
-            this.pTDataGridViewTextBoxColumn.Name = "pTDataGridViewTextBoxColumn";
-            // 
-            // pATDataGridViewTextBoxColumn
-            // 
-            this.pATDataGridViewTextBoxColumn.DataPropertyName = "PAT";
-            this.pATDataGridViewTextBoxColumn.HeaderText = "PAT";
-            this.pATDataGridViewTextBoxColumn.Name = "pATDataGridViewTextBoxColumn";
-            // 
-            // fGDataGridViewTextBoxColumn
-            // 
-            this.fGDataGridViewTextBoxColumn.DataPropertyName = "FG";
-            this.fGDataGridViewTextBoxColumn.HeaderText = "FG";
-            this.fGDataGridViewTextBoxColumn.Name = "fGDataGridViewTextBoxColumn";
-            // 
-            // puntsDataGridViewTextBoxColumn
-            // 
-            this.puntsDataGridViewTextBoxColumn.DataPropertyName = "Punts";
-            this.puntsDataGridViewTextBoxColumn.HeaderText = "Punts";
-            this.puntsDataGridViewTextBoxColumn.Name = "puntsDataGridViewTextBoxColumn";
-            // 
-            // longestPuntsDataGridViewTextBoxColumn
-            // 
-            this.longestPuntsDataGridViewTextBoxColumn.DataPropertyName = "Longest Punts";
-            this.longestPuntsDataGridViewTextBoxColumn.HeaderText = "Longest Punts";
-            this.longestPuntsDataGridViewTextBoxColumn.Name = "longestPuntsDataGridViewTextBoxColumn";
-            // 
-            // totalPuntingYardsDataGridViewTextBoxColumn
-            // 
-            this.totalPuntingYardsDataGridViewTextBoxColumn.DataPropertyName = "Total Punting Yards";
-            this.totalPuntingYardsDataGridViewTextBoxColumn.HeaderText = "Total Punting Yards";
-            this.totalPuntingYardsDataGridViewTextBoxColumn.Name = "totalPuntingYardsDataGridViewTextBoxColumn";
-            // 
-            // positionDataGridViewTextBoxColumn
-            // 
-            this.positionDataGridViewTextBoxColumn.DataPropertyName = "Position";
-            this.positionDataGridViewTextBoxColumn.HeaderText = "Position";
-            this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
-            // 
-            // sacksDataGridViewTextBoxColumn
-            // 
-            this.sacksDataGridViewTextBoxColumn.DataPropertyName = "Sacks";
-            this.sacksDataGridViewTextBoxColumn.HeaderText = "Sacks";
-            this.sacksDataGridViewTextBoxColumn.Name = "sacksDataGridViewTextBoxColumn";
-            // 
-            // interceptionsDataGridViewTextBoxColumn
-            // 
-            this.interceptionsDataGridViewTextBoxColumn.DataPropertyName = "Interceptions";
-            this.interceptionsDataGridViewTextBoxColumn.HeaderText = "Interceptions";
-            this.interceptionsDataGridViewTextBoxColumn.Name = "interceptionsDataGridViewTextBoxColumn";
-            // 
-            // playerBindingSource
-            // 
-            this.playerBindingSource.DataMember = "Player";
-            this.playerBindingSource.DataSource = this.leagueDataSet1;
             // 
             // leagueDataSet1
             // 
             this.leagueDataSet1.DataSetName = "LeagueDataSet1";
             this.leagueDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // playerBindingSource
+            // 
+            this.playerBindingSource.DataMember = "Player";
+            this.playerBindingSource.DataSource = this.leagueDataSet1;
+            // 
             // playerTableAdapter
             // 
             this.playerTableAdapter.ClearBeforeFill = true;
             // 
-            // bindingNavigator1
+            // tableAdapterManager
             // 
-            this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
-            this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.PlayerTableAdapter = this.playerTableAdapter;
+            this.tableAdapterManager.TableTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = WindowsFormsApp1.Database.LeagueDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // playerBindingNavigator
+            // 
+            this.playerBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.playerBindingNavigator.BindingSource = this.playerBindingSource;
+            this.playerBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.playerBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.playerBindingNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.playerBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -288,17 +119,18 @@
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem});
-            this.bindingNavigator1.Location = new System.Drawing.Point(0, 0);
-            this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.bindingNavigator1.Name = "bindingNavigator1";
-            this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(996, 25);
-            this.bindingNavigator1.TabIndex = 27;
-            this.bindingNavigator1.Text = "bindingNavigator1";
+            this.bindingNavigatorDeleteItem,
+            this.playerBindingNavigatorSaveItem});
+            this.playerBindingNavigator.Location = new System.Drawing.Point(0, 705);
+            this.playerBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.playerBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.playerBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.playerBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.playerBindingNavigator.Name = "playerBindingNavigator";
+            this.playerBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.playerBindingNavigator.Size = new System.Drawing.Size(996, 25);
+            this.playerBindingNavigator.TabIndex = 26;
+            this.playerBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -335,14 +167,14 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 15);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -350,7 +182,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -359,13 +191,13 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -382,25 +214,221 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
             this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
+            // playerBindingNavigatorSaveItem
+            // 
+            this.playerBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.playerBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("playerBindingNavigatorSaveItem.Image")));
+            this.playerBindingNavigatorSaveItem.Name = "playerBindingNavigatorSaveItem";
+            this.playerBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.playerBindingNavigatorSaveItem.Text = "Save Data";
+            this.playerBindingNavigatorSaveItem.Click += new System.EventHandler(this.playerBindingNavigatorSaveItem_Click);
+            // 
+            // playerDataGridView
+            // 
+            this.playerDataGridView.AutoGenerateColumns = false;
+            this.playerDataGridView.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.playerDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.playerDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17,
+            this.dataGridViewTextBoxColumn18,
+            this.dataGridViewTextBoxColumn19,
+            this.dataGridViewTextBoxColumn20,
+            this.dataGridViewTextBoxColumn21,
+            this.dataGridViewTextBoxColumn22,
+            this.dataGridViewTextBoxColumn23,
+            this.dataGridViewTextBoxColumn24,
+            this.dataGridViewTextBoxColumn25});
+            this.playerDataGridView.DataSource = this.playerBindingSource;
+            this.playerDataGridView.Location = new System.Drawing.Point(12, 113);
+            this.playerDataGridView.Name = "playerDataGridView";
+            this.playerDataGridView.Size = new System.Drawing.Size(740, 589);
+            this.playerDataGridView.TabIndex = 26;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "First Name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "First Name";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Last Name";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Last Name";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Game Played";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Game Played";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Passing Yards";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Passing Yards";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Passing Touchdowns";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Passing Touchdowns";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Interception Thrown";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Interception Thrown";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Fumbles";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Fumbles";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Rushing Yards";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Rushing Yards";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Rushing Touchdowns";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Rushing Touchdowns";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Fumbles Recovery";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Fumbles Recovery";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "Receptions";
+            this.dataGridViewTextBoxColumn13.HeaderText = "Receptions";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "Receiving Yards";
+            this.dataGridViewTextBoxColumn14.HeaderText = "Receiving Yards";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "Receiving Touchdowns";
+            this.dataGridViewTextBoxColumn15.HeaderText = "Receiving Touchdowns";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "Return Touchdowns";
+            this.dataGridViewTextBoxColumn16.HeaderText = "Return Touchdowns";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "2PT";
+            this.dataGridViewTextBoxColumn17.HeaderText = "2PT";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "PAT";
+            this.dataGridViewTextBoxColumn18.HeaderText = "PAT";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.DataPropertyName = "FG";
+            this.dataGridViewTextBoxColumn19.HeaderText = "FG";
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "Punts";
+            this.dataGridViewTextBoxColumn20.HeaderText = "Punts";
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.DataPropertyName = "Longest Punts";
+            this.dataGridViewTextBoxColumn21.HeaderText = "Longest Punts";
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            this.dataGridViewTextBoxColumn22.DataPropertyName = "Total Punting Yards";
+            this.dataGridViewTextBoxColumn22.HeaderText = "Total Punting Yards";
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.DataPropertyName = "Position";
+            this.dataGridViewTextBoxColumn23.HeaderText = "Position";
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            // 
+            // dataGridViewTextBoxColumn24
+            // 
+            this.dataGridViewTextBoxColumn24.DataPropertyName = "Sacks";
+            this.dataGridViewTextBoxColumn24.HeaderText = "Sacks";
+            this.dataGridViewTextBoxColumn24.Name = "dataGridViewTextBoxColumn24";
+            // 
+            // dataGridViewTextBoxColumn25
+            // 
+            this.dataGridViewTextBoxColumn25.DataPropertyName = "Interceptions";
+            this.dataGridViewTextBoxColumn25.HeaderText = "Interceptions";
+            this.dataGridViewTextBoxColumn25.Name = "dataGridViewTextBoxColumn25";
             // 
             // UpdatePlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.ClientSize = new System.Drawing.Size(996, 730);
-            this.Controls.Add(this.bindingNavigator1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.playerDataGridView);
+            this.Controls.Add(this.playerBindingNavigator);
             this.Name = "UpdatePlayer";
             this.Load += new System.EventHandler(this.UpdatePlayer_Load);
-            this.Controls.SetChildIndex(this.dataGridView1, 0);
-            this.Controls.SetChildIndex(this.bindingNavigator1, 0);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.playerBindingSource)).EndInit();
+            this.Controls.SetChildIndex(this.playerBindingNavigator, 0);
+            this.Controls.SetChildIndex(this.playerDataGridView, 0);
             ((System.ComponentModel.ISupportInitialize)(this.leagueDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
-            this.bindingNavigator1.ResumeLayout(false);
-            this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.playerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playerBindingNavigator)).EndInit();
+            this.playerBindingNavigator.ResumeLayout(false);
+            this.playerBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.playerDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -408,35 +436,11 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
         private Database.LeagueDataSet1 leagueDataSet1;
         private System.Windows.Forms.BindingSource playerBindingSource;
         private Database.LeagueDataSet1TableAdapters.PlayerTableAdapter playerTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lastNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn teamDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn gamePlayedDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passingYardsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passingTouchdownsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn interceptionThrownDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fumblesDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rushingYardsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rushingTouchdownsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fumblesRecoveryDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn receptionsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn receivingYardsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn receivingTouchdownsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn returnTouchdownsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pTDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pATDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fGDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn puntsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn longestPuntsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn totalPuntingYardsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn positionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sacksDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn interceptionsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingNavigator bindingNavigator1;
+        private Database.LeagueDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.BindingNavigator playerBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -448,5 +452,32 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private System.Windows.Forms.ToolStripButton playerBindingNavigatorSaveItem;
+        private System.Windows.Forms.DataGridView playerDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn24;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
     }
 }

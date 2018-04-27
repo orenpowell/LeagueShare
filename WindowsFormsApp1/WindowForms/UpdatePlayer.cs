@@ -21,6 +21,16 @@ namespace WindowsFormsApp1.WindowForms
             this.playerTableAdapter.Fill(this.leagueDataSet1.Player);
             // TODO: This line of code loads data into the 'leagueDataSet1.Player' table. You can move, or remove it, as needed.
             this.playerTableAdapter.Fill(this.leagueDataSet1.Player);
+            // TODO: This line of code loads data into the 'leagueDataSet1.Player' table. You can move, or remove it, as needed.
+            this.playerTableAdapter.Fill(this.leagueDataSet1.Player);
+
+        }
+
+        private void playerBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.playerBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.leagueDataSet1);
 
         }
     }

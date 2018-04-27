@@ -45,11 +45,21 @@ namespace WindowsFormsApp1
         {
             // TODO: This line of code loads data into the 'leagueDataSet.Table' table. You can move, or remove it, as needed.
             this.tableTableAdapter.Fill(this.leagueDataSet.Table);
+            // TODO: This line of code loads data into the 'leagueDataSet.Table' table. You can move, or remove it, as needed.
+            this.tableTableAdapter.Fill(this.leagueDataSet.Table);
 
         }
 
         private void tableDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void tableBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.tableBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.leagueDataSet);
 
         }
     }

@@ -39,17 +39,11 @@
             this.nameLabel = new System.Windows.Forms.Label();
             this.nameBox = new System.Windows.Forms.TextBox();
             this.enterButton = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.teamDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.winsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lossesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tiesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tableBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.leagueDataSet1 = new WindowsFormsApp1.Database.LeagueDataSet1();
-            this.tableBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.leagueDataSet = new WindowsFormsApp1.Database.LeagueDataSet();
             this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tableTableAdapter = new WindowsFormsApp1.Database.LeagueDataSet1TableAdapters.TableTableAdapter();
-            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.tableTableAdapter = new WindowsFormsApp1.Database.LeagueDataSetTableAdapters.TableTableAdapter();
+            this.tableAdapterManager = new WindowsFormsApp1.Database.LeagueDataSetTableAdapters.TableAdapterManager();
+            this.tableBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -61,13 +55,18 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leagueDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource4)).BeginInit();
+            this.tableBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
+            this.tableDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.leagueDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
-            this.bindingNavigator1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingNavigator)).BeginInit();
+            this.tableBindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // tieLabel
@@ -80,6 +79,7 @@
             this.tieLabel.Size = new System.Drawing.Size(91, 20);
             this.tieLabel.TabIndex = 43;
             this.tieLabel.Text = "Tie Count:";
+            this.tieLabel.Visible = false;
             this.tieLabel.Click += new System.EventHandler(this.tieLabel_Click);
             // 
             // lossLabel
@@ -92,6 +92,7 @@
             this.lossLabel.Size = new System.Drawing.Size(105, 20);
             this.lossLabel.TabIndex = 42;
             this.lossLabel.Text = "Loss Count:";
+            this.lossLabel.Visible = false;
             // 
             // winLabel
             // 
@@ -103,6 +104,7 @@
             this.winLabel.Size = new System.Drawing.Size(97, 20);
             this.winLabel.TabIndex = 41;
             this.winLabel.Text = "Win Count:";
+            this.winLabel.Visible = false;
             this.winLabel.Click += new System.EventHandler(this.winLabel_Click);
             // 
             // tieBox
@@ -111,6 +113,7 @@
             this.tieBox.Name = "tieBox";
             this.tieBox.Size = new System.Drawing.Size(148, 26);
             this.tieBox.TabIndex = 40;
+            this.tieBox.Visible = false;
             // 
             // lossBox
             // 
@@ -118,6 +121,7 @@
             this.lossBox.Name = "lossBox";
             this.lossBox.Size = new System.Drawing.Size(148, 26);
             this.lossBox.TabIndex = 39;
+            this.lossBox.Visible = false;
             // 
             // winBox
             // 
@@ -125,6 +129,7 @@
             this.winBox.Name = "winBox";
             this.winBox.Size = new System.Drawing.Size(148, 26);
             this.winBox.TabIndex = 38;
+            this.winBox.Visible = false;
             // 
             // nameLabel
             // 
@@ -136,6 +141,7 @@
             this.nameLabel.Size = new System.Drawing.Size(109, 20);
             this.nameLabel.TabIndex = 37;
             this.nameLabel.Text = "Team Name:";
+            this.nameLabel.Visible = false;
             this.nameLabel.Click += new System.EventHandler(this.nameLabel_Click);
             // 
             // nameBox
@@ -144,6 +150,7 @@
             this.nameBox.Name = "nameBox";
             this.nameBox.Size = new System.Drawing.Size(148, 26);
             this.nameBox.TabIndex = 36;
+            this.nameBox.Visible = false;
             // 
             // enterButton
             // 
@@ -153,73 +160,37 @@
             this.enterButton.TabIndex = 35;
             this.enterButton.Text = "Enter";
             this.enterButton.UseVisualStyleBackColor = true;
+            this.enterButton.Visible = false;
+            this.enterButton.Click += new System.EventHandler(this.enterButton_Click_1);
             // 
-            // dataGridView1
+            // leagueDataSet
             // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.teamDataGridViewTextBoxColumn,
-            this.winsDataGridViewTextBoxColumn,
-            this.lossesDataGridViewTextBoxColumn,
-            this.tiesDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.tableBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 251);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(739, 467);
-            this.dataGridView1.TabIndex = 44;
-            // 
-            // teamDataGridViewTextBoxColumn
-            // 
-            this.teamDataGridViewTextBoxColumn.DataPropertyName = "Team";
-            this.teamDataGridViewTextBoxColumn.HeaderText = "Team";
-            this.teamDataGridViewTextBoxColumn.Name = "teamDataGridViewTextBoxColumn";
-            // 
-            // winsDataGridViewTextBoxColumn
-            // 
-            this.winsDataGridViewTextBoxColumn.DataPropertyName = "Wins";
-            this.winsDataGridViewTextBoxColumn.HeaderText = "Wins";
-            this.winsDataGridViewTextBoxColumn.Name = "winsDataGridViewTextBoxColumn";
-            // 
-            // lossesDataGridViewTextBoxColumn
-            // 
-            this.lossesDataGridViewTextBoxColumn.DataPropertyName = "Losses";
-            this.lossesDataGridViewTextBoxColumn.HeaderText = "Losses";
-            this.lossesDataGridViewTextBoxColumn.Name = "lossesDataGridViewTextBoxColumn";
-            // 
-            // tiesDataGridViewTextBoxColumn
-            // 
-            this.tiesDataGridViewTextBoxColumn.DataPropertyName = "Ties";
-            this.tiesDataGridViewTextBoxColumn.HeaderText = "Ties";
-            this.tiesDataGridViewTextBoxColumn.Name = "tiesDataGridViewTextBoxColumn";
-            // 
-            // tableBindingSource1
-            // 
-            this.tableBindingSource1.DataMember = "Table";
-            this.tableBindingSource1.DataSource = this.leagueDataSet1;
-            // 
-            // leagueDataSet1
-            // 
-            this.leagueDataSet1.DataSetName = "LeagueDataSet1";
-            this.leagueDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.leagueDataSet.DataSetName = "LeagueDataSet";
+            this.leagueDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tableBindingSource
             // 
             this.tableBindingSource.DataMember = "Table";
-            this.tableBindingSource.DataSource = this.leagueDataSet1;
+            this.tableBindingSource.DataSource = this.leagueDataSet;
             // 
             // tableTableAdapter
             // 
             this.tableTableAdapter.ClearBeforeFill = true;
             // 
-            // bindingNavigator1
+            // tableAdapterManager
             // 
-            this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
-            this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.TableTableAdapter = this.tableTableAdapter;
+            this.tableAdapterManager.UpdateOrder = WindowsFormsApp1.Database.LeagueDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // tableBindingNavigator
+            // 
+            this.tableBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.tableBindingNavigator.BindingSource = this.tableBindingSource;
+            this.tableBindingNavigator.CountItem = this.bindingNavigatorCountItem;
+            this.tableBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.tableBindingNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tableBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
@@ -230,17 +201,18 @@
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem});
-            this.bindingNavigator1.Location = new System.Drawing.Point(0, 0);
-            this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.bindingNavigator1.Name = "bindingNavigator1";
-            this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(996, 25);
-            this.bindingNavigator1.TabIndex = 45;
-            this.bindingNavigator1.Text = "bindingNavigator1";
+            this.bindingNavigatorDeleteItem,
+            this.tableBindingNavigatorSaveItem});
+            this.tableBindingNavigator.Location = new System.Drawing.Point(0, 705);
+            this.tableBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.tableBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.tableBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.tableBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.tableBindingNavigator.Name = "tableBindingNavigator";
+            this.tableBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
+            this.tableBindingNavigator.Size = new System.Drawing.Size(996, 25);
+            this.tableBindingNavigator.TabIndex = 44;
+            this.tableBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -277,14 +249,14 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 15);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -292,7 +264,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -301,13 +273,13 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
             // 
             // bindingNavigatorAddNewItem
             // 
@@ -324,15 +296,71 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
             this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
+            // tableBindingNavigatorSaveItem
+            // 
+            this.tableBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tableBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("tableBindingNavigatorSaveItem.Image")));
+            this.tableBindingNavigatorSaveItem.Name = "tableBindingNavigatorSaveItem";
+            this.tableBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.tableBindingNavigatorSaveItem.Text = "Save Data";
+            this.tableBindingNavigatorSaveItem.Click += new System.EventHandler(this.tableBindingNavigatorSaveItem_Click);
+            // 
+            // tableDataGridView
+            // 
+            this.tableDataGridView.AutoGenerateColumns = false;
+            this.tableDataGridView.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tableDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5});
+            this.tableDataGridView.DataSource = this.tableBindingSource;
+            this.tableDataGridView.Location = new System.Drawing.Point(12, 113);
+            this.tableDataGridView.Name = "tableDataGridView";
+            this.tableDataGridView.Size = new System.Drawing.Size(740, 589);
+            this.tableDataGridView.TabIndex = 44;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Team";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Team";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Wins";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Wins";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Losses";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Losses";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Ties";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Ties";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
             // UpdateTeam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.ClientSize = new System.Drawing.Size(996, 730);
-            this.Controls.Add(this.bindingNavigator1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.tableDataGridView);
+            this.Controls.Add(this.tableBindingNavigator);
             this.Controls.Add(this.tieLabel);
             this.Controls.Add(this.lossLabel);
             this.Controls.Add(this.winLabel);
@@ -353,16 +381,14 @@
             this.Controls.SetChildIndex(this.winLabel, 0);
             this.Controls.SetChildIndex(this.lossLabel, 0);
             this.Controls.SetChildIndex(this.tieLabel, 0);
-            this.Controls.SetChildIndex(this.dataGridView1, 0);
-            this.Controls.SetChildIndex(this.bindingNavigator1, 0);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.leagueDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource4)).EndInit();
+            this.Controls.SetChildIndex(this.tableBindingNavigator, 0);
+            this.Controls.SetChildIndex(this.tableDataGridView, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.leagueDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
-            this.bindingNavigator1.ResumeLayout(false);
-            this.bindingNavigator1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableBindingNavigator)).EndInit();
+            this.tableBindingNavigator.ResumeLayout(false);
+            this.tableBindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tableDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -379,17 +405,11 @@
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.TextBox nameBox;
         private System.Windows.Forms.Button enterButton;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource tableBindingSource4;
-        private Database.LeagueDataSet1 leagueDataSet1;
+        private Database.LeagueDataSet leagueDataSet;
         private System.Windows.Forms.BindingSource tableBindingSource;
-        private Database.LeagueDataSet1TableAdapters.TableTableAdapter tableTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn teamDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn winsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lossesDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tiesDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource tableBindingSource1;
-        private System.Windows.Forms.BindingNavigator bindingNavigator1;
+        private Database.LeagueDataSetTableAdapters.TableTableAdapter tableTableAdapter;
+        private Database.LeagueDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.BindingNavigator tableBindingNavigator;
         private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
@@ -401,5 +421,12 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private System.Windows.Forms.ToolStripButton tableBindingNavigatorSaveItem;
+        private System.Windows.Forms.DataGridView tableDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
     }
 }
