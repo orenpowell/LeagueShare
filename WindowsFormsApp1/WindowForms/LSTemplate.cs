@@ -36,7 +36,7 @@ namespace WindowsFormsApp1
 
         private void Home_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void txtULeague_Click(object sender, EventArgs e)
@@ -118,7 +118,8 @@ namespace WindowsFormsApp1
 
         private void leagueButton_Click(object sender, EventArgs e)
         {
-            txtULeague.Visible = true;
+            if(button1.Text == "logout") {txtULeague.Visible = true;}
+            else{txtULeague.Visible = false;}
             txtVLeague.Visible = true;
             txtUGame.Visible = false;
             txtVGame.Visible = false;
@@ -130,7 +131,8 @@ namespace WindowsFormsApp1
 
         private void playerButton_Click(object sender, EventArgs e)
         {
-            txtUPlayer.Visible = true;
+            if(button1.Text == "logout") {txtUPlayer.Visible = true;}
+            else{txtUPlayer.Visible = false;}
             txtVPlayer.Visible = true;
             txtULeague.Visible = false;
             txtVLeague.Visible = false;
@@ -142,7 +144,8 @@ namespace WindowsFormsApp1
         }
         private void teamButton_Click(object sender, EventArgs e)
         {
-            txtUTeam.Visible = true;
+            if(button1.Text == "logout") {txtUTeam.Visible = true;}
+            else {txtUTeam.Visible = false;}
             txtVTeam.Visible = true;
             txtULeague.Visible = false;
             txtVLeague.Visible = false;
@@ -153,7 +156,8 @@ namespace WindowsFormsApp1
         }
         private void gameButton_Click(object sender, EventArgs e)
         {
-            txtUGame.Visible = true;
+            if(button1.Text == "logout"){txtUGame.Visible = true;}
+            else{txtUGame.Visible = false;}
             txtVGame.Visible = true;
             txtULeague.Visible = false;
             txtVLeague.Visible = false;

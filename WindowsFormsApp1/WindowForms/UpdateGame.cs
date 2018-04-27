@@ -32,7 +32,13 @@ namespace WindowsFormsApp1.WindowForms
             this.Validate();
             this.tableBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.leagueDataSet1);
+        }
 
+        private void bttnUpdate_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.tableBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.leagueDataSet1);
         }
     }
 }
