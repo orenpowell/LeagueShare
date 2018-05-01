@@ -74,9 +74,10 @@
             this.tieLabel.AutoSize = true;
             this.tieLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tieLabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.tieLabel.Location = new System.Drawing.Point(11, 222);
+            this.tieLabel.Location = new System.Drawing.Point(16, 322);
+            this.tieLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tieLabel.Name = "tieLabel";
-            this.tieLabel.Size = new System.Drawing.Size(91, 20);
+            this.tieLabel.Size = new System.Drawing.Size(134, 29);
             this.tieLabel.TabIndex = 43;
             this.tieLabel.Text = "Tie Count:";
             this.tieLabel.Visible = false;
@@ -87,9 +88,10 @@
             this.lossLabel.AutoSize = true;
             this.lossLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lossLabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.lossLabel.Location = new System.Drawing.Point(11, 190);
+            this.lossLabel.Location = new System.Drawing.Point(16, 276);
+            this.lossLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lossLabel.Name = "lossLabel";
-            this.lossLabel.Size = new System.Drawing.Size(105, 20);
+            this.lossLabel.Size = new System.Drawing.Size(150, 29);
             this.lossLabel.TabIndex = 42;
             this.lossLabel.Text = "Loss Count:";
             this.lossLabel.Visible = false;
@@ -99,9 +101,10 @@
             this.winLabel.AutoSize = true;
             this.winLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.winLabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.winLabel.Location = new System.Drawing.Point(11, 158);
+            this.winLabel.Location = new System.Drawing.Point(16, 229);
+            this.winLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.winLabel.Name = "winLabel";
-            this.winLabel.Size = new System.Drawing.Size(97, 20);
+            this.winLabel.Size = new System.Drawing.Size(139, 29);
             this.winLabel.TabIndex = 41;
             this.winLabel.Text = "Win Count:";
             this.winLabel.Visible = false;
@@ -109,25 +112,28 @@
             // 
             // tieBox
             // 
-            this.tieBox.Location = new System.Drawing.Point(129, 219);
+            this.tieBox.Location = new System.Drawing.Point(194, 318);
+            this.tieBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tieBox.Name = "tieBox";
-            this.tieBox.Size = new System.Drawing.Size(148, 26);
+            this.tieBox.Size = new System.Drawing.Size(220, 35);
             this.tieBox.TabIndex = 40;
             this.tieBox.Visible = false;
             // 
             // lossBox
             // 
-            this.lossBox.Location = new System.Drawing.Point(128, 187);
+            this.lossBox.Location = new System.Drawing.Point(192, 271);
+            this.lossBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lossBox.Name = "lossBox";
-            this.lossBox.Size = new System.Drawing.Size(148, 26);
+            this.lossBox.Size = new System.Drawing.Size(220, 35);
             this.lossBox.TabIndex = 39;
             this.lossBox.Visible = false;
             // 
             // winBox
             // 
-            this.winBox.Location = new System.Drawing.Point(128, 155);
+            this.winBox.Location = new System.Drawing.Point(192, 225);
+            this.winBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.winBox.Name = "winBox";
-            this.winBox.Size = new System.Drawing.Size(148, 26);
+            this.winBox.Size = new System.Drawing.Size(220, 35);
             this.winBox.TabIndex = 38;
             this.winBox.Visible = false;
             // 
@@ -136,9 +142,10 @@
             this.nameLabel.AutoSize = true;
             this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameLabel.ForeColor = System.Drawing.SystemColors.Window;
-            this.nameLabel.Location = new System.Drawing.Point(12, 126);
+            this.nameLabel.Location = new System.Drawing.Point(18, 183);
+            this.nameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(109, 20);
+            this.nameLabel.Size = new System.Drawing.Size(163, 29);
             this.nameLabel.TabIndex = 37;
             this.nameLabel.Text = "Team Name:";
             this.nameLabel.Visible = false;
@@ -146,17 +153,19 @@
             // 
             // nameBox
             // 
-            this.nameBox.Location = new System.Drawing.Point(128, 123);
+            this.nameBox.Location = new System.Drawing.Point(192, 178);
+            this.nameBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nameBox.Name = "nameBox";
-            this.nameBox.Size = new System.Drawing.Size(148, 26);
+            this.nameBox.Size = new System.Drawing.Size(220, 35);
             this.nameBox.TabIndex = 36;
             this.nameBox.Visible = false;
             // 
             // enterButton
             // 
-            this.enterButton.Location = new System.Drawing.Point(287, 219);
+            this.enterButton.Location = new System.Drawing.Point(430, 318);
+            this.enterButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.enterButton.Name = "enterButton";
-            this.enterButton.Size = new System.Drawing.Size(83, 26);
+            this.enterButton.Size = new System.Drawing.Size(124, 38);
             this.enterButton.TabIndex = 35;
             this.enterButton.Text = "Enter";
             this.enterButton.UseVisualStyleBackColor = true;
@@ -190,6 +199,7 @@
             this.tableBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.tableBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
             this.tableBindingNavigator.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tableBindingNavigator.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.tableBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
@@ -203,14 +213,15 @@
             this.bindingNavigatorAddNewItem,
             this.bindingNavigatorDeleteItem,
             this.tableBindingNavigatorSaveItem});
-            this.tableBindingNavigator.Location = new System.Drawing.Point(0, 533);
+            this.tableBindingNavigator.Location = new System.Drawing.Point(0, 753);
             this.tableBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
             this.tableBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
             this.tableBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.tableBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.tableBindingNavigator.Name = "tableBindingNavigator";
+            this.tableBindingNavigator.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.tableBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.tableBindingNavigator.Size = new System.Drawing.Size(766, 25);
+            this.tableBindingNavigator.Size = new System.Drawing.Size(1140, 31);
             this.tableBindingNavigator.TabIndex = 44;
             this.tableBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -220,13 +231,13 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(54, 28);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -236,7 +247,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -245,7 +256,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -254,27 +265,27 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(73, 31);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -282,7 +293,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -291,20 +302,20 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // tableBindingNavigatorSaveItem
             // 
             this.tableBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tableBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("tableBindingNavigatorSaveItem.Image")));
             this.tableBindingNavigatorSaveItem.Name = "tableBindingNavigatorSaveItem";
-            this.tableBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
+            this.tableBindingNavigatorSaveItem.Size = new System.Drawing.Size(28, 28);
             this.tableBindingNavigatorSaveItem.Text = "Save Data";
             this.tableBindingNavigatorSaveItem.Click += new System.EventHandler(this.tableBindingNavigatorSaveItem_Click);
             // 
@@ -320,10 +331,12 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.tableDataGridView.DataSource = this.tableBindingSource;
-            this.tableDataGridView.Location = new System.Drawing.Point(12, 113);
+            this.tableDataGridView.Location = new System.Drawing.Point(18, 164);
+            this.tableDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableDataGridView.Name = "tableDataGridView";
-            this.tableDataGridView.Size = new System.Drawing.Size(740, 417);
+            this.tableDataGridView.Size = new System.Drawing.Size(1110, 605);
             this.tableDataGridView.TabIndex = 44;
+            this.tableDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableDataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -357,8 +370,8 @@
             // 
             // UpdateTeam
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
-            this.ClientSize = new System.Drawing.Size(766, 558);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
+            this.ClientSize = new System.Drawing.Size(1140, 784);
             this.Controls.Add(this.tableDataGridView);
             this.Controls.Add(this.tableBindingNavigator);
             this.Controls.Add(this.tieLabel);
@@ -370,7 +383,8 @@
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.nameBox);
             this.Controls.Add(this.enterButton);
-            this.MinimumSize = new System.Drawing.Size(782, 597);
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.MinimumSize = new System.Drawing.Size(1162, 840);
             this.Name = "UpdateTeam";
             this.Load += new System.EventHandler(this.UpdateTeam_Load);
             this.Controls.SetChildIndex(this.enterButton, 0);

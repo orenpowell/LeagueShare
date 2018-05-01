@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Functionality
 {
-    class UserType
+    public class UserType
     {
         // Verifying the type of User to show specific items on the form. 
         // Eventually, this will change with the different level of users, 

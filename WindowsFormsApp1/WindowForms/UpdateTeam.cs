@@ -71,5 +71,10 @@ namespace WindowsFormsApp1.WindowForms
             this.tableAdapterManager.UpdateAll(this.leagueDataSet);
 
         }
+
+        private void tableDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
