@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApp1.Functionality
 {
-    class ValidateLogin
+    public class ValidateLogin
     {
         String[] username = new String[] { "Billy", "Chris", "Josh", "Oren", "Eddy" };
         String[] password = new String[] { "B!11y", "Chr!$", "J0sh!", "0r3n", "3ddy!" };
