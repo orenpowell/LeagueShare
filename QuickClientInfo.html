@@ -1,0 +1,2399 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.hide {
+	visibility: hidden;
+
+}
+
+</style>
+</head>
+<body>
+<div style="height: 50px;">
+</div>
+<h2>Quick Company Info</h2>
+<div style="padding-bottom:50px;">
+Company:
+<select id="companyChoice" onchange="Changed()">
+<!-- On value 56 -->
+  <option value="0">Please Select</option>
+  <option value="10">All Clear Plumbing </option>
+  <option value="2">Alliance Awards</option>
+  <option value="40">Allogram Inc. Odenton</option>
+  <option value="41">Allogram Inc. Timonium</option>
+  <option value="56">Aswell Trophy</option>
+  <option value="39">Avalon Landing RV Park</option>
+  <option value="1">Award Crafters</option>
+  <option value="11">Award Masters Inc.</option>
+  <option value="12">Awards & Engraving</option>
+  <option value="46">Awards By Walsh</option>
+  <option value="13">Awards Center</option>
+  <option value="3">Bardach Awards</option>
+  <option value="4">Butlers Auto Recycling</option>
+  <option value="5">Breathing Systems Inc.</option>
+  <option value="14">Collection Services Inc</option>
+  <option value="38">Dan Vega LLC</option>
+  <option value="15">Disaster Response 911</option>
+  <option value="16">Doodlebuggers Service Network</option>
+  <option value="17">Elite Mechanical Systems</option>
+  <option value="18">Floor Care 911</option>
+  <option value="19">G&W Gifts and Awards</option>
+  <option value="52">Gulf Coast Merchant Services</option>
+  <option value="20">KellyCo</option>
+  <option value="48">Lewis & Jurnovoy, PA - Crestview</option>
+  <option value="49">Lewis & Jurnovoy, PA - FWB</option>
+  <option value="50">Lewis & Jurnovoy, PA - PCB</option>
+  <option value="51">Lewis & Jurnovoy, PA - Pensacola</option>
+  <option value="7">Gross & Schuster - Crestview</option>
+  <option value="21">Gross & Schuster - Destin</option>
+  <option value="22">Gross & Schuster - FWB</option>
+  <option value="8">Gross & Schuster - Milton</option>
+  <option value="23">Gross & Schuster - Pensacola</option>
+  <option value="24">Joan's Trophy and Plaque Company</option>
+  <option value="43">Lil' John Big and Tall Men's Fashion LLC.</option>
+  <option value="47">Martelli Enterprise</option>
+  <option value="55">Mike Breen</option>
+  <option value="42">Monarch Trophy & Awards</option>
+  <option value="25">Mr. Rooter of Dublin</option>
+  <option value="26">Mr. Rooter of Knoxville</option>
+  <option value="27">Mr. Rooter of Macon</option>
+  <option value="28">Miami Rooter</option>
+  <option value="29">Mr. Rooter of Mobile</option>
+  <option value="30">Mr. Rooter of Panama City</option>
+  <option value="31">Mr. Rooter of Savannah</option>
+  <option value="32">Mr. Rooter of Southeast Georgia</option>
+  <option value="33">Mr. Rooter of Tallahassee</option>
+  <option value="34">Northwest Trophy and Awards</option>
+  <option value="44">Pack & Ship - Creighton</option>
+  <option value="45">Pack & Ship - Warrington</option>
+  <option value="35">Prosperous I.M.</option>
+  <option value="9">Specialty Engraving</option>
+  <option value="53">Titan Sunrooms Pensacola</option>
+  <option value="54">Titan Sunrooms FWB</option>
+  <option value="36">The Billy Goat</option>
+  <option value="37">Viking Trophies</option>
+  
+
+</select>
+</div>
+
+<div style="width: 100%; padding-left:50px;" id="info">
+<h2 id="title"></h2>
+<br><br>
+	<div style="width: 24%; float:left;">
+		<strong>Name: </strong><br><span id="name"></span>
+		<br><br>
+		<strong>Website:</strong><br> <span id="web"></span>
+		<br><br>
+		<strong>Phone: </strong><br><span id="phone"></span>
+		<br><br>
+		<strong>Address/Citation</strong>
+		<br>
+		<span id="Name"></span>
+		<br>
+		<span id="address"></span>
+		<br>
+		<span id="city/state/zip"></span>
+		<br>
+		<span id="num"></span>
+		<br>
+		</div>
+	<div style="width: 23%; float:left;">
+		<strong>Google Email</strong><br>
+		<span id="email"></span>
+		<br>
+		<span id="googPass"></span>
+		<br><br>
+		<strong>Flickr</strong><br>
+		<span id="flickrEmail"></span>
+		<br>
+		<span id="flickrpass"></span>
+		<br><br>
+		<strong>Photobucket</strong><br>
+		<span id="photoEmail"></span>
+		<br>
+		<span id="photopass"></span>
+		<br><br>
+		<strong>500PX</strong><br>
+		<span id="500pxEmail"></span>
+		<br>
+		<span id="500pxPass"></span>
+		<br>
+	</div>
+	<div style="width: 23%; float:left;">
+		<strong>Youtube</strong><br>
+		<span id="youEmail"></span>
+		<br>
+		<span id="youPass"></span>
+		<br><br>
+		<strong>Vimeo</strong><br>
+		<span id="vimEmail"></span>
+		<br>
+		<span id="vimPass"></span>
+		<br><br>
+		<strong>Dailymotion</strong><br>
+		<span id="dailyEmail"></span>
+		<br>
+		<span id="dailyPass"></span>
+		<br><br>
+		<strong class="hide">Google+</strong><br>
+		<span id="plusEmail" class="hide"></span>
+		<br>
+		<span id="plusPass" class="hide"></span>
+		<br>
+	</div>
+	<div style="width: 29%; float:left;">
+		<strong>Keywords: </strong>
+		<br><span id="keywords"></span>
+		<br>
+		<br>
+	</div>
+</div>
+
+<div style="width: 100%; float:left; padding-left:50px; padding-top:30px;" id="info2">
+	<div style="width: 45%; float:left;">
+		<strong>Description: </strong> 
+		<select id="descripChoice" onchange="Description()">
+		<option value="des1">Normal Description</option>
+		<option value="des2">Description With Citation</option>
+		<option value="des3">Description With Citation and Link</option>
+		</select>
+		<br><br>
+		<span id="descrip"></span>
+		<br>
+	</div>
+	<div style="width: 45%; float:left; padding-left: 20px;">		
+			<strong>Any Errors Please Contact Developer</strong>
+			<br><br>
+			<textarea id="contactDev" rows="7" cols="50" 
+			placeholder="Enter message and click Submit to inform developer of any incorrect information, or any Client Keywords that need to be updated"
+			maxlength="300"></textarea>
+			<br>
+			<input type="button" value="Submit" onclick="Submit()"/>	
+	</div>
+</div>	
+</body>
+<footer>
+
+<script type="text/javascript">
+
+var choice = document.getElementById("companyChoice");
+var descripOption = document.getElementById("descripChoice");
+
+//Create company Object
+var company = {name:"Test", description:"", website:"", address:"", phone:"", email:"", yahooEmail:"", city:"",
+ state:"", zip:"", keywords: "", pxEmail: "", pxPass: "", googPass: "", vimPass:"", dailyPass:"",
+ flickrPass:"", photoEmail:"", photoPass:"", dailyEmail: "", vimEmail: ""};
+ 
+ //Make info divs invisible until there is info in them
+ var mainDiv = document.getElementById("info");
+ mainDiv.style.visibility = "hidden";
+ var secondDiv = document.getElementById("info2");
+ secondDiv.style.visibility = "hidden";
+ 
+ //Set description based on what option is chossen
+ function Description()
+{
+
+	if (descripOption.options[descripOption.selectedIndex].value == "des1")
+	{
+		document.getElementById("descrip").innerHTML = company.description;
+	}
+	else if (descripOption.options[descripOption.selectedIndex].value == "des2")
+	{
+		document.getElementById("descrip").innerHTML = company.name + "<br>" + company.address + "<br>" + company.city + ", " + company. state + " " + company.zip + "<br>" + company.phone + "<br><br>" +company.description;
+	}
+	else if(descripOption.options[descripOption.selectedIndex].value == "des3")
+	{
+		document.getElementById("descrip").innerHTML = company.name + "<br>" + company.address + "<br>" + company.city + ", " + company. state + " " + company.zip + "<br>" + company.phone + "<br>" + company.website + "<br><br>" +company.description;
+	}
+}
+
+ //function that is called when the select item is changed
+function Changed()
+{
+	
+	//Check which company is selected and input their info into the company object
+	if (choice.options[choice.selectedIndex].value == "1")
+	{
+		//Place info in company object
+		company.name = "Award Crafters, Inc.";
+		company.website = "http://www.awardcrafters.com/";
+		company.address = "8854 Rixlew Lane";
+		company.city = "Manassas";
+		company.state = "VA";
+		company.zip = "20109";
+		company.phone = "(703) 818-0500";
+		
+		company.email = "awards.chantilly.va@gmail.com";
+		company.googPass = "1stplace12";
+		
+		company.yahooEmail = "awardcrafters@yahoo.com";
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "";
+		company.pxEmail = "Banned";
+		
+		company.photoEmail = "awards.chantilly.va@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "awards.chantilly.va@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="Sign in With Google+";
+		company.dailyPass = "";
+		
+		company.description = "Since 1964 Award Crafters has been designing, manufacturing and distributing Awards and Recognition Items to Local, State and Federal Government Agencies.Award Crafters is a small women owned business. We are members of ASI (the Advertising Specialties Institute), ARA (the Awards and Recognition Association), and AAA (the Awards Associates of America).Award Crafters partners with the best suppliers in the industry. With more than 400 current supplier partnerships, (some dating back to the 1960s) you can be confident that if we don't make it in house, we can get it.";
+		company.keywords = "Awards Chantilly<br>Trophy Shop Chantilly<br>Washington DC Awards<br>Awards Alexandria VA<br>Trophies Arlington VA<br>Medallions Washington DC<br>Custom Awards Arlington VA<br>Corporate Awards Chantilly<br>Alexandria VA Corporate Awards<br>";
+		/* Idea for future editing
+		company.keyword1= "";
+		company.keyword2= "";
+		company.keyword3= "";
+		company.keyword4= "";
+		company.keyword5= "";
+		company.keyword6= "";
+		company.keyword7= "";
+		company.keyword8= "";
+		company.keyword9= "";
+		company.keyword10= "";
+		*/
+
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "2")
+	{
+		company.name = "Alliance Awards";
+		company.website = "http://www.allianceawards.com";
+		company.address = "147 Aviator Dr.";
+		company.city = "Fort Worth";
+		company.state = "TX";
+		company.zip = "76179";
+		company.phone = "(817) 439-5514";
+		
+		company.email = "Awards.FortWorth.TX@gmail.com";
+		company.googPass = "1stplace";
+		
+		company.yahooEmail = "Awards.FortWorth.TX@gmail.com";
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "";
+		company.pxEmail = "Banned";
+		
+		company.photoEmail = "Awards.FortWorth.TX@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "Awards.FortWorth.TX@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="Awards.FortWorth.TX@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Over 45 years experience manufacturing custom awards, recognition and promotional products for the Fort Worth, Texas community. We sell a wide range of recognition products such as: plaques, crystal trophies, custom medallions, jade awards, and more!";
+		company.keywords =  "Awards and Recognition Fort Worth<br>Awards and Recognition Irving<br>Alliance Awards and Recognition<br>Awards and Recognition Grapevine<br>Awards and Recognition Denton<br>Promotional Products Fort Worth<br>Corporate Awards Fort Worth<br>Trophies Fort Worth<br>Plaques Fort Worth<br>Custom Medals Fort Worth<br>Acrylic Awards Fort Worth<br>Crystal Awards Fort Worth<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	//Repeat of above section, but with different client (Refer to begining if)
+	else if (choice.options[choice.selectedIndex].value == "3")
+	{
+		company.name = "Bardach Awards";
+		company.website = "http://www.bardachawards.com/";
+		company.address = "4222 86th Street";
+		company.city = "West Indianapolis";
+		company.state = "Indiana";
+		company.zip = "46268";
+		company.phone = "(317) 888-4434";
+		company.email = "indianapolis.in.awards@gmail.com";
+		company.yahooEmail = "indianapolis.in.awards@gmail.com";
+		
+			
+		company.googPass = "1stPlace12";
+				
+		company.flickrPass = "1stplace1";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "indianapolis.in.awards@gmail.com";
+		
+		company.photoEmail = "indianapolis.in.awards@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "indianapolis.in.awards@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="indianapolis.in.awards@gmail.com";
+		company.dailyPass = "1stplace1";
+		
+		company.description = "Bardach Awards has been in business for over 40 years and has built a strong reputation for excellence. One of the Midwests largest award and promotional-product companies, Bardach Awards is known for its high-quality creations as well as its unparalleled ability to transform customers ideas into reality. Call or visit us today and ask for out online discount at:Bardach Awards, 4222 86th Street, West Indianapolis, IN 46268 - (317) 888-4434";
+		company.keywords = "Promotional Products Indianapolis<br>Marketing Gifts Indianapolis<br>Executive Gifts Indianapolis<br>Trophies Indianapolis<br>Acrylic Awards Indianapolis<br>Trophy House Indianapolis<br>3D Trophy Indianapolis<br>Plaque Indianapolis<br>Plaques Indianapolis<br>Trophy Indianapolis<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	//Repeat of above section, but with different client (Refer to begining if)
+	else if (choice.options[choice.selectedIndex].value == "4")
+	{
+		company.name = "Butler's Auto Recycling";
+		company.website = "http://www.miltonautoparts.com";
+		company.address = "5505 Industrial Blvd.";
+		company.city = "Milton";
+		company.state = "FL";
+		company.zip = "32584";
+		company.phone = "(850) 564-6566";
+		company.email = "milton.auto.parts@gmail.com";
+		company.yahooEmail = "miltonauto.parts@yahoo.com";
+		
+			
+		company.googPass = "1stplace1";
+				
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "";
+		company.pxEmail = "Banned";
+		
+		company.photoEmail = "milton.auto.parts@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "Banned";
+		company.vimPass = "";
+		
+		company.dailyEmail="milton.auto.parts@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Butler's Auto Recycling is proud to offer quality used auto parts to customers in the Pensacola, Florida - Mobile, Alabama area. If you have a junk car to sell or are looking to pick up some auto parts, feel free to visit us and enjoy our great customer service.";
+		company.keywords = "Auto Recycling Milton<br>Junk Yard Milton<br>Auto Parts Store Milton<br>Auto Parts Milton<br>Milton Salvage Yards<br>Junkyard Milton<br>Milton Auto Parts<br>Milton Junkyard<br>Salvage Yard Milton<br>Auto Machine Shop Milton<br>";	
+		
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	//Repeat of above section, but with different client (Refer to begining if)
+	else if (choice.options[choice.selectedIndex].value == "5")
+	{
+		company.name = "Breathing Systems Inc.";
+		company.website = "https://breathingsystems.us/";
+		company.address = "8800 Grow Drive";
+		company.city = "Pensacola";
+		company.state = "FL";
+		company.zip = "32514";
+		company.phone = "(850) 477-2324";
+		company.email = "breathingsystemspcola@gmail.com";
+		company.yahooEmail = "breathingsystemspcola@gmail.com";
+		
+			
+		company.googPass = "1stplace";
+				
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "breathingsystemspcola@gmail.com";
+		
+		company.photoEmail = "breathingsystemspcola@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "breathingsystemspcola@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="breathingsystemspcola@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Breathing Systems Inc. life support systems are NIOSH/CE approved and used throughout the international petroleum refining, petrochemical, and liquid natural gas industries to protect the lives of workers inside confined spaces and during inert entry into nitrogen purged vessels. The heart of the system is our anti-panic, clamshell design helmet which allows difficult maintenance operations to be carried out safely with significant reduction in plant downtime. Breathing Systems Inc. equipment is used for a variety of activities including catalyst unloading and loading operations, inspection, tank cleaning and mechanical work in hazardous environments.";
+		company.keywords = "pensacola breathing systems<br>Pensacola life support maintenance<br>pensacola breathing systems maintenance<br>pensacola life support systems<br>pensacola life support technologies<br>pensacola life support systems<br>pensacola helmet regulator<br>pensacola breathing systems helmets<br>pensacola air control consoles<br>pensacola life support system harnessess<br>";
+
+		
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	//Repeat of above section, but with different client (Refer to begining if)
+	else if (choice.options[choice.selectedIndex].value == "7")
+	{
+		company.name = "Gross & Schuster, P.A.";
+		company.website = "http://grossandschuster.com/crestview-personal-injury-lawyers/";
+		company.address = "1501 S Ferdon Blvd.";
+		company.city = "Crestview";
+		company.state = "FL";
+		company.zip = "32536";
+		company.phone = "(850) 682-3000";
+		company.email = "grossandschuster.crestview@gmail.com";
+		company.yahooEmail = "grossandschuster.crestview@yahoo.com";
+		
+			
+		company.googPass = "1stplace";
+				
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "";
+		company.pxEmail = "Banned";
+		
+		company.photoEmail = "grossandschuster.crestview@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "Banned";
+		company.vimPass = "";
+		
+		company.dailyEmail="grossandschuster.crestview@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Throughout Crestview, Holt, Baker, DeFuniak Springs, and Ponce de Leon, the law firm of Gross & Schuster, P.A., works with clients and referring attorneys to deliver comprehensive legal representation on a personalized basis. If you have been injured in a car accident or face criminal charges, our Crestview lawyers can provide you with the guidance and representation you need in order to protect your rights and seek justice.";
+		company.keywords = "Crestview Lawyers<br>Crestview Personal Injury Lawyer <br>Personal Injury Attorney Crestview<br>Accident Attorney Crestview<br>Accident Lawyer Crestview <br>Crestview Personal Injury Compensation<br>Car Wreck Attorney Crestview<br>Crestview Car Accident Lawyer<br>Crestview Car Crash Attorney<br>Crestview Traffic Accident Lawyer<br>";
+		
+		document.getElementById("plusEmail").innerHTML = "grossandschuster@gmail.com";
+		document.getElementById("plusPass").innerHTML = "grosslaw1";
+		
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	//Repeat of above section, but with different client (Refer to begining if)
+	else if (choice.options[choice.selectedIndex].value == "8")
+	{
+		company.name = "Gross & Schuster, P.A.";
+		company.website = "http://grossandschuster.com/milton-personal-injury-lawyers/";
+		company.address = "6480 US-90 Suite E.";
+		company.city = "Milton";
+		company.state = "FL";
+		company.zip = "32570";
+		company.phone = "(850) 434-3333";
+		company.email = "grossandschuster.milton@gmail.com";
+		company.yahooEmail = "grossandschuster.milton@yahoo.com";
+		
+			
+		company.googPass = "1stplace";
+				
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "";
+		company.pxEmail = "Banned";
+		
+		company.photoEmail = "grossandschuster.milton@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "Banned";
+		company.vimPass = "";
+		
+		company.dailyEmail="grossandschuster.milton@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		document.getElementById("plusEmail").innerHTML = "grossandschuster@gmail.com";
+		document.getElementById("plusPass").innerHTML = "grosslaw1";
+		
+		company.description = "Throughout Milton Pace, Jay, and Pea Ridge, the law firm of Gross & Schuster, P.A., works with clients and referring attorneys to deliver comprehensive legal representation on a personalized basis. If you have been injured in a car accident or face criminal charges, our Milton lawyers can provide you with the guidance and representation you need in order to protect your rights and seek justice.";
+		company.keywords = "Milton Attorney<br>Attorney Milton<br>Milton Lawyers<br>Lawyers Milton<br>Milton Personal Injury Attorney<br>Milton Auto Accident Lawyer<br>Milton Accident Lawyer<br>Milton Law Firm<br>Milton Personal Injury Claim<br>Dog Bites Milton<br>";
+
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	//Repeat of above section, but with different client (Refer to begining if)
+	else if (choice.options[choice.selectedIndex].value == "9")
+	{
+		company.name = "Specialty Engraving & Trophies, Inc.";
+		company.website = "http://www.specialtyengraving.com";
+		company.address = "3655 Lawrenceville Suwanee Rd.";
+		company.city = "Suwanee";
+		company.state = "Georgia";
+		company.zip = "30024";
+		company.phone = "(770) 448-3386";
+		company.email = "specialty.engraving.suwanee.ga@gmail.com";
+		company.yahooEmail = "specialty.engraving@yahoo.com";
+		
+			
+		company.googPass = "1stPlace1";
+				
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "specialty.engraving.suwanee.ga@gmail.com";
+		
+		company.photoEmail = "specialty.engraving.suwanee.ga@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "specialty.engraving.suwanee.ga@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="specialtyengravingco@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Specialty Engraving & Trophies, Inc. is a full service awards dealer, providing Custom Awards, Monthly Recognition Programs, Name Badges, Plaques, Trophies, Customized Apparel and Advertising Specialty Products.  We have been serving metro Atlanta, as well as customers all over the United States, since 1958.";
+		company.keywords = "Award Atlanta<br>Medallion Atlanta<br>Acrylic Award Atlanta<br>Promotional Products Atlanta<br>Medals Atlanta<br>Promotional Products Atlanta<br>Plaques Atlanta<br>Atlanta Medals<br>Crystal Awards Atlanta<br>Acrylic Awards Atlanta<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "10")
+	{
+		company.name = "All Clear Plumbing";
+		company.website = "https://mobilealplumbers.com/";
+		company.address = "2107 wolfridge rd. Whistler AL 36612";
+		company.city = "Whistler";
+		company.state = "Alabama";
+		company.zip = "36612";
+		company.phone = "(251) 725-0808";
+		company.email = "allclearplumbingmobileal@gmail.com";
+		company.yahooEmail = "allclearplumbingmobileal@gmail.com";
+		
+			
+		company.googPass = "1stPlace1";
+				
+		company.flickrPass = "1stPlace1";
+		
+		company.pxPass = "";
+		company.pxEmail = "Banned";
+		
+		company.photoEmail = "";
+		company.photoPass = ""
+		
+		company.vimEmail = "allclearplumbingmobileal@gmail.com";
+		company.vimPass = "1stPlace1";
+		
+		company.dailyEmail="allclearplumbingmobileal@gmail.com";
+		company.dailyPass = "1stPlace1";
+		
+		company.description = "All Clear Plumbing is capable of doing most any type of task, drain cleaning, septic tank pumping, plumbing fixture repair and replacement, water heaters, sump pumps, and most anything else that water runs through.";
+		company.keywords = "Mobile AL Plumber<br>Mobile AL Plumbers<br>Mobile AL Plumbing<br>Clogged Drain Mobile Al<br>Septic Service in Mobile Al<br>Plumbing Service Mobile AL<br><br>Septic Service Mobile AL<br>Drain Cleaning Mobile AL<br>Plumbers Near Me Mobile AL<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "11")
+	{
+		company.name = "Award Masters Inc.";
+		company.website = "http://www.awardmastersinc.com";
+		company.address = "5353 North Palafox Street";
+		company.city = "Pensacola";
+		company.state = "Florida";
+		company.zip = "32505";
+		company.phone = "(850) 438-2124";
+		company.email = "soccer.trophies@gmail.com";
+		company.yahooEmail = "soccer.trophies@gmail.com";
+		
+			
+		company.googPass = "1stPlace1";
+				
+		company.flickrPass = "1stplace1";
+		
+		company.pxPass = "";
+		company.pxEmail = "Banned";
+		
+		company.photoEmail = "soccer.trophies@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "soccer.trophies@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="soccer.trophies@gmail.com";
+		company.dailyPass = "1stPlace";
+		
+		company.description = "Pensacola's Largest Award shop. Selling top quality Trophies, Plaques, Crystal Awards, Acrylic Awards, Promotional Products, Engravable gifts, plus we can engrave anything.";
+		company.keywords = "Awards Pensacola<br>Award Pensacola<br>Trophy Pensacola<br>Medals Pensacola<br>Trophies Pensacola<br>Engraving Pensacola<br>Plaques Pensacola<br>Medallions Pensacola<br>Promotional Products Pensacola<br>Corporate Awards Pensacola<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "12")
+	{
+		company.name = "Awards & Engraving";
+		company.website = "http://www.awards-engraving.com/";
+		company.address = "1214 Massey Tompkins Rd";
+		company.city = "Baytown";
+		company.state = "Texas";
+		company.zip = "77521";
+		company.phone = "(281) 420-1299";
+		company.email = "Awards.Baytown@gmail.com";
+		company.yahooEmail = "awards.engraving@yahoo.com";
+		
+			
+		company.googPass = "1stPlace12";
+				
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "";
+		company.pxEmail = "Banned";
+		
+		company.photoEmail = "Awards.Baytown@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "Awards.Baytown@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="Sign in With Google+";
+		company.dailyPass = "";
+		
+		company.description = "For over 25 years we have proudly supplied quality awards and promotional products all over the country. Call our trained staff and let them provide you with outstanding service today!";
+		company.keywords = "Trophies Baytown, TX<br>Promotional Products Houston, TX<br>Trophy Houston,TX<br>Personalized Gifts Baytown, TX<br>Awards Houston, TX<br>Awards Baytown, TX<br>Engraving Baytown, TX<br>Plaques Baytown, TX<br>Corporate Awards Houston, TX<br>Corporate Awards Baytown, TX<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "13")
+	{
+		company.name = "Awards Center";
+		company.website = "http://www.awardscenter.net/";
+		company.address = "4415 Saint Rita Drive";
+		company.city = "Louisville";
+		company.state = "KY";
+		company.zip = "40219";
+		company.phone = "(502) 966-2040";
+		company.email = "awards.louisville.ky@gmail.com";
+		company.yahooEmail = "awards.louisville@yahoo.com";
+		
+			
+		company.googPass = "AwardsRockMySocks4415966";
+				
+		company.flickrPass = "1stplace1";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "awards.louisville.ky@gmail.com";
+		
+		company.photoEmail = "1stplace";
+		company.photoPass = "awards.louisville.ky@gmail.com"
+		
+		company.vimEmail = "Banned";
+		company.vimPass = "";
+		
+		company.dailyEmail="awards.louisville.ky@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Awards Center has the perfect award, trophy, plaque, or engraving for every occasion. Whether you're recognizing an individual, you can't find trophies or awards better than Louisville, KY finest! For more information, visit Awards Center at 4415 Saint Rita Drive, Louisville, KY 40219 or call (502) 966-2040.";
+		company.keywords = "Name Badges Louisville KY<br>Trophies Louisville KY<br>Plaques Louisville KY<br>Engraving Louisville<br>Corporate Awards Louisville KY<br>Soccer Trophies Louisville KY<br>Medallions Louisville KY<br>Baseball Trophies Louisville KY<br>Promotional Products Louisville KY<br>Engraver Louisville KY<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "14")
+	{
+		company.name = "Collection Services, Inc";
+		company.website = "http://www.collectionservices.com/";
+		company.address = "180 E Burgess Rd. Suite G";
+		company.city = "Pensacola";
+		company.state = "FL";
+		company.zip = "32503";
+		company.phone = "(850) 434-0883";
+		company.email = "CollectionServicesCSI@gmail.com";
+		company.yahooEmail = "CollectionServicesCSI@yahoo.com";
+		
+			
+		company.googPass = "1stPlace1";
+				
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "";
+		company.pxEmail = "Banned";
+		
+		company.photoEmail = "CollectionServicesCSI@yahoo.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "CollectionServicesCSI@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="CollectionServicesCSI@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Collection Services, Inc. is a national full service collection agency specializing in customized accounts receivable management services for multiple industries including, medical, municipalities, communications, and utilities. We have been in business for over 57 years in Pensacola, FL.";
+		company.keywords = "Collection Agency<br>Debt Collection<br>Collection<br>Debt Pensacola<br>Debt Consolidation Pensacola<br>Pensacola Collection Agency<br>Pensacola Debt Collection<br>Pensacola Medical Collection Agency<br>Pensacola Collection<br>Pensacola Debt<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "15")
+	{
+		company.name = "Disaster Response Team";
+		company.website = "http://www.drt911.com";
+		company.address = "2145 Mound Ave";
+		company.city = "Panama City";
+		company.state = "FL";
+		company.zip = "32405";
+		company.phone = "(850) 763-4378";
+		company.email = "911DisasterResponseTeam@gmail.com";
+		company.yahooEmail = "disater.response911@yahoo.com";
+		
+			
+		company.googPass = "Response2016";
+				
+		company.flickrPass = "Response2016";
+		
+		company.pxPass = "";
+		company.pxEmail = "Banned";
+		
+		company.photoEmail = "911DisasterResponseTeam@gmail.com";
+		company.photoPass = "Response2016"
+		
+		company.vimEmail = "Banned";
+		company.vimPass = "";
+		
+		company.dailyEmail="Sign in With Google+";
+		company.dailyPass = "";
+		
+		company.description = "Disaster Response Team is a full service restoration company that helps residential and commercial customers of Panama City restore their properties after disasters of all kinds.  Simply put, we help put people’s lives back together!  Whether you need damage restoration services, emergency clean-up or complete reconstruction, Disaster Response Team (DRT) understands our customer’s need for fast, reliable service 24 hours a day/7 days a week.";
+		company.keywords = "Damage Restoration<br>Emergency Response<br>Restoration<br>Fire Damage Restoration<br>Disaster Recovery<br>Water Damage Restoration<br>Storm Damage<br>Emergency Response Team<br>Fire Damage <br>Disaster Response<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "16")
+	{
+		company.name = "Doodlebuggers Service Network";
+		company.website = "http://www.HugYourHome.com";
+		company.address = "7555 Highway 98 West, Ste. A";
+		company.city = "Pensacola";
+		company.state = "FL";
+		company.zip = "32506";
+		company.phone = "(850) 477-1151";
+		company.email = "airduct.pensacola@gmail.com";
+		company.yahooEmail = "doodlebuggers@yahoo.com";
+		
+			
+		company.googPass = "1stplace";
+				
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "airduct.pensacola@gmail.com";
+		
+		company.photoEmail = "airduct.pensacola@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "Banned";
+		company.vimPass = "";
+		
+		company.dailyEmail="airduct.pensacola@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Doodlebuggers Service Network is the most trusted name I service since 1998. We are accredited members of the BBB with an A+ rating since 1999. Offering professional inspections, cleaning, duct leak testings/sealing, consulting and repairs for Air Ducts, Chimney's, Dryer Vents and Mold. Doodlebuggers Service Network was established in 1998 and offers service to residential and commercial accounts in Escambia, Santa Rosa, Walton, Okaloosa and Baldwin Counties. Our Company is driven by Customer Service, Education and Quality. Our technicians are certified by several associations including the Institute for Inspection and Cleaning (IICRC), Chimney Saftey Institute of America (CSIA) American Indoor Air Quality Council and the National Air Duct Cleaners Association (NADCA). FL Lic#CAC1817997";
+		company.keywords = "Cleaning Services Pensacola<br>Chimney Cleaning Pensacola<br>Chimney Repair Pensacola<br>Air Duct Pensacola<br>Mold Inspection Pensacola<br>Mold Testing Pensacola<br>Chimney Inspection Pensacola<br>Mold Restoration Pensacola<br>Cleaner Pensacola<br>Air Duct Cleaning Pensacola<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "17")
+	{
+		company.name = "Elite Mechanical Systems, LLC";
+		company.website = "http://www.EliteMechanical.us";
+		company.address = "8804 Grow Drive";
+		company.city = "Pensacola";
+		company.state = "FL";
+		company.zip = "32514";
+		company.phone = "(850) 332-5123";
+		company.email = "hvac.pensacola@gmail.com";
+		company.yahooEmail = "hvac.pensacola@yahoo.com";
+		
+			
+		company.googPass = "1stplace";
+				
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "";
+		company.pxEmail = "Banned";
+		
+		company.photoEmail = "hvac.pensacola@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "hvac.pensacola@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="hvac.pensacola@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Full Service Air Conditioning, Heating, and Plumbing company serving Pensacola as well as Milton,  Pace, Molino, Cantonment, Gulf Breeze, and tiger Point.  We are licensed, bonded, and insured for your protection.";
+		company.keywords = "Air Conditioner Pensacola, FL <br>Heating repair Pensacola, FL<br>Air Conditioning Pensacola<br>Pensacola, FL Commercial Hvac<br>Pensacola, FL Commercial Plumbing<br>Fix Air Conditioner Pensacola<br>Heating Systems Pensacola<br>Pensacola FL Residential Plumbing<br>Plumbing Pensacola<br>Hvac Pensacola<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "18")
+	{
+		company.name = "CCS Floor Care";
+		company.website = "http://floorcare911.com";
+		company.address = "1814 High Avenue";
+		company.city = "Panama City";
+		company.state = "FL";
+		company.zip = "32405";
+		company.phone = "(850) 265-4204";
+		company.email = "carpetcleaning.panamacityfl@gmail.com";
+		company.yahooEmail = "carpetcleaning.panamacityfl@gmail.com";
+		
+			
+		company.googPass = "1STPLACE";
+				
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "";
+		company.pxEmail = "Banned";
+		
+		company.photoEmail = "carpetcleaning.panamacityfl@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "Banned";
+		company.vimPass = "";
+		
+		company.dailyEmail="carpetcleaning.panamacityfl@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Locally owned and operated, CCS Floor Care is a carpet, tile, wood floor cleaning company. We specialize in pet treatment as well as specialty services for carpet needs. Upholstery, drapery and other specialty services are  also provided.";
+		company.keywords = "Carpet Cleaning<br>Upholstery Cleaning<br>Rug Cleaning<br>Floor Cleaning<br>Tile Cleaning<br>Carpet Cleaning Services<br>Carpet Cleaning Sevices<br>Floor Cleaning Services<br>Hardwood Floor Cleaning<br>Carpet Cleaning Panama City Fl<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "19")
+	{
+		company.name = "G & W Gifts and Awards";
+		company.website = "http://www.gwawards.com/";
+		company.address = "815 Poplar Hall Drive";
+		company.city = "Norfolk";
+		company.state = "VA";
+		company.zip = "23502";
+		company.phone = "(757) 461-7676";
+		company.email = "awards.norfolk.va@gmail.com";
+		company.yahooEmail = "awards.norfolk.va@gmail.com";
+		
+			
+		company.googPass = "1stPlace";
+				
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "";
+		company.pxEmail = "Banned";
+		
+		company.photoEmail = "awards.norfolk.va@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "awards.norfolk.va@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="awards.norfolk.va@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "G & W Gifts & Awards is a full service trophy and awards store serving the greater Norfolk, Va area since 1959. They offer a wide variety of custom trophies, plaques, engraving, medals, advertising specialties and corporate awards.";
+		company.keywords = "Awards Norfolk VA<br>Acrylic Norfolk VA<br>Engraving Norfolk VA<br>Promotional Products Norfolk VA<br>Gifts Norfolk VA<br>Award Norfolk VA<br>Medallion Norfolk VA<br>Engravings Norfolk VA<br>Award Norfolk<br>Trophy Norfolk<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "20")
+	{
+		company.name = "KellyCo";
+		company.website = "http://www.kellycoflowers.com";
+		company.address = "185-B West Airport Blvd";
+		company.city = "Pensacola";
+		company.state = "FL";
+		company.zip = "32505";
+		company.phone = "(850) 438-1981";
+		company.email = "pensacola.flowers@gmail.com";
+		company.yahooEmail = "pensacola.flowers@gmail.com";
+		
+			
+		company.googPass = "1stPlace1";
+				
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "";
+		company.pxEmail = "N/A";
+		
+		company.photoEmail = "N/A";
+		company.photoPass = ""
+		
+		company.vimEmail = "pensacola.flowers@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="pensacola.flowers@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		
+		company.description = "KellyCo Flowers & Gifts is a full-service florist and gift shop, serving the greater Pensacola area and its surrounding customers in Escambia and Santa Rosa county since 1981.";
+		company.keywords = "Pensacola Florist<br>Pensacola Gift Baskets<br>Pensacola Weddings<br>Pensacola Flower Shop<br>Pensacola Floral Wire Service<br>Pensacola Flowers<br>Flower store Pensacola<br><br><br><br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	else if (choice.options[choice.selectedIndex].value == "21")
+	{
+		company.name = "Gross & Schuster, P.A.";
+		company.website = "http://grossandschuster.com/destin-personal-injury-lawyers/";
+		company.address = "30 S Shore Dr";
+		company.city = "Destin";
+		company.state = "FL";
+		company.zip = "32550";
+		company.phone = "(850) 244-7191";
+		company.email = "grossandschuster.destin@gmail.com";
+		company.yahooEmail = "grossandschuster.destin@yahoo.com";
+		
+			
+		company.googPass = "1stplace";
+				
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "grossandschuster.destin@gmail.com";
+		
+		company.photoEmail = "grossandschuster.destin@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "grossandschuster.destin@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="grossandschuster.destin@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		document.getElementById("plusEmail").innerHTML = "grossandschuster@gmail.com";
+		document.getElementById("plusPass").innerHTML = "grosslaw1";
+		
+		company.description = "Throughout Destin, Freeport, and San Destin, the law firm of Gross & Schuster, P.A., works with clients and referring attorneys to deliver comprehensive legal representation on a personalized basis. If you have been injured in a car accident or face criminal charges, our Destin lawyers can provide you with the guidance and representation you need in order to protect your rights and seek justice.";
+		company.keywords = "personal injury lawyers <br>car accident lawyers <br>personal injury attorneys <br>maritime lawyers <br>dog bite lawyers <br>accident attorney <br>accident lawyer <br>personal injury claims <br>auto accident lawyer <br>accident claims <br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	else if (choice.options[choice.selectedIndex].value == "22")
+	{
+		company.name = "Gross & Schuster, P.A.";
+		company.website = "http://grossandschuster.com/fort-walton-beach-personal-injury-lawyers/";
+		company.address = "151 Mary Esther Blvd";
+		company.city = "Mary Esther";
+		company.state = "FL";
+		company.zip = "32569";
+		company.phone = "(850) 244-7191";
+		company.email = "grossandschuster.fwb@gmail.com";
+		company.yahooEmail = "grossandschuster.fwb@yahoo.com";
+		
+			
+		company.googPass = "1stplace";
+				
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "";
+		company.pxEmail = "Sign in With Google+";
+		
+		company.photoEmail = "grossandschuster.fwb@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "grossandschuster.fwb@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="Sign in With Google+";
+		company.dailyPass = "";
+		
+		document.getElementById("plusEmail").innerHTML = "grossandschuster@gmail.com";
+		document.getElementById("plusPass").innerHTML = "grosslaw1";
+		
+		company.description = "Throughout Fort Walton Beach, Mary Esther, Niceville, Shalimar, and Bluewater Bay, the law firm of Gross & Schuster, P.A., works with clients and referring attorneys to deliver comprehensive legal representation on a personalized basis. If you have been injured in a car accident or face criminal charges, our Fort Walton Beach lawyers can provide you with the guidance and representation you need in order to protect your rights and seek justice.";
+		company.keywords = "Fort Walton Beach Personal Injury Lawyer<br>Fort Walton Beach Car Accident Lawyer<br>Fort Walton Beach Dog Bite Lawyer<br>personal injury lawyer<br>car accident lawyer<br>injury lawyer<br>accident lawyer<br>personal injury<br>personal injury lawyers<br>accident attorney<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	else if (choice.options[choice.selectedIndex].value == "23")
+	{
+		company.name = "Gross & Schuster, P.A.";
+		company.website = "https://www.grossandschuster.com";
+		company.address = "803 N. Palafox St.";
+		company.city = "Pensacola";
+		company.state = "Fl";
+		company.zip = "32501";
+		company.phone = "(850) 434-3333";
+		company.email = "grossandschuster@gmail.com";
+		company.yahooEmail = "PersonalInjuryLawyer850@yahoo.com";
+		
+			
+		company.googPass = "grosslaw1";
+				
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "";
+		company.pxEmail = "Banned";
+		
+		company.photoEmail = "PersonalInjuryLawyer850@yahoo.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "terencegross72@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="grossandschuster@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		document.getElementById("plusEmail").innerHTML = "grossandschuster@gmail.com";
+		document.getElementById("plusPass").innerHTML = "grosslaw1";
+		
+		company.description = "The firm provides representation to people who were injured in Florida, Alabama and other nearby states. A large part of our practice is devoted to motor vehicle accidents. We can take on any car or truck accident case, regardless of the complexity. We have also had success with dog bite injury and other premises liability cases. In addition, with of-counsel attorney Scott Silbert, we provide maritime and admiralty law representation.";
+		company.keywords = "Pensacola Attorneys<br>Pensacola Lawyers<br>Accident Attorney Pensacola<br>Motor Vehicle Accident Lawyer<br>Injuries Lawyer<br>Fatalities Lawyer<br>Pensacola Attorneys<br>Maritime Lawyer<br>Admiralty Lawyer<br>Accident Attorney Pensacola FL<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	else if (choice.options[choice.selectedIndex].value == "24")
+	{
+		company.name = "Joan's Trophy & Plaque Co.";
+		company.website = "http://www.awardsnow.com";
+		company.address = "508 NE Jefferson Ave.";
+		company.city = "Peoria";
+		company.state = "Illinois";
+		company.zip = "61603";
+		company.phone = "(309)674-6500";
+		company.email = "peoria.il.trophies@gmail.com";
+		company.yahooEmail = "joanstrophy@yahoo.com";
+		
+			
+		company.googPass = "1stplace1";
+				
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "";
+		company.pxEmail = "Banned";
+		
+		company.photoEmail = "peoria.il.trophies@gmail.com";
+		company.photoPass = "1stplace";
+		
+		company.vimEmail = "peoria.il.trophies@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="peoria.il.trophies@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "We are a full service awards & recognition company.  We are the largest awards & trophy shop in downstate Illinois that specializes in corporate recognition programs, sports trophies, custom interior signage, to personalized gifts.";
+		company.keywords = "Awards Peoria IL<br>Award Peoria IL<br>Medallion Peoria IL<br>Promotional products Peoria IL<br>Corporate Awards Peoria IL<br>Peoria IL Awards<br>Medallion Peoria IL<br>Medal Peoria IL<br>Peoria IL Medals<br>Peoria IL Promotional Products<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	else if (choice.options[choice.selectedIndex].value == "25")
+	{
+		company.name = "Mr. Rooter of Dublin";
+		company.website = "N/A";
+		company.address = "N/A";
+		company.city = "N/A";
+		company.state = "N/A";
+		company.zip = "N/A";
+		company.phone = "N/A";
+		company.email = "N/A";
+		company.yahooEmail = "N/A";
+		
+			
+		company.googPass = "";
+				
+		company.flickrPass = "";
+		
+		company.pxPass = "";
+		company.pxEmail = "N/A";
+		
+		company.photoEmail = "N/A";
+		company.photoPass = ""
+		
+		company.vimEmail = "N/A";
+		company.vimPass = "";
+		
+		company.dailyEmail="N/A";
+		company.dailyPass = "";
+		
+		company.description = "N/A";
+		company.keywords = "N/A<br><br><br><br><br><br><br><br><br><br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	else if (choice.options[choice.selectedIndex].value == "26")
+	{
+		company.name = "Mr. Rooter of Knoxville";
+		company.website = "N/A";
+		company.address = "N/A";
+		company.city = "N/A";
+		company.state = "N/A";
+		company.zip = "N/A";
+		company.phone = "N/A";
+		company.email = "N/A";
+		company.yahooEmail = "N/A";
+		
+			
+		company.googPass = "";
+				
+		company.flickrPass = "";
+		
+		company.pxPass = "";
+		company.pxEmail = "N/A";
+		
+		company.photoEmail = "N/A";
+		company.photoPass = ""
+		
+		company.vimEmail = "N/A";
+		company.vimPass = "";
+		
+		company.dailyEmail="N/A";
+		company.dailyPass = "";
+		
+		company.description = "N/A";
+		company.keywords = "N/A<br><br><br><br><br><br><br><br><br><br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	else if (choice.options[choice.selectedIndex].value == "27")
+	{
+		company.name = "Mr. Rooter of Macon";
+		company.website = "N/A";
+		company.address = "N/A";
+		company.city = "N/A";
+		company.state = "N/A";
+		company.zip = "N/A";
+		company.phone = "N/A";
+		company.email = "N/A";
+		company.yahooEmail = "N/A";
+		
+			
+		company.googPass = "";
+				
+		company.flickrPass = "";
+		
+		company.pxPass = "";
+		company.pxEmail = "N/A";
+		
+		company.photoEmail = "N/A";
+		company.photoPass = ""
+		
+		company.vimEmail = "N/A";
+		company.vimPass = "";
+		
+		company.dailyEmail="N/A";
+		company.dailyPass = "";
+		
+		company.description = "N/A";
+		company.keywords = "N/A<br><br><br><br><br><br><br><br><br><br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	else if (choice.options[choice.selectedIndex].value == "28")
+	{
+		company.name = "Miami Rooter";
+		company.website = "https://miamirooter.com/";
+		company.address = "7005 N Waterway Dr. Suite 307";
+		company.city = "Miami";
+		company.state = "FL";
+		company.zip = "33155";
+		company.phone = "(786) 474-3100";
+		company.email = "mrrootermiami@gmail.com";
+		company.yahooEmail = "mrrootermiami@yahoo.com";
+		
+			
+		company.googPass = "1stplace";
+				
+		company.flickrPass = "1stplace1";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "mrrootermiami@gmail.com";
+		
+		company.photoEmail = "mrrootermiami@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "mrrootermiami@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="mrrootermiami@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Be sure to call Miami Rooter for quality plumbing services in Miami and the surrounding areas. We offer solutions to commercial and residential plumbing needs, from sewer line repairs to drain cleaning. We are available 24/7 with flat rate fees on all jobs. Miami Rooter is licensed and insured and fully prepared to resolve all of your plumbing issues!";
+		company.keywords = "Plumber Miami FL<br>Plumbers Miami FL<br>Plumbing Miami FL<br>Leak Detection Miami FL<br>Plumbing Services Miami FL<br>Local Plumbers Miami FL<br>Plumbing Companies Miami FL<br>24 Hour Plumber Miami FL<br>Water Leak Detection Miami FL<br>Plumbing Company Miami FL<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	else if (choice.options[choice.selectedIndex].value == "29")
+	{
+		company.name = "Mr. Rooter of Mobile";
+		company.website = "http://mrrooter.com/mobile-al";
+		company.address = "2409 Wolf Ridge Rd";
+		company.city = "Mobile";
+		company.state = "AL";
+		company.zip = "36618";
+		company.phone = "(251) 288-5488";
+		company.email = "mrrootermobile@gmail.com";
+		company.yahooEmail = "mrrootermobileal@yahoo.com";
+		
+			
+		company.googPass = "plumber5879";
+				
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "";
+		company.pxEmail = "Banned";
+		
+		company.photoEmail = "plumbing.mobile.al@gmail.com";
+		company.photoPass = "1stplace";
+		
+		company.vimEmail = "plumbing.mobile.al@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="mrrootermobile@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Mr. Rooter of Mobile, AL provides all of your septic and plumbing needs with reliable and fast service. There are no overtime charge; it's upfront pricing, 24/7 service, and experienced technicians.";
+		company.keywords = "Plumbing Mobile<br>Mobile Plumbing<br>Plumber Mobile<br>Mobile Plumber<br>Plumbers Mobile<br>Mobile Plumbers<br>Mobile Home Plumber<br>Plumbing Mobile AL<br>Plumber Mobile AL<br>Mobile AL Plumber<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	else if (choice.options[choice.selectedIndex].value == "30")
+	{
+		company.name = "Mr. Rooter of Panama City";
+		company.website = "http://www.mrrooter.com/panama-city";
+		company.address = "920 NE Ave";
+		company.city = "Panama City";
+		company.state = "FL";
+		company.zip = "32401";
+		company.phone = "(850) 250-0906";
+		company.email = "plumbing.panama.city.fl@gmail.com";
+		company.yahooEmail = "mrrooternwfl@yahoo.com";
+		
+			
+		company.googPass = "1stplace";
+				
+		company.flickrPass = "mrrooter1";
+		
+		company.pxPass = "mrrooter";
+		company.pxEmail = "plumbing.panama.city.fl@gmail.com";
+		
+		company.photoEmail = "plumbing.panama.city.fl@gmail.com";
+		company.photoPass = "FG30KHqf";
+		
+		company.vimEmail = "plumbing.panama.city.fl@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="plumbing.panama.city.fl@gmail.com";
+		company.dailyPass = "FG30KHqf";
+		
+		company.description = "Mr. Rooter of Panama City, FL provides all of your septic and plumbing needs with reliable and fast service. There are no overtime charge; it's upfront pricing, 24/7 service, and experienced technicians.";
+		company.keywords = "Plumber Panama City FL<br>Plumbers Panama City FL<br>Plumbing Panama City FL<br>Plumber Panama City<br>Septic Panama City FL<br>Plumbers In Panama City<br>Plumbing Panama City<br>Local Plumber Panama City<br>bathroom plumber Panama city, FL <br>Mobile AL Plumber<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	else if (choice.options[choice.selectedIndex].value == "31")
+	{
+		company.name = "Mr. Rooter of Savannah";
+		company.website = "http://www.mrrooter.com/savannah";
+		company.address = "221 Pinecrest PL";
+		company.city = "Pooler";
+		company.state = "GA";
+		company.zip = "31322";
+		company.phone = "(912) 330-7091";
+		company.email = "plumbing.savannah.ga@gmail.com";
+		company.yahooEmail = "plumbing.savannah.ga@gmail.com";
+		
+			
+		company.googPass = "1stPlace1";
+				
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "";
+		company.pxEmail = "Banned";
+		
+		company.photoEmail = "plumbing.savannah.ga@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "Banned";
+		company.vimPass = "";
+		
+		company.dailyEmail="plumbing.savannah.ga@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Mr. Rooter Plumbing in Savannah is the only plumbing company you'll ever need. Homeowners and business owners alike have come to depend on Mr. Rooter for expert plumbing services at fair prices.";
+		company.keywords = "Plumbing Savannah GA<br>Plumbers Savannah GA<br>Plumber Savannah GA<br>Savannah GA Plumber<br>Plumbing Services Savannah GA<br>Savannah GA Plumbers<br>Plumbing Plumber Savannah GA<br>Savannah GA Plumbing Plumber<br>Plumbing Pipe Savannah GA<br>Clogged Garbage Disposal Repair<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	else if (choice.options[choice.selectedIndex].value == "32")
+	{
+		company.name = "Mr. Rooter of Southeast Georgia";
+		company.website = "http://www.mrrooter.com/southeast-georgia";
+		company.address = "7163 Old Axson Rd";
+		company.city = "Douglas";
+		company.state = "GA";
+		company.zip = "31535";
+		company.phone = "(912) 384-3526";
+		company.email = "plumbing.southeast.ga@gmail.com";
+		company.yahooEmail = "plumbing.southeast.ga@gmail.com";
+		
+			
+		company.googPass = "mrrooter";
+				
+		company.flickrPass = "mr1stplace";
+		
+		company.pxPass = "";
+		company.pxEmail = "Banned";
+		
+		company.photoEmail = "plumbing.southeast.ga@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "plumbing.southeast.ga@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="plumbing.southeast.ga@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Every customer\'s individual needs are important to us at Mr. Rooter Plumbing of Southeast Georgia. Our focus of providing quality plumbing service and products combined with honesty has made our plumbers the first choice of many residential and commercial clients. You can count on a Mr. Rooter plumber to take care of your plumbing and drainage needs-day or night with never an overtime charge. \n\nFor more information, contact Mr. Rooter of Southeast Georgia: 7163 Old Axson Rd, Douglas, GA 31535 - (912) 387-0230 - southeastgeorgia.mrrooter.com";
+		company.keywords = "Plumbing Douglas Georgia<br>Plumbers Douglas GA<br>Plumber Douglas GA<br>Douglas GA Plumber<br>Douglas GA Plumbing<br>Drain Cleaning Douglas GA<br>Douglas GA Drain Cleaning<br>Georgia Plumber<br>Septic Service Douglas Georgia<br>Drain Cleaning Douglas GA<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	else if (choice.options[choice.selectedIndex].value == "33")
+	{
+		company.name = "Mr. Rooter of Tallahassee";
+		company.website = "http://www.mrrooter.com/tallahassee";
+		company.address = "3163 Eliza Rd Suite 2";
+		company.city = "Tallahassee";
+		company.state = "FL";
+		company.zip = "32308";
+		company.phone = "(850) 523-4505";
+		company.email = "plumbing.tallahassee.fl@gmail.com";
+		company.yahooEmail = "plumbing.tallahassee.fl@gmail.com";
+		
+			
+		company.googPass = "MRROOTER123123";
+				
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "plumbing.tallahassee.fl@gmail.com";
+		
+		company.photoEmail = "plumbing.tallahassee.fl@gmail.com";
+		company.photoPass = "1stplace";
+		
+		company.vimEmail = "plumbing.tallahassee.fl@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="1stplace";
+		company.dailyPass = "plumbing.tallahassee.fl@gmail.com";
+		
+		company.description = "Mr. Rooter of Tallahassee, FL. provides all of your clogs, leaks, septic, and plumbing repairs with quick and reliable help. They are experienced experts, upfront pricing, and 24/7 service.";
+		company.keywords = "Tallahassee FL Plumbing<br>Plumbing Tallahassee FL<br>Tallahassee FL Plumber<br>Plumber Tallahassee FL<br>Tallahassee FL Plumbers<br>Plumbers Tallahassee FL<br>Tallahassee FL Plumbing Plumber<br>Plumbing Plumber Tallahassee FL<br>Tallahassee FL Plumbing Pipe<br>Plumbing Pipe Tallahassee FL<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	else if (choice.options[choice.selectedIndex].value == "34")
+	{
+		company.name = "Northwest Trophy and Awards";
+		company.website = "http://www.nwtrophy.com";
+		company.address = "13440 NE 177th Pl.";
+		company.city = "Woodinville";
+		company.state = "Washington";
+		company.zip = "98072";
+		company.phone = "(425) 485-4149";
+		company.email = "trophywoodinvillewa@gmail.com";
+		company.yahooEmail = "trophy.awards.woodinville.wa@gmail.com";
+		
+			
+		company.googPass = "1stplace";
+				
+		company.flickrPass = "1stPlace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "trophywoodinvillewa@gmail.com";
+		
+		company.photoEmail = "trophywoodinvillewa@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "trophywoodinvillewa@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="trophywoodinvillewa@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "At Northwest Trophy and Awards Recognition of Excellence - Trophies, Plaques, Medals is a time honored way of memorializing great achievement. Custom and Special Order items available upon request. Three locations to serve you. Call or see more at Northwest Trophy and Awards, 13440 NE 177th Pl., Woodinville, WA 98072 - (425) 485-4149.";
+		company.keywords = "Trophies Renton Wa<br>Award Bellevue WA<br>Award Redmond WA<br>Corporate Awards Seattle WA<br>Awards Bellevue WA<br>Awards Redmond WA<br>Baseball Trophies Seattle WA<br>Medal Seattle WA<br>Medal Bellevue WA<br>Medal Redmond WA<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	else if (choice.options[choice.selectedIndex].value == "35")
+	{
+		company.name = "Prosperous I.M. Inc.";
+		company.website = "http://prosperousim.com/";
+		company.address = "180 East Burgess Rd. Suite F";
+		company.city = "Pensacola";
+		company.state = "FL";
+		company.zip = "32503";
+		company.phone = "(850) 432-2898";
+		company.email = "prosperousim1@gmail.com";
+		company.yahooEmail = "prosperousim1@yahoo.com";
+		
+			
+		company.googPass = "1stPlace1";
+				
+		company.flickrPass = "1stPlace1";
+		
+		company.pxPass = "";
+		company.pxEmail = "Banned";
+		
+		company.photoEmail = "prosperousim1@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "prosperousim1@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="prosperousim1@gmail.com";
+		company.dailyPass = "1stPlace";
+		
+		company.description = "Prosperous I.M. is the Internet Marketing Agency in Pensacola that can help you ranked #1 on Google in anything through SEO (Search Engine Optimization)!";
+		company.keywords = "SEO<br>Search Engine Optimization<br>Online Marketing<br>Internet Marketing<br>Advertising Agency<br>Pensacola Seo<br>Pensacola Internet Marketing<br>Internet Marketing Pensacola<br>Seo Pensacola<br>Search Engine Optimization Pensacola<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	else if (choice.options[choice.selectedIndex].value == "36")
+	{
+		company.name = "The Billy Goat";
+		company.website = "https://www.thebillygoat.net";
+		company.address = "5794 Southwest 40th Street";
+		company.city = "Miami";
+		company.state = "FL";
+		company.zip = "33155";
+		company.phone = "(305) 666-0111";
+		company.email = "residential.landscaping.miami@gmail.com";
+		company.yahooEmail = "residentiallandscaping.miami@yahoo.com";
+		
+			
+		company.googPass = "1stplace";
+				
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "";
+		company.pxEmail = "Banned";
+		
+		company.photoEmail = "residential.landscaping.miami@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "residential.landscaping.miami@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="residential.landscaping.miami@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "The Billy Goat has been servicing businesses and homeowners in the South Florida and surrounding areas for the last 8 years. We are a complete landscape service dedicated to customer satisfaction. At the Billy Goat, we specialize in landscape construction and installation. From standard residential to multi-million dollar properties, we have the support staff qualified to help you complete or value engineer your design project from start to finish. We also carry a high $2 million general liability policy to safeguard our customers. Some of our services include: lawn maintenance, fertilizing, tree trimming and removal. We also repair and install irrigation and artificial turf. At the Billy Goat, we take pride in our work and in providing the utmost attention to your special needs. Call The Billy Goat Landscaping Company, where customer satisfaction is number one!";
+		company.keywords = "Landscaping Miami<br>Landscape Design Miami<br>Lawn Service Miami<br>Lawn Care Miami<br>Commercial Landscaping Miami<br>Residential Landscaper Miami<br>Tree Pruning Service Miami<br>Lawn Mowing Company Miami<br>Residential Lawn Care Miami<br>Lawn Fumigation Miami<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	else if (choice.options[choice.selectedIndex].value == "37")
+	{
+		company.name = "Viking Trophies";
+		company.website = "http://www.vikingtrophies.com";
+		company.address = "6248 Lakeland Ave N. Suite 102";
+		company.city = "Brooklyn Park";
+		company.state = "MN";
+		company.zip = "55428";
+		company.phone = "(763) 537-3422";
+		company.email = "trophies.brooklyn.park.mn@gmail.com";
+		company.yahooEmail = "trophies.brooklyn.park.mn@gmail.com";
+		
+			
+		company.googPass = "lakeland2003";
+				
+		company.flickrPass = "1stPlace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "trophies.brooklyn.park.mn@gmail.com";
+		
+		company.photoEmail = "trophies.brooklyn.park.mn@gmail.com";
+		company.photoPass = "1stplace";
+		
+		company.vimEmail = "trophies.brooklyn.park.mn@gmail.com";
+		company.vimPass = "lakeland2003";
+		
+		company.dailyEmail="trophies.brooklyn.park.mn@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Viking Trophies - Awards & Recognition is the Twin Cities largest awards retailer.  Providing custom recognition solutions since 1969. Your place for trophies, plaques, glass awards, custom medals.";
+		company.keywords = "Minneapolis Awards<br>Minneapolis Corporate Awards<br>Brooklyn Park Trophies<br>Engraving Minneapolis MN<br>Soccer Trophies Minneapolis MN<br>Trophies Brooklyn Park MN<br>Trophy Minneapolis<br>Engraver Minneapolis<br>Promotional Products Minneapolis<br>Football Trophies Minneapolis<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "38")
+	{
+		company.name = "Dan Vega LLC";
+		company.website = "http://www.danvegabusiness.com/";
+		company.address = "3 West Garden Street STE 352";
+		company.city = "Pensacola";
+		company.state = "FL";
+		company.zip = "32502";
+		company.phone = "(417) 209-8343";
+		
+		company.email = "danvega.pensacola@gmail.com";
+		company.googPass = "1stPlace1";
+		
+		company.yahooEmail = "danvega.pensacola@yahoo.com";
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "danvega.pensacola@gmail.com";
+		
+		company.photoEmail = "danvega.pensacola@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "danvega.pensacola@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="danvega.pensacola@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Dan Vega is a professional entrepreneur and speaker who has had tons of success helping coach others in how to efficiently run their business. He is also an effective investor and TV talk show host.  Dan Vega is currently located in Pensacola, FL and will gladly help you grow and expand your business.";
+		company.keywords =  "Dan Vega<br>Pensacola Entrepreneur<br>Pensacola Speaker<br>Pensacola Investor<br>Pensacola Television Host<br>Pensacola Meet Up<br>Business Coaching Pensacola<br>Executive Leadership Coaching Pensacola<br>Leadership Speaker Pensacola<br>Dan Vega Pensacola<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "39")
+	{
+		company.name = "Avalon Landing RV Park / Pensacola East";
+		company.website = "http://avalonlandingrvpark.com";
+		company.address = "2444 Avalon Blvd";
+		company.city = "Milton";
+		company.state = "FL";
+		company.zip = "32583";
+		company.phone = "(850) 995-5898";
+		
+		company.email = "campingmilton@gmail.com";
+		company.googPass = "1stplace";
+		
+		company.yahooEmail = "avalonlanding.milton@yahoo.com";
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "avalonlanding.milton@gmail.com";
+		
+		company.photoEmail = "avalonlanding.milton@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "avalonlanding.milton@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="avalonlanding.milton@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		document.getElementById("plusEmail").innerHTML = "avalonlandingrvpark@gmail.com";
+		document.getElementById("plusPass").innerHTML = "4saltwaterfishing";
+		
+		company.description = "Locally owned and operated RV Park.  5 mile East of Pensacola. RV Park for Big RIgs to Pop-ups campers. Waterfront (pull-in or back-in), pull-thru or off water all full hook-up sites available";
+		company.keywords =  "RV Park Pensacola<br>Campgrounds Pensacola<br>Waterfront RV Park Pensacola<br>Pensacola RV Campsites<br>Pull Thru Rv Sites Pensacola<br>Monthly RV Sites Pensacola<br>Camping Pensacola<br>RV Campgrounds Pensacola<br>RV Parking Pensacola<br>Campgrounds Near Pensacola<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "40")
+	{
+		company.name = "Allogram Inc";
+		company.website = "http://www.allogram.com";
+		company.address = "8391 Piney Orchard Pkwy";
+		company.city = "Odenton";
+		company.state = "MD";
+		company.zip = "21113";
+		company.phone = "(410) 551-7700";
+		
+		company.email = "awards.odenton@gmail.com";
+		company.googPass = "1stPlace*";
+		
+		company.yahooEmail = "awards.odenton@yahoo.com";
+		company.flickrPass = "1stPlace*";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "awards.odenton@Yahoo.com";
+		
+		company.photoEmail = "awards.odenton@Yahoo.com";
+		company.photoPass = "1stPlace"
+		
+		company.vimEmail = "awards.odenton@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="awards.odenton@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "With two locations in Maryland, Allogram, Inc. specializes in creating customized recognition products and memorabilia crafted from genuine Walnut, Cherry, Oak, Marble, Acrylic, Mirrored Acrylic, Corian, Lucite, Plastic, Brass, Aluminum, Bronze, and Vinyl. We also offer full color direct UV printing, vinyl and sublimation graphic capabilities.  All of these services are provided 'in-house' so we can control both production time and quality. Our extensive equipment list includes six powerful laser engravers, traditional rotary engravers, full color thermal head printing, full color sublimation, direct UV printing, dimensional UV printing, woodworking and sand carving.  Our creative graphics team can take your ideas and design the best award product for your application. Our precision computer driven equipment will diamond drag, burnish, route, sandblast, direct print and laser engrave any personal message. With a large inventory of raw materials and component parts, we are able to produce your order not only quickly, but efficiently and at an unbeatable price. We make sure our wholesale pricing structure allows you to save money and receive a quality that is unsurpassed. At Allogram, Inc., we pride ourselves on our commitment to produce quality workmanship, friendly and knowledgeable customer service and are sure to guarantee your satisfaction.";
+		company.keywords =  "Trophy Baltimore<br>Plaques Baltimore<br>Acrylic Awards Baltimore<br>Laser Engraving Baltimore<br>Glass Trophies Baltimore<br>Custom Trophies Baltimore<br>Crystal Trophies Baltimore<br>Sports Medals Baltimore<br>Baseball Trophies Baltimore<br>Corporate Awards Baltimore<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "41")
+	{
+		company.name = "Allogram Inc";
+		company.website = "http://www.allogram.com";
+		company.address = "2003 Greenspring Drive";
+		company.city = "Timonium";
+		company.state = "MD";
+		company.zip = "21093";
+		company.phone = "(410) 252-7300";
+		
+		company.email = "awards.Timonium@gmail.com";
+		company.googPass = "1stPlace123";
+		
+		company.yahooEmail = "timoniumTrophies@Yahoo.com";
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "timoniumTrophies@Yahoo.com";
+		
+		company.photoEmail = "timoniumTrophies@Yahoo.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "TimoniumTrophies@Yahoo.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="awards.Timonium@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "With two locations in Maryland, Allogram, Inc. of Timonium specializes in creating customized trophies and memorabilia.  At Allogram, Inc., we pride ourselves on our commitment to produce quality workmanship, friendly, and knowledgeable customer service and are sure to guarantee your satisfaction.";
+		company.keywords =  "Baltimore MD Trophy Shop<br>Baltimore MD Laser Engraving<br>Baltimore MD Plaques<br>Baltimore MD Football Trophies<br>Baltimore Sandblasting<br>Baltimore MD Promotional Products<br>Baltimore MD Crystal Awards<br>Baltimore MD Trophy Engraving<br>Baltimore MD Custom Trophies<br>Baltimore MD Custom Medal<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "47")
+	{
+		company.name = "Martelli Enterprise";
+		company.website = "http://www.martellinotions.com";
+		company.address = "5450 North W Street";
+		company.city = "Pensacola";
+		company.state = "FL";
+		company.zip = "32505";
+		company.phone = "(850) 433-1414";
+		
+		company.email = "sewingpenacola@gmail.com";
+		company.googPass = "1stplace";
+		
+		company.yahooEmail = "quilt.shop.pensacola@gmail.com";
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "quilt.shop.pensacola@gmail.com";
+		
+		company.photoEmail = "quilt.shop.pensacola@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "quilt.shop.pensacola@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="quilt.shop.pensacola@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Locally owned and operated, Martelli Enterprises in Pensacola FL, is a quilting and sewing company that was founded in 1997 and innovations for the quilting and sewing communities.";
+		company.keywords =  "Sewing Table Pensacola FL<br>Pensacola FL Janome<br>cutting table Pensacola FL<br>Pensacola FL quilt shop<br>quilting tools Pensacola FL<br>Pensacola quilting tool<br>quilting templates Pensacola FL<br>Pensacola fabric<br>quilt binding Pensacola FL<br>sewing machines Pensacola FL<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "42")
+	{
+		company.name = "Monarch Trophy & Awards";
+		company.website = "http://www.monarchtrophy.com/";
+		company.address = "8840 North Sam Houston Pkwy W";
+		company.city = "Houston";
+		company.state = "TX";
+		company.zip = "77064";
+		company.phone = "(713) 464-1122";
+		
+		company.email = "houston.awards@gmail.com";
+		company.googPass = "1stplace";
+		
+		company.yahooEmail = "houston.awards@gmail.com";
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "houston.awards@gmail.com";
+		
+		company.photoEmail = "houston.awards@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "houston.awards@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="houston.awards@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Monarch Trophy & Awards was established in 1965. We have provided awards and trophies for corporations, national organizational groups, the business community and adult/youth sports leagues for over 40 years. Visit Monarch Trophy & Awards at 8840 North Sam Houston Pkwy W  Houston, TX 77064 or call us at (713) 464-1122.";
+		company.keywords =  "Trophy Houston<br>Plaque Houston<br>Awards Houston<br>Engraving Houston<br>Medallion Houston<br>Medal Houston<br>Wooden Plaques Houston<br>Trophy Shop Houston<br>Trophy Store Houston<br>Custom Trophies Houston<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "48")
+	{
+		company.name = "Lewis & Jurnovoy, PA- Crestview";
+		company.website = "http://www.LewisandJurnovoy.com";
+		company.address = "1501 S. Ferdon Dr.";
+		company.city = "Crestview";
+		company.state = "FL";
+		company.zip = "32536";
+		company.phone = "(850) 409-3350";
+		
+		company.email = "bankruptcylawyers.crestview@gmail.com";
+		company.googPass = "1stplace";
+		
+		company.yahooEmail = "bankruptcylawyers.crestview@yahoo.com";
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "";
+		
+		company.photoEmail = "";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "bankruptcylawyers.crestview@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="bankruptcylawyers.crestview@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "The primary emphasis of our law firm is in the representation of individuals in Chapter 13 bankruptcy, Chapter 7 bankruptcy,mortgage foreclosures, mortgage modifications and protecting against abusive debt collectors.Our goal is to assist you and your family in protecting your assets while either eliminating your creditors or figuring out a manner in which to repay them. .";
+		company.keywords =  "Crestview Chapter 7 Bankruptcy lawyer<br>Crestview Debt Consolidation lawyer<br>Crestview Chapter 13 Bankruptcy lawyer<br>Crestview Creditor Harassment Lawyer<br>Crestview Mortgage Modification lawyer<br>Crestview bankruptcy lawyers<br>Crestview bankruptcy attorney<br>Crestview debt lawyer<br>Crestview debt attorney<br>Crestview personal bankruptcy attorney<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "49")
+	{
+		company.name = "Lewis & Jurnovoy, PA- FWB";
+		company.website = "http://www.LewisandJurnovoy.com";
+		company.address = "151 South Mary Esther Cutoff";
+		company.city = "Mary Esther";
+		company.state = "FL";
+		company.zip = "32569";
+		company.phone = "(850) 863-9110";
+		
+		company.email = "bankruptcylawyers.fwb@gmail.com";
+		company.googPass = "1stplace";
+		
+		company.yahooEmail = "bankruptcylawyers.fwb@yahoo.com";
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "";
+		
+		company.photoEmail = "";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "bankruptcylawyers.fwb@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="bankruptcylawyers.fwb@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "The primary emphasis of our law firm is in the representation of individuals in Chapter 13 bankruptcy, Chapter 7 bankruptcy,mortgage foreclosures, mortgage modifications and protecting against abusive debt collectors.Our goal is to assist you and your family in protecting your assets while either eliminating your creditors or figuring out a manner in which to repay them. .";
+		company.keywords =  " Fort Walton Beach Chapter 7 Bankruptcy lawyer<br>Fort Walton Beach Chapter 13 Bankruptcy lawyer <br>Fort Walton Beach Debt Consolidation lawyer <br>Fort Walton Beach Foreclosure lawyer<br>Fort Walton Beach Student loan Lawyer<br>Fort Walton Beach Creditor Harassment Lawyer<br>Fort Walton Beach Collector Harassment Lawyer<br>Fort Walton Beach Mortgage Modification lawyer<br>Fort Walton Beach debt lawyer<br>Fort Walton Beach debt attorney<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "50")
+	{
+		company.name = "Lewis & Jurnovoy, PA- PCB";
+		company.website = "http://www.LewisandJurnovoy.com";
+		company.address = "1004 Jenks Avenue";
+		company.city = "Panama City";
+		company.state = "FL";
+		company.zip = "32401";
+		company.phone = "(850) 913-9110";
+		
+		company.email = "bankruptcylawyers.pcb@gmail.com";
+		company.googPass = "1stplace1";
+		
+		company.yahooEmail = "bankruptcylawyers.pcb@gmail.com";
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "";
+		
+		company.photoEmail = "";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "bankruptcylawyers.pcb@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="bankruptcylawyers.pcb@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "The primary emphasis of our law firm is in the representation of individuals in Chapter 13 bankruptcy, Chapter 7 bankruptcy,mortgage foreclosures, mortgage modifications and protecting against abusive debt collectors.Our goal is to assist you and your family in protecting your assets while either eliminating your creditors or figuring out a manner in which to repay them. .";
+		company.keywords =  "Panama City FL Chapter 7 Bankruptcy lawyer<br>Panama City FL Chapter 13 Bankruptcy lawyer<br>Panama City FL Debt Consolidation lawyer<br>Panama City FL Foreclosure lawyer<br>Panama City FL Student loan Lawyer<br>Panama City FL bankruptcy lawyers<br>Panama City FL bankruptcy attorney<br>Panama City FL debt lawyer<br>Panama City FL debt attorney<br>Panama City FL Creditor Harassment Lawyer<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "51")
+	{
+		company.name = "Lewis & Jurnovoy, PA- Pensacola";
+		company.website = "http://www.LewisandJurnovoy.com";
+		company.address = "1100 North Palafox St";
+		company.city = "Pensacola";
+		company.state = "FL";
+		company.zip = "32501";
+		company.phone = "(850) 432-9110";
+		
+		company.email = "bankruptcylawyers.pcola@gmail.com";
+		company.googPass = "1stplace";
+		
+		company.yahooEmail = "bankruptcylawyer.pcola@yahoo.com";
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "bankruptcylawyers.pcola@gmail.com";
+		
+		company.photoEmail = "";
+		company.photoPass = ""
+		
+		company.vimEmail = "bankruptcylawyers.pcola@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="bankruptcylawyers.pcola@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "The primary emphasis of our law firm is in the representation of individuals in Chapter 13 bankruptcy, Chapter 7 bankruptcy,mortgage foreclosures, mortgage modifications and protecting against abusive debt collectors.Our goal is to assist you and your family in protecting your assets while either eliminating your creditors or figuring out a manner in which to repay them. .";
+		company.keywords =  "Pensacola FL Chapter 7 Bankruptcy lawyer<br>Pensacola FL Chapter 13 Bankruptcy lawyer<br>Pensacola FL Debt Consolidation lawyer<br>Pensacola FL Foreclosure lawyer<br>Pensacola FL Student loan Lawyer<br>Pensacola FL bankruptcy lawyers<br>Pensacola FL bankruptcy attorney<br>Pensacola FL debt lawyer<br>Pensacola FL debt attorney<br>Pensacola FL Creditor Harassment Lawyer<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	
+	else if (choice.options[choice.selectedIndex].value == "43")
+	{
+		company.name = "Lil' John Big and Tall Men's Fashion LLC.";
+		company.website = "http://www.LilJohnsBigAndTall.com";
+		company.address = "5700 N. Davis Hwy.";
+		company.city = "Pensacola";
+		company.state = "FL";
+		company.zip = "32503";
+		company.phone = "(850) 484-0904";
+		
+		company.email = "Clothing.Pensacola@gmail.com";
+		company.googPass = "1stplace";
+		
+		company.yahooEmail = "Clothing.Pensacola@gmail.com";
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "Clothing.Pensacola@gmail.com";
+		
+		company.photoEmail = "Clothing.Pensacola@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "Clothing.Pensacola@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="Clothing.Pensacola@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Locally owned and Operated, Lil' John's Big and Tall Men's Fashion in Pensacola FL is known for Quality clothes with a Great Fit at affordable prices for the XL and up or the LT and up Men While haveing a great selection of options. If you are tall or Big, Lil' John's Has it all.";
+		company.keywords =  "Big and Tall Clothing Pensacola<br>Men's Clothing Pensacola<br>Mens Big and Tall Pensacola<br>Big and Tall Mens Clothing Pensacola<br>King Size Clothing Pensacola<br>Tall Mens Clothing Pensacola<br>Clothing Stores Pensacola<br>Clothing Alterations Pensacola<br>Alteration Shop Pensacola<br>Plus Size Mens Clothing Pensacola<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "44")
+	{
+		company.name = "Pack and Ship";
+		company.website = "http://www.pensacolashipping.com";
+		company.address = "1805 Creighton Rd #5";
+		company.city = "Pensacola";
+		company.state = "FL";
+		company.zip = "32504";
+		company.phone = "(850) 912-6699";
+		
+		company.email = "Moreinkforless@gmail.com";
+		company.googPass = "Mifl1234!";
+		
+		company.yahooEmail = "packship.pensacola@gmail.com";
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "1stPlace1";
+		company.pxEmail = "packship.pensacola@gmail.com";
+		
+		company.photoEmail = "packship.pensacola@gmail.com";
+		company.photoPass = "1stPlace1"
+		
+		company.vimEmail = "packship.pensacola@gmail.com";
+		company.vimPass = "1stPlace1";
+		
+		company.dailyEmail="packship.pensacola@gmail.com";
+		company.dailyPass = "1stPlace1";
+		
+		company.description = "Creighton Pack & Ship Business Center is an independently owned and operated packing, shipping, printing and business services center located in Pensacola, FL. We are professionally trained experts and members of the Pensacola community who are dedicated to providing Super-Star Customer care in a convenient, efficient and friendly environment.";
+		company.keywords =  "Fedex Shipping Pensacola FL<br>Pensacola Post Office<br>Mailing Service Pensacola FL<br>DHL Shipping Pensacola FL<br>Flat Rate Shipping Pensacola FL<br>FedEX Drop off locations Pensacola FL<br>Standard Shipping Pensacola FL<br>Shipping Costs Pensacola FL<br>FedEx Shipping near me Pensacola FL<br><br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "45")
+	{
+		company.name = "Pack and Ship";
+		company.website = "http://www.packandshipstores.com";
+		company.address = "120 Chief's Way #1";
+		company.city = "Pensacola";
+		company.state = "FL";
+		company.zip = "32507";
+		company.phone = "(850) 455-1234";
+		
+		company.email = "Moreinkforless@gmail.com";
+		company.googPass = "Mifl1234!";
+		
+		company.yahooEmail = "packship.pensacola@gmail.com";
+		company.flickrPass = "1stPlace1";
+		
+		company.pxPass = "1stPlace1";
+		company.pxEmail = "packship.pensacola@gmail.com";
+		
+		company.photoEmail = "packship.pensacola@gmail.com";
+		company.photoPass = "1stPlace1"
+		
+		company.vimEmail = "packship.pensacola@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="packship.pensacola@gmail.com";
+		company.dailyPass = "1stPlace1";
+		
+		company.description = "Warrington Pack & Ship Business Center is an independently owned and operated packing, shipping, printing and business services center located in Pensacola, FL. We are professionally trained experts and members of the Pensacola community who are dedicated to providing Super-Star Customer care in a convenient, efficient and friendly environment.";
+		company.keywords =  "Fedex Shipping Pensacola FL<br>Pensacola Post Office<br>Pensacola Shipping<br>FedEx Drop off locations Pensacola FL<br>Flat Rate Shipping Pensacola FL<br>Overnight Shipping Pensacola FL<br>Standard Shipping Pensacola FL<br>Shipping Costs Pensacola FL<br>Shipping Store Pensacola FL<br><br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "52")
+	{
+		company.name = "Gulf Coast Merchant Services";
+		company.website = "http://www.gulfcoastmerchantservices.com";
+		company.address = "6901-A N 9th Avenue";
+		company.city = "Pensacola";
+		company.state = "FL";
+		company.zip = "32504";
+		company.phone = "(850) 995-4414";
+		
+		company.email = "pensacola.merchantservices@gmail.com";
+		company.googPass = "1stplace";
+		
+		company.yahooEmail = "pensacola.merchantservices@yahoo.com";
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "pensacola.merchantservices@gmail.com";
+		
+		company.photoEmail = "";
+		company.photoPass = ""
+		
+		company.vimEmail = "pensacola.merchantservices@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="pensacola.merchantservices@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Merchant Services, Credit Card Processing, Point of  Sale Systems, Gift Cards, Check Processing, Working Business Capital, ATM's // Sentence format";
+		company.keywords =  "Merchant Services Pensacola Fl <br>Pensacola FL Credit Card Processing<br>Pensacola FL Point of Sale Systems<br>Pos Machine Pensacola FL<br>Pensacola FL Credit Card Processing Company <br>Merchant account Pensacola FL<br>Pensacola FL credit card terminal<br>payment processing Pensacola FL <br>Pensacola FL merchant processing <br>Pensacola FL Credit Card Merchant <br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	else if (choice.options[choice.selectedIndex].value == "53")
+	{
+		company.name = "Titan Sunrooms Pensacola ";
+		company.website = "http://www.titansunrooms.com";
+		company.address = "5680 Gulf Breeze Pkwy";
+		company.city = "Gulfbreeze";
+		company.state = "FL";
+		company.zip = "32563";
+		company.phone = "(850) 916-7660";
+		
+		company.email = "Sunrooms.Pensacola@gmail.com";
+		company.googPass = "1stplace";
+		
+		company.yahooEmail = "Sunrooms.Pensacola@gmail.com";
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "Sunrooms.Pensacola@gmail.com";
+		
+		company.photoEmail = "";
+		company.photoPass = ""
+		
+		company.vimEmail = "Sunrooms.Pensacola@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="Sunrooms.Pensacola@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Titan Sunrooms, located in Gulf Breeze, Florida, specializes in the manufacturing & installation of sunrooms, screen rooms, patio covers, and patio enclosure products.";
+		company.keywords =  "Sunrooms Pensacola Fl<br> screen rooms Pensacola Fl<br>patio Cover Pensacola Fl<br>Pergola Pensacola Fl<br>Florida Room Pensacola Fl <br>Pensacola Fl Sunroom Contractor<br>Sunroom Construction Pensacola Fl<br>Sunroom Companies Pensacola Fl<br>Patio screen enclosures prices Pensacola Fl<br>backyard screen room Pensacola Fl <br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	
+	else if (choice.options[choice.selectedIndex].value == "54")
+	{
+		company.name = "Titan Sunrooms FWB";
+		company.website = "www.titansunrooms.com";
+		company.address = "5680 Gulf Breeze Pkwy #5";
+		company.city = "Gulf Breeze";
+		company.state = "FL";
+		company.zip = "32563";
+		company.phone = "(850) 244-4474";
+		
+		company.email = "sunrooms.fortwaltonbeach@gmail.com";
+		company.googPass = "1stplace";
+		
+		company.yahooEmail = "sunrooms.fortwaltonbeach@gmail.com";
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "sunrooms.fortwaltonbeach@gmail.com";
+		
+		company.photoEmail = "";
+		company.photoPass = ""
+		
+		company.vimEmail = "sunrooms.fortwaltonbeach@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="sunrooms.fortwaltonbeach@gmail.com";
+		company.dailyPass = "1stPlace1!";
+		
+		company.description = "Titan Sunrooms, located in Gulf Breeze, Florida, specializes in the manufacturing & installation of sunrooms, screen rooms, patio covers, and patio enclosure products. ";
+		company.keywords =  "Sunrooms Fort Walton Beach FL<br>screen rooms Crestview FL<br>patio Cover Niceville FL<br>Pergola Destin FL<br>Florida Room Navarre FL<br>Sunroom Construction Fort Walton Beach FL<br>Sunrooms Gulf Breeze FL<br>screen rooms Gulf Breeze FL<br>Sunroom Companies Gulf Breeze FL<br>patio Cover Gulf Breeze FL<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	
+	else if (choice.options[choice.selectedIndex].value == "55")
+	{
+		company.name = "Mike Breen Attorney at Law P.S.C.";
+		company.website = "http://www.mikebreen.com/";
+		company.address = "870 Fairview Ave #5";
+		company.city = "Bowling Green";
+		company.state = "KY";
+		company.zip = "42101";
+		company.phone = "(270) 782-3030";
+		
+		company.email = "bowlinggreenkymike@gmail.com";
+		company.googPass = "1stplace";
+		
+		company.yahooEmail = "bowlinggreenkymike@gmail.com";
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "bowlinggreenkymike@gmail.com";
+		
+		company.photoEmail = "";
+		company.photoPass = ""
+		
+		company.vimEmail = "bowlinggreenkymike@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="bowlinggreenkymike@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "For almost 30 years, Bowling Green, Kentucky personal injury lawyer Mike Breen has had the privilege of fighting for people and families who have been injured by the carelessness of others";
+		company.keywords =  "Car Accident Injury Lawyer Bowling Green, KY <br>Auto Accident Attorney Bowling Green, KY<br>Car Crash Attorney Bowling Green, KY<br>Accident Lawyer Bowling Green KY<br>Car Accident Personal Injury Lawyer Bowling Green, KY<br>Personal Injury Lawyer Bowling Green, KY<br>Accident Attorney Bowling Green, KY<br>Auto Accident Attorney Bowling Green, KY<br>Attorney Bowling Green, KY<br>Accident Lawyer Bowling Green, KY<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	
+	
+	else if (choice.options[choice.selectedIndex].value == "56")
+	{
+		company.name = "Aswell Trophy";
+		company.website = "http://www.aswelltrophy.com";
+		company.address = "235 N. Oxnard Blvd";
+		company.city = "Oxnard";
+		company.state = "CA";
+		company.zip = "93030";
+		company.phone = "(805) 487-2224";
+		
+		company.email = "Awards.Oxnard@gmail.com";
+		company.googPass = "1stplace";
+		
+		company.yahooEmail = "Awards.Oxnard@gmail.com";
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "1stplace";
+		company.pxEmail = "Awards.Oxnard@gmail.com";
+		
+		company.photoEmail = "";
+		company.photoPass = ""
+		
+		company.vimEmail = "Awards.Oxnard@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="Awards.Oxnard@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Aswell Trophy, a trophy shop in Oxnard, CA, has been family owned and operated for over 50 years. We are the one stop shop for all your recognition needs: trophies, plaques, engraving, embroidery, silk screening tshirts, banners, signage, nametags, crystal and acrylic awards.";
+		company.keywords =  "Awards Oxnard,CA<br>Embroidery Oxnard, CA<br>trophies Ventura, CA<br>Silk Screen Printing Oxnard, CA<br>Engraving Oxnard, CA<br>Trophies Oxnard, CA<br>Medals Oxnard, CA<br>Plaques Ventura, CA<br>Plaques Oxnard, CA<br>Awards Camarillo, CA<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	
+	
+	
+	else if (choice.options[choice.selectedIndex].value == "46")
+	{
+		company.name = "Awards By Walsh's & Creative Marketing";
+		company.website = "http://www.awardsbywalsh.com";
+		company.address = "233 Ontario St";
+		company.city = "Cohoes";
+		company.state = "NY";
+		company.zip = "12047";
+		company.phone = "(518) 235-6362";
+		
+		company.email = "Awards.Cohoes.NY@gmail.com";
+		company.googPass = "1stPlace12";
+		
+		company.yahooEmail = "Awards.CohoesNY@Yahoo.com";
+		company.flickrPass = "1stplace";
+		
+		company.pxPass = "";
+		company.pxEmail = "";
+		
+		company.photoEmail = "Awards.Cohoes.NY@gmail.com";
+		company.photoPass = "1stplace"
+		
+		company.vimEmail = "Awards.Cohoes.NY@gmail.com";
+		company.vimPass = "1stplace";
+		
+		company.dailyEmail="Awards.Cohoes.NY@gmail.com";
+		company.dailyPass = "1stplace";
+		
+		company.description = "Awards by Walsh's and Creative Marketing has been setting the standard in the trophy, awards, screen printing, embroidery, uniforms, apparel and promotional items industry for nearly 25 years. Our state-of-the-art facility, located in Cohoes, NY, is equipped with the latest technology, enabling us to handle any type of custom order while providing outstanding workmanship, clear quality control and prompt turnarounds.";
+		company.keywords =  "Embroidery Albany NY<br>Medals Albany NY<br>Trophy Albany NY<br>Custom Plaques Albany NY<br>Custom Trophies Albany NY<br>Custom Awards Albany NY<br>Glass Awards Albany NY<br>Corporate Awards Albany NY<br>Crystal Awards Albany NY<br>Acrylic Awards Albany NY<br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	//Template
+	/*
+	else if (choice.options[choice.selectedIndex].value == "")
+	{
+		company.name = "";
+		company.website = "";
+		company.address = "";
+		company.city = "";
+		company.state = "";
+		company.zip = "";
+		company.phone = "";
+		
+		company.email = "";
+		company.googPass = "";
+		
+		company.yahooEmail = "";
+		company.flickrPass = "";
+		
+		company.pxPass = "";
+		company.pxEmail = "";
+		
+		company.photoEmail = "";
+		company.photoPass = ""
+		
+		company.vimEmail = "";
+		company.vimPass = "";
+		
+		company.dailyEmail="";
+		company.dailyPass = "";
+		
+		company.description = "";
+		company.keywords =  "<br><br><br><br><br><br><br><br><br><br>";
+	
+		//Make divs holding information visible to user	
+		 mainDiv.style.visibility = "visible";
+		 secondDiv.style.visibility = "visible";
+	}
+	*/
+	
+	//If default list item is selected then hide the information divs 
+	else
+	{
+		 mainDiv.style.visibility = "hidden";
+		 secondDiv.style.visibility = "hidden";
+	}
+	
+	//Output all the information
+	document.getElementById("title").innerHTML = company.name;
+	document.getElementById("name").innerHTML = company.name;
+	document.getElementById("web").innerHTML = company.website;
+	document.getElementById("phone").innerHTML = company.phone;
+	document.getElementById("Name").innerHTML = company.name;
+	document.getElementById("address").innerHTML = company.address;
+	document.getElementById("city/state/zip").innerHTML = company.city + ", " + company. state + " " + company.zip;
+	document.getElementById("num").innerHTML = company.phone;
+	document.getElementById("email").innerHTML = company.email;
+	document.getElementById("googPass").innerHTML = company.googPass;
+	document.getElementById("keywords").innerHTML = company.keywords;
+	
+	document.getElementById("flickrEmail").innerHTML = company.yahooEmail;
+	document.getElementById("flickrpass").innerHTML = company.flickrPass;
+	
+	document.getElementById("photoEmail").innerHTML = company.photoEmail;
+	document.getElementById("photopass").innerHTML = company.photoPass;
+	
+	document.getElementById("500pxEmail").innerHTML = company.pxEmail;
+	document.getElementById("500pxPass").innerHTML = company.pxPass;
+	
+	document.getElementById("youEmail").innerHTML = company.email;
+	document.getElementById("youPass").innerHTML = company.googPass;
+	
+	document.getElementById("vimEmail").innerHTML = company.vimEmail;
+	document.getElementById("vimPass").innerHTML = company.vimPass;
+	
+	document.getElementById("dailyEmail").innerHTML = company.dailyEmail;
+	document.getElementById("dailyPass").innerHTML = company.dailyPass;
+	
+	//If is a Gross & Schuster Client Display Additional Information, Else Hide addition info
+	if(choice.options[choice.selectedIndex].value == "21" || 
+	choice.options[choice.selectedIndex].value == "22" || 
+	choice.options[choice.selectedIndex].value == "23" || 
+	choice.options[choice.selectedIndex].value == "7" || 
+	choice.options[choice.selectedIndex].value == "8" ||
+	choice.options[choice.selectedIndex].value == "39")
+	{	
+		if(choice.options[choice.selectedIndex].value == "39")
+		{
+		document.getElementsByClassName("hide")[0].style.visibility = "visible";
+		document.getElementsByClassName("hide")[1].style.visibility = "visible";
+		document.getElementsByClassName("hide")[2].style.visibility = "visible";
+		document.getElementById("youEmail").innerHTML = "avalonlandingrvpark@gmail.com";
+		document.getElementById("youPass").innerHTML = "4saltwaterfishing";
+		}
+		else
+		{
+		document.getElementsByClassName("hide")[0].style.visibility = "visible";
+		document.getElementsByClassName("hide")[1].style.visibility = "visible";
+		document.getElementsByClassName("hide")[2].style.visibility = "visible";
+		document.getElementById("youEmail").innerHTML = "grossandschuster@gmail.com";
+		document.getElementById("youPass").innerHTML = "grosslaw1";
+		}
+	}
+	else
+	{
+		document.getElementsByClassName("hide")[0].style.visibility = "hidden";	
+		document.getElementsByClassName("hide")[1].style.visibility = "hidden";
+		document.getElementsByClassName("hide")[2].style.visibility = "hidden";
+	}			
+	
+	Description();
+}
+
+</script>
+
+<script lang="javascript">
+function Submit()
+{
+	var textarea = document.getElementById("contactDev");
+	var message = textarea.value;
+	
+	//send email
+	var link = "mailto:bishop@prosperousim.com"      
+             + "&subject=" + escape("Quick Client Info Support Ticket")
+             + "&body=" + escape(message);
+
+    window.location.href = link;
+			
+	textarea.value = "";	
+}
+</script>
+</footer>
+<!-- IDEAS
+
+1)Potentiall make drop down list on the left side and move info to top of screen on right side. This should alow more space for items
+
+2)Button to change keywords -> onclick put radio button next to words and finish button -> onclick opens text field to enter new word 
+ -> on finish click send email with which keyword want to change -> message says to give me 24hr to change
+	-->
+</html>
